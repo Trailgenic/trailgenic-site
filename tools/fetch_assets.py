@@ -23,7 +23,17 @@ HOSTS = {
     "uploads-ssl.webflow.com": "wfup",
 }
 PATTERN = re.compile(r"https://(?:cdn\.prod\.website-files\.com|app-assets\.website-files\.com|"
-                     r"d3e54v103j8qbb\.cloudfront\.net|uploads-ssl\.webflow\.com)/[^\s\"'<>)\\,]+")
+                     r"d3e54v103j8qbb\.cloudfront\.net|uploads-ssl\.webflow\.com)/[^\s\"'<>\\,]+")
+
+
+def find_urls(text):
+    """Webflow file names can contain parentheses; drop only unbalanced closers."""
+    out = []
+    for u in PATTERN.findall(text):
+        while u.endswith(")") and u.count("(") < u.count(")"):
+            u = u[:-1]
+        out.append(u.rstrip(".;"))
+    return out
 UA = "Mozilla/5.0 TrailGenicMigrationAssets/1.0"
 
 
@@ -66,7 +76,7 @@ def main():
                     fh.write(body)
                 mapping[url] = lp
                 if re.search(r"\.(css|js)$", urllib.parse.urlparse(url).path):
-                    for found in PATTERN.findall(body.decode("utf-8", "replace")):
+                    for found in find_urls(body.decode("utf-8", "replace")):
                         if found not in done:
                             todo.append(found)
         print(f"downloaded {len(mapping)} failed {len(failed)}", flush=True)
