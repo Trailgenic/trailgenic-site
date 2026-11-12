@@ -24,8 +24,10 @@ jobs:
       - name: Local parity (build vs snapshot)
         run: python3 tools/parity_local.py
       - name: Remote parity (deployment vs build)
+        env:
+          INPUT_BASE: ${{ github.event.inputs.base }}
         run: |
-          BASE="${{ github.event.inputs.base }}"
+          BASE="$INPUT_BASE"
           if [ -z "$BASE" ]; then BASE="$(head -1 reports/REMOTE_REQUEST)"; fi
           BASE="$BASE" python3 tools/parity_remote.py
       - name: Commit reports

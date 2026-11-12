@@ -125,6 +125,11 @@ def main():
     open(os.path.join(ROOT, "reports", "parity-remote.md"), "w").write("\n".join(lines) + "\n")
     print("\n".join(lines[:12]))
     print("failures", len(failures))
+    missing_cited = sorted(set(cited) - set(cited_ok))
+    if failures or missing_cited:
+        print(f"PARITY FAILED: {len(failures)} failed comparison(s), {len(missing_cited)} cited address(es) not passing",
+              missing_cited[:20])
+        sys.exit(1)
 
 
 if __name__ == "__main__":
