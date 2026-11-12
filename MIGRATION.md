@@ -102,3 +102,9 @@ site is re-captured, not patched.
   still resolves on Webflow's file server. No current TrailGenic page links to it
   (the site links the 2026 edition). A TrailGenic-hosted copy is at
   `/cdn/wf/687dbbd9b5ac024294bb3226/6983e360f3721341a6ac1565_Fasted-Hiking-Playbook.pdf`.
+
+## Webflow downgrade readiness (2026-11-11, after cutover)
+
+- Forms: the only Webflow-handled forms are the two samples on /style-guide (already on the correction track). /find uses its own on-page search. No live form depends on Webflow.
+- Files: all 12 PDFs and every image, style and script are served from /cdn on Vercel. The live site still references Webflow only through (a) the leftover preconnect hint, which is harmless, and (b) Webflow's shared placeholder image, which is not tied to this site's plan. Both are already on the correction track.
+- Residual: outside links and AI answers that point at the original cdn.prod.website-files.com PDF addresses. These are Webflow asset-library files and should keep resolving while the project and its assets exist. Do not delete the Webflow project or its assets. Recheck the original Fasted Hiking Playbook PDF address the day after the downgrade takes effect.
