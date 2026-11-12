@@ -1,6 +1,6 @@
-# Parity check against https://trailgenic-site.vercel.app
+# Parity check against https://www.trailgenic.com
 
-Checked 2026-11-12T01:55:49Z.
+Checked 2026-11-12T03:47:03Z.
 
 | Check | Passed | Checked |
 |---|---:|---:|
