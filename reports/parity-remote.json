@@ -1,0 +1,31 @@
+{
+ "base": "https://trailgenic-site.vercel.app",
+ "checked_utc": "2026-11-12T01:37:39Z",
+ "summary": {
+  "page": {
+   "checked": 321,
+   "passed": 321
+  },
+  "not_found": {
+   "checked": 10,
+   "passed": 10
+  },
+  "redirect": {
+   "checked": 6,
+   "passed": 6
+  },
+  "trailing_slash": {
+   "checked": 3,
+   "passed": 3
+  },
+  "file": {
+   "checked": 777,
+   "passed": 777
+  }
+ },
+ "cited": {
+  "checked": 29,
+  "passed": 29
+ },
+ "failures": []
+}
