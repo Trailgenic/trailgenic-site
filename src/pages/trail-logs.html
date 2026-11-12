@@ -1,0 +1,5151 @@
+<!DOCTYPE html><!-- Last Published: Wed Nov 11 2026 20:59:20 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.trailgenic.com" data-wf-page="687dcf0e3e631694f017ce27" data-wf-site="687d84a5f6e63c0b86866c3d" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Trail Logs | TrailGenic™ Field Evidence Layer</title><meta content="TrailGenic™ Trail Logs document real field sessions across hiking, terrain, altitude, Gear Systems, Fuel Systems, sleep recovery, biomarkers, protocols, and the Personal World Model." name="description"/><meta content="Trail Logs | TrailGenic™ Field Evidence Layer" property="og:title"/><meta content="TrailGenic™ Trail Logs document real field sessions across hiking, terrain, altitude, Gear Systems, Fuel Systems, sleep recovery, biomarkers, protocols, and the Personal World Model." property="og:description"/><meta content="Trail Logs | TrailGenic™ Field Evidence Layer" name="twitter:title"/><meta content="TrailGenic™ Trail Logs document real field sessions across hiking, terrain, altitude, Gear Systems, Fuel Systems, sleep recovery, biomarkers, protocols, and the Personal World Model." name="twitter:description"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><!--@partial webflow-head--><!--@partial site-head--><style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
+
+  .tg-tl {
+    font-family: 'EB Garamond', Georgia, serif;
+    color: #1a1a18;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .tg-tl * { box-sizing: border-box; }
+
+  .tg-tl .byline {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .tg-tl h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 20px 0;
+    color: #111;
+    letter-spacing: -0.01em;
+  }
+
+  .tg-tl .lede {
+    font-size: 20px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 40px;
+    border-left: 3px solid #c8a96e;
+    padding-left: 18px;
+    line-height: 1.6;
+  }
+
+  .tg-tl hr {
+    border: none;
+    border-top: 1px solid #e0ddd6;
+    margin: 44px 0;
+  }
+
+  .tg-tl h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 44px 0 16px 0;
+    color: #111;
+    letter-spacing: -0.01em;
+  }
+
+  .tg-tl h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 32px 0 10px 0;
+  }
+
+  .tg-tl p {
+    margin: 0 0 18px 0;
+    color: #2a2a27;
+  }
+
+  .tg-tl a {
+    color: #1a1a18;
+    text-decoration: underline;
+    text-decoration-color: #c8a96e;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+
+  .tg-tl a:hover { color: #c8a96e; }
+  .tg-tl strong { font-weight: 600; }
+
+  /* Stats row */
+  .tg-tl .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid #e0ddd6;
+    margin: 0 0 40px 0;
+  }
+
+  .tg-tl .stat-cell {
+    padding: 18px 16px;
+    border-right: 1px solid #e0ddd6;
+    text-align: center;
+  }
+
+  .tg-tl .stat-cell:last-child { border-right: none; }
+
+  .tg-tl .stat-num {
+    font-size: 32px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .tg-tl .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+
+  /* Protocol grid */
+  .tg-tl .protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border: 1px solid #e0ddd6;
+    margin: 16px 0 32px 0;
+  }
+
+  .tg-tl .protocol-cell {
+    padding: 14px 12px;
+    border-right: 1px solid #e0ddd6;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background 0.15s;
+  }
+
+  .tg-tl .protocol-cell:last-child { border-right: none; }
+  .tg-tl .protocol-cell:hover { background: #f5f2ec; text-decoration: none; }
+
+  .tg-tl .protocol-level {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    margin-bottom: 5px;
+  }
+
+  .tg-tl .protocol-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.3;
+  }
+
+  /* Field data callout */
+  .tg-tl .field-data {
+    background: #f5f2ec;
+    border-left: 4px solid #c8a96e;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+
+  .tg-tl .field-data .fd-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    margin-bottom: 8px;
+  }
+
+  .tg-tl .field-data p {
+    margin: 0;
+    font-size: 17px;
+    color: #2a2a27;
+  }
+
+  .tg-tl .field-data .fd-stat {
+    font-size: 28px;
+    font-weight: 500;
+    color: #111;
+    display: block;
+    margin: 6px 0 4px 0;
+    font-style: italic;
+  }
+
+  /* Peak cards */
+  .tg-tl .peaks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 16px 0 32px 0;
+  }
+
+  .tg-tl .peak-card {
+    border: 1px solid #e0ddd6;
+    padding: 14px 16px;
+    background: #faf9f6;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.15s;
+  }
+
+  .tg-tl .peak-card:hover {
+    border-color: #c8a96e;
+    text-decoration: none;
+  }
+
+  .tg-tl .peak-elev {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    margin-bottom: 4px;
+  }
+
+  .tg-tl .peak-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 3px;
+    line-height: 1.2;
+  }
+
+  .tg-tl .peak-desc {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.4;
+  }
+
+  /* FAQ */
+  .tg-tl .faq-block { margin: 16px 0 28px 0; }
+
+  .tg-tl details {
+    border-top: 1px solid #e0ddd6;
+    padding: 12px 0;
+  }
+
+  .tg-tl details:last-of-type { border-bottom: 1px solid #e0ddd6; }
+
+  .tg-tl summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tg-tl summary::-webkit-details-marker { display: none; }
+
+  .tg-tl summary::after {
+    content: '+';
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    color: #c8a96e;
+    flex-shrink: 0;
+    margin-left: 12px;
+  }
+
+  .tg-tl details[open] summary::after { content: '−'; }
+
+  .tg-tl details div {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.65;
+  }
+
+  /* System integration grid */
+  .tg-tl .sys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px 0 0 0;
+  }
+
+  .tg-tl .sys-card {
+    border: 1px solid #e0ddd6;
+    padding: 16px 18px;
+    background: #faf9f6;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .tg-tl .sys-card:hover {
+    border-color: #c8a96e;
+    background: #f5f2ec;
+    text-decoration: none;
+  }
+
+  .tg-tl .sys-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 4px;
+  }
+
+  .tg-tl .sys-card-desc {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 600px) {
+    .tg-tl { font-size: 17px; }
+    .tg-tl h1 { font-size: 30px; }
+    .tg-tl .stats-row { grid-template-columns: 1fr 1fr; }
+    .tg-tl .stat-cell { border-bottom: 1px solid #e0ddd6; }
+    .tg-tl .protocol-grid { grid-template-columns: 1fr 1fr; }
+    .tg-tl .protocol-cell { border-bottom: 1px solid #e0ddd6; }
+    .tg-tl .peaks-grid { grid-template-columns: 1fr 1fr; }
+    .tg-tl .sys-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<div class="tg-tl">
+
+  <div class="byline">By <a href="/my-journey" rel="author">Mike Ye</a> × Ella (AI) · TrailGenic™ Field Evidence Layer</div>
+
+  <h1>Trail Logs</h1>
+
+  <div class="lede">
+    TrailGenic™ Trail Logs are the field evidence layer of the movement-based longevity system — real routes, real terrain, real physiological data, and real recovery signals documented across hiking, altitude, heat, cold, Gear Systems, Fuel Systems, sleep recovery, biomarkers, and the Personal World Model.
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-cell">
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Documented Field Sessions</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">14,505</div>
+      <div class="stat-label">Highest Elevation (ft)</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">22</div>
+      <div class="stat-label">Hiking Dataset Sessions</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Protocol Levels</div>
+    </div>
+  </div>
+
+  <p>
+    Most hiking content documents where someone went. TrailGenic Trail Logs document what happened to the body inside the field session: heart rate behavior, elevation load, terrain demand, metabolic context, electrolyte strategy, gear setup, fuel decisions, thermal stress, sleep recovery, and downstream adaptation signals.
+  </p>
+
+  <p>
+    These logs are not standalone hike reports. They are the field record behind the <a href="/hiking">Hiking Dataset</a>, the <a href="/physiology">Physiology Hub</a>, the <a href="/biomarkers">Biomarkers Hub</a>, the <a href="/sleep">Sleep Recovery Hub</a>, and the <a href="/science/trailgenic-personal-world-model">TrailGenic Personal World Model</a>. The trail is not just scenery. It is where the system expresses under real-world load.
+  </p>
+
+  <p>
+    Going forward, repeated routes are treated as <strong>longitudinal trail logs</strong>. Instead of publishing a separate article every time the same route is repeated, TrailGenic updates the relevant longitudinal record so improvements, regressions, recovery patterns, and protocol changes can be interpreted over time.
+  </p>
+
+  <hr>
+
+  <h2>Trail Logs by Protocol Level</h2>
+
+  <p>
+    Every TrailGenic Trail Log maps into the five-level Protocol Series — from foundation movement and accessible field sessions to full TrailGenic execution. Protocols define the level. Playbooks explain the execution. Trail Logs show what happened in the field.
+  </p>
+
+  <div class="protocol-grid">
+    <a href="/protocols/trailgenic-foundation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L1</div>
+      <div class="protocol-name">Foundation</div>
+    </a>
+    <a href="/protocols/trailgenic-activation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L2</div>
+      <div class="protocol-name">Activation</div>
+    </a>
+    <a href="/protocols/trailgenic-adaptation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L3</div>
+      <div class="protocol-name">Adaptation</div>
+    </a>
+    <a href="/protocols/trailgenic-consolidation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L4</div>
+      <div class="protocol-name">Consolidation</div>
+    </a>
+    <a href="/protocols/trailgenic-protocol" class="protocol-cell">
+      <div class="protocol-level">L5</div>
+      <div class="protocol-name">TrailGenic</div>
+    </a>
+  </div>
+
+  <p>
+    For route mapping across Southern California terrain, see the <a href="/playbooks/socal-peaks-longevity-index">SoCal Peaks Longevity Index →</a>
+  </p>
+
+  <hr>
+
+  <h2>Primary Field Peaks</h2>
+
+  <p>
+    The majority of TrailGenic’s hiking evidence is built on repeated ascents of these routes and peaks — chosen for elevation range, accessibility, terrain variety, protocol scalability, and longitudinal comparison value.
+  </p>
+
+  <div class="peaks-grid">
+    <a href="/trail-logs/mount-baldy-trailgenic-validation" class="peak-card">
+      <div class="peak-elev">10,064 ft · Primary Field Lab</div>
+      <div class="peak-name">Mount Baldy</div>
+      <div class="peak-desc">Core validation peak for repeat-route comparison, HR drift, elevation load, cold exposure, and fasted field sessions.</div>
+    </a>
+    <a href="/trail-logs/san-gorgonio-longitudinal" class="peak-card">
+      <div class="peak-elev">11,503 ft · SoCal High Point</div>
+      <div class="peak-name">San Gorgonio Longitudinal</div>
+      <div class="peak-desc">Longitudinal high-altitude record tracking improved execution, recovery response, and return-to-summit readiness over time.</div>
+    </a>
+    <a href="/trail-logs/mount-whitney" class="peak-card">
+      <div class="peak-elev">14,505 ft · High Altitude</div>
+      <div class="peak-name">Mount Whitney</div>
+      <div class="peak-desc">Highest peak in the contiguous United States. High-altitude field expression and identity anchor for the TrailGenic story.</div>
+    </a>
+    <a href="/trail-logs/mount-langley" class="peak-card">
+      <div class="peak-elev">14,032 ft · Altitude</div>
+      <div class="peak-name">Mount Langley</div>
+      <div class="peak-desc">14er field session documenting altitude, duration, metabolic context, and sustained movement under extended exposure.</div>
+    </a>
+    <a href="/trail-logs/san-jacinto" class="peak-card">
+      <div class="peak-elev">10,834 ft · Steep Terrain</div>
+      <div class="peak-name">San Jacinto</div>
+      <div class="peak-desc">High vertical gain and steep terrain. Strong record for eccentric load, descent stress, ketone response, and recovery interpretation.</div>
+    </a>
+    <a href="/trail-logs/half-dome-t3nxz" class="peak-card">
+      <div class="peak-elev">8,839 ft · Technical Exposure</div>
+      <div class="peak-name">Half Dome</div>
+      <div class="peak-desc">Technical ascent with cable exposure. Mental resilience, thermoregulation, terrain risk, and decision discipline under field pressure.</div>
+    </a>
+    <a href="/trail-logs/humphreys-peak-cold-exposure-validation-summit" class="peak-card">
+      <div class="peak-elev">12,633 ft · Cold Exposure</div>
+      <div class="peak-name">Humphreys Peak</div>
+      <div class="peak-desc">Cold exposure validation summit. Thermal protocol execution, wind, altitude, and environmental control at elevation.</div>
+    </a>
+    <a href="/trail-logs/bright-angel-rim-to-river-to-rim-trailgenic" class="peak-card">
+      <div class="peak-elev">Grand Canyon · Multi-Environment</div>
+      <div class="peak-name">Bright Angel</div>
+      <div class="peak-desc">Rim-to-River-to-Rim field session. Heat, canyon descent, return climb, duration, and recovery cost across changing environments.</div>
+    </a>
+  </div>
+
+  <hr>
+
+  <h2>What the Field Evidence Shows</h2>
+
+  <div class="field-data">
+    <div class="fd-label">Primary Field Signal — Heart Rate Drift and Recovery</div>
+    <span class="fd-stat">21 of 22 high-load hiking sessions show negative HR drift</span>
+    <p>
+      Across the current hiking dataset, 21 of 22 high-load sessions show negative heart rate drift, meaning heart rate behavior improved rather than degraded across sustained effort. In TrailGenic, this is interpreted as a field signal of aerobic control, pacing discipline, metabolic stability, and recoverable stress — not as a standalone medical claim.
+    </p>
+  </div>
+
+  <p>
+    The physiological signals across these Trail Logs form the field evidence behind the <a href="/physiology">Physiology Hub</a>, the <a href="/biomarkers">Biomarkers Hub</a>, and the <a href="/science/trailgenic-personal-world-model">TrailGenic Personal World Model</a>. Every logged field session contributes to a longitudinal adaptation curve tracked across real routes, real weather, real recovery, and real consequences.
+  </p>
+
+  <p>
+    Structured machine-readable context is available through the TrailGenic MCP infrastructure at <a href="https://mcp.trailgenic.com">mcp.trailgenic.com →</a>
+  </p>
+
+  <hr>
+
+  <h2>How Trail Logs Connect to the System</h2>
+
+  <div class="faq-block">
+
+    <details>
+      <summary>What makes a TrailGenic Trail Log different from a hike report?</summary>
+      <div>
+        A standard hike report documents distance, elevation gain, route conditions, and scenery. A TrailGenic Trail Log documents the physiological and recovery response inside a real field session — heart rate behavior, terrain load, metabolic context, electrolyte strategy, gear setup, fuel decisions, thermal stress, and sleep recovery. Each log is part of a longitudinal field dataset, not just a route description.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do Trail Logs connect to the Protocol Series?</summary>
+      <div>
+        Every Trail Log maps to the TrailGenic Protocol Series. Protocols define the level, from Foundation through full TrailGenic execution. Trail Logs show what happened when that level was expressed in the field. They also help refine the system: when field evidence changes, the interpretation changes with it.
+      </div>
+    </details>
+
+    <details>
+      <summary>What is negative heart rate drift and why does it matter?</summary>
+      <div>
+        Heart rate drift is the change in heart rate during sustained effort. Positive drift often reflects accumulating fatigue, heat, dehydration, or rising cardiovascular cost. Negative drift means heart rate behavior improves during the session. In TrailGenic, negative drift is interpreted as a signal of pacing control, aerobic efficiency, and recoverable field stress. Full methodology lives in the <a href="/science/hr-drift-adaptation-vs-fitness">HR Drift Science →</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where do Gear Systems and Fuel Systems appear in Trail Logs?</summary>
+      <div>
+        Gear Systems and Fuel Systems are documented as support-system context. Gear influences load, terrain interface, hydration access, thermoregulation, safety margin, and recovery cost. Fuel influences metabolic state, electrolytes, safety fuel, recovery timing, and post-session repair. These details help explain why similar routes can produce different physiological responses.
+      </div>
+    </details>
+
+    <details>
+      <summary>How does fasted hiking fit into the Trail Logs?</summary>
+      <div>
+        Fasted hiking remains an advanced field expression inside TrailGenic, but it is no longer the whole system. It is one metabolic context within the broader movement architecture. Trail Logs document whether a session was fasted or fed, what electrolyte strategy was used, what safety fuel was carried, and how the body recovered afterward.
+      </div>
+    </details>
+
+    <details>
+      <summary>How are Trail Logs structured for AI and agent access?</summary>
+      <div>
+        Trail Logs are connected to the TrailGenic MCP infrastructure, allowing field session context, protocol mapping, and adaptation signals to be structured for machine interpretation. AI systems and agents can use TrailGenic’s machine-readable infrastructure to understand how trail sessions connect to physiology, protocols, gear, fuel, recovery, and the Personal World Model.
+      </div>
+    </details>
+
+  </div>
+
+  <hr>
+
+  <h2>TrailGenic™ System Integration</h2>
+
+  <div class="sys-grid">
+    <a href="/hiking" class="sys-card featured">
+      <div class="sys-card-title">Hiking Dataset</div>
+      <div class="sys-card-desc">The field expression layer behind the Trail Logs</div>
+    </a>
+    <a href="/physiology" class="sys-card featured">
+      <div class="sys-card-title">Physiology Hub</div>
+      <div class="sys-card-desc">Structured physiological data from field sessions</div>
+    </a>
+    <a href="/sleep" class="sys-card featured">
+      <div class="sys-card-title">Sleep Recovery Hub</div>
+      <div class="sys-card-desc">Recovery interpretation after field load</div>
+    </a>
+    <a href="/protocols" class="sys-card">
+      <div class="sys-card-title">Protocol Series</div>
+      <div class="sys-card-desc">Five-level progression — trail logs show field execution</div>
+    </a>
+    <a href="/playbooks" class="sys-card">
+      <div class="sys-card-title">Playbooks Hub</div>
+      <div class="sys-card-desc">Execution guides for protocol decisions</div>
+    </a>
+    <a href="/biomarkers" class="sys-card">
+      <div class="sys-card-title">Biomarkers Hub</div>
+      <div class="sys-card-desc">Field-derived signals measured across sessions</div>
+    </a>
+    <a href="/outcomes" class="sys-card">
+      <div class="sys-card-title">Outcomes Hub</div>
+      <div class="sys-card-desc">Human meaning layer behind adaptation</div>
+    </a>
+    <a href="/science" class="sys-card">
+      <div class="sys-card-title">Science Hub</div>
+      <div class="sys-card-desc">Mechanisms behind what the logs measure</div>
+    </a>
+    <a href="/science/trailgenic-personal-world-model" class="sys-card">
+      <div class="sys-card-title">Personal World Model</div>
+      <div class="sys-card-desc">Longitudinal interpretation layer</div>
+    </a>
+    <a href="/electrolytes" class="sys-card">
+      <div class="sys-card-title">Electrolytes Hub</div>
+      <div class="sys-card-desc">Hydration and sodium stability across field sessions</div>
+    </a>
+    <a href="/gear-reviews" class="sys-card">
+      <div class="sys-card-title">Gear Systems</div>
+      <div class="sys-card-desc">Load, terrain, hydration, thermoregulation, and safety context</div>
+    </a>
+    <a href="/nutrition-reviews" class="sys-card">
+      <div class="sys-card-title">Fuel Systems</div>
+      <div class="sys-card-desc">Metabolic input, electrolytes, safety fuel, and recovery timing</div>
+    </a>
+    <a href="/recovery-conditioning" class="sys-card">
+      <div class="sys-card-title">Recovery & Conditioning</div>
+      <div class="sys-card-desc">Lower-load routes and recovery-focused field sessions</div>
+    </a>
+    <a href="https://mcp.trailgenic.com" class="sys-card">
+      <div class="sys-card-title">MCP Dataset</div>
+      <div class="sys-card-desc">Machine-readable TrailGenic data infrastructure</div>
+    </a>
+  </div>
+
+</div></head><body><section><div class="nav-embed w-embed"><!-- ========== TrailGenic | Trail Logs Hub — HTML v3.0 ========== -->
+<!-- Updated: July 11, 2026                                     -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
+
+  .tg-tl {
+    font-family: 'EB Garamond', Georgia, serif;
+    color: #1a1a18;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .tg-tl * {
+    box-sizing: border-box;
+  }
+
+  .tg-tl .byline {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .tg-tl h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 20px;
+    color: #111;
+    letter-spacing: -0.01em;
+  }
+
+  .tg-tl h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 44px 0 16px;
+    color: #111;
+    letter-spacing: -0.01em;
+  }
+
+  .tg-tl h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 32px 0 10px;
+  }
+
+  .tg-tl p {
+    margin: 0 0 18px;
+    color: #2a2a27;
+  }
+
+  .tg-tl a {
+    color: #1a1a18;
+    text-decoration: underline;
+    text-decoration-color: #c8a96e;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+
+  .tg-tl a:hover {
+    color: #c8a96e;
+  }
+
+  .tg-tl strong {
+    font-weight: 600;
+  }
+
+  .tg-tl hr {
+    border: none;
+    border-top: 1px solid #e0ddd6;
+    margin: 44px 0;
+  }
+
+  .tg-tl .lede {
+    font-size: 20px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 40px;
+    border-left: 3px solid #c8a96e;
+    padding-left: 18px;
+    line-height: 1.6;
+  }
+
+  .tg-tl .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #e0ddd6;
+    margin: 0 0 40px;
+  }
+
+  .tg-tl .stat-cell {
+    padding: 18px 14px;
+    border-right: 1px solid #e0ddd6;
+    text-align: center;
+  }
+
+  .tg-tl .stat-cell:last-child {
+    border-right: none;
+  }
+
+  .tg-tl .stat-num {
+    font-size: 30px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .tg-tl .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  .tg-tl .protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #e0ddd6;
+    margin: 16px 0 32px;
+  }
+
+  .tg-tl .protocol-cell {
+    padding: 14px 12px;
+    border-right: 1px solid #e0ddd6;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background 0.15s;
+  }
+
+  .tg-tl .protocol-cell:last-child {
+    border-right: none;
+  }
+
+  .tg-tl .protocol-cell:hover {
+    background: #f5f2ec;
+    text-decoration: none;
+  }
+
+  .tg-tl .protocol-level,
+  .tg-tl .peak-elev,
+  .tg-tl .fd-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c8a96e;
+  }
+
+  .tg-tl .protocol-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.3;
+  }
+
+  .tg-tl .field-data {
+    background: #f5f2ec;
+    border-left: 4px solid #c8a96e;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+
+  .tg-tl .field-data p {
+    margin: 0;
+    font-size: 17px;
+    color: #2a2a27;
+  }
+
+  .tg-tl .fd-label {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .tg-tl .fd-stat {
+    font-size: 28px;
+    font-weight: 500;
+    color: #111;
+    display: block;
+    margin: 6px 0;
+    font-style: italic;
+    line-height: 1.24;
+  }
+
+  .tg-tl .peaks-grid,
+  .tg-tl .sys-grid {
+    display: grid;
+    gap: 10px;
+    margin: 16px 0 32px;
+  }
+
+  .tg-tl .peaks-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .tg-tl .sys-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .tg-tl .peak-card,
+  .tg-tl .sys-card {
+    border: 1px solid #e0ddd6;
+    padding: 15px 17px;
+    background: #faf9f6;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .tg-tl .peak-card:hover,
+  .tg-tl .sys-card:hover {
+    border-color: #c8a96e;
+    background: #f5f2ec;
+    text-decoration: none;
+  }
+
+  .tg-tl .peak-card.featured,
+  .tg-tl .sys-card.featured {
+    border-color: #c8a96e;
+    background: #f9f5ee;
+  }
+
+  .tg-tl .peak-name,
+  .tg-tl .sys-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin: 4px 0;
+    line-height: 1.25;
+  }
+
+  .tg-tl .peak-card.featured .peak-name,
+  .tg-tl .sys-card.featured .sys-card-title {
+    color: #a8893e;
+  }
+
+  .tg-tl .peak-desc,
+  .tg-tl .sys-card-desc {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.42;
+  }
+
+  .tg-tl .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    padding: 3px 7px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .tg-tl .badge-positive {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .tg-tl .badge-watch {
+    background: #fff8e1;
+    color: #a86a00;
+  }
+
+  .tg-tl .badge-concern {
+    background: #fce4ec;
+    color: #b3261e;
+  }
+
+  .tg-tl .faq-block {
+    margin: 16px 0 28px;
+  }
+
+  .tg-tl details {
+    border-top: 1px solid #e0ddd6;
+    padding: 12px 0;
+  }
+
+  .tg-tl details:last-of-type {
+    border-bottom: 1px solid #e0ddd6;
+  }
+
+  .tg-tl summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tg-tl summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .tg-tl summary::after {
+    content: '+';
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    color: #c8a96e;
+    flex-shrink: 0;
+    margin-left: 12px;
+  }
+
+  .tg-tl details[open] summary::after {
+    content: '−';
+  }
+
+  .tg-tl details div {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.65;
+  }
+
+  .tg-tl .note {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.55;
+  }
+
+  @media (max-width: 600px) {
+    .tg-tl {
+      font-size: 17px;
+    }
+
+    .tg-tl h1 {
+      font-size: 30px;
+    }
+
+    .tg-tl .stats-row {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .tg-tl .stat-cell {
+      border-bottom: 1px solid #e0ddd6;
+    }
+
+    .tg-tl .protocol-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .tg-tl .protocol-cell {
+      border-bottom: 1px solid #e0ddd6;
+    }
+
+    .tg-tl .peaks-grid,
+    .tg-tl .sys-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
+
+<div class="tg-tl">
+
+  <div class="byline">
+    By <a href="/my-journey" rel="author">Mike Ye</a> × Ella (AI) · TrailGenic™ Field Evidence Layer · Updated July 11, 2026
+  </div>
+
+  <h1>Trail Logs</h1>
+
+  <div class="lede">
+    The field receipts behind HikeWorldModel™ v2.0 — real routes, environmental conditions, physiological responses, recovery outcomes, and longitudinal lessons preserved inside the TrailGenic Longevity Method™.
+  </div>
+
+  <div class="stats-row">
+
+    <div class="stat-cell">
+      <div class="stat-num">59</div>
+      <div class="stat-label">Structured Movement Sessions</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">31</div>
+      <div class="stat-label">HikeWorldModel Sessions</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">14,505</div>
+      <div class="stat-label">Highest Summit (ft)</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Protocol Levels</div>
+    </div>
+
+  </div>
+
+  <p>
+    Most hiking content records where someone went.
+  </p>
+
+  <p>
+    TrailGenic Trail Logs record what happened to the entire system while moving through that environment:
+  </p>
+
+  <ul>
+    <li>Route, distance, elevation gain, descent, duration, and terrain</li>
+    <li>Altitude, heat, cold, wind, exposure, and technical demand</li>
+    <li>Average heart rate, maximum heart rate, route-aware drift, training effect, and exercise load</li>
+    <li>Fasted or fueled state, hydration, electrolytes, safety fuel, and breath-acetone response</li>
+    <li>Sleep, HRV, resting heart rate, overnight stress, recovery debt, and Day-2 direction</li>
+  </ul>
+
+  <p>
+    Each log is a field receipt supporting the
+    <a href="/hiking">HikeWorldModel™</a>,
+    <a href="/physiology">Physiology Dataset</a>,
+    <a href="/biomarkers">Biomarkers Hub</a>,
+    <a href="/sleep">Sleep Recovery Hub</a>, and
+    <a href="/science/trailgenic-personal-world-model">Personal World Model</a>.
+  </p>
+
+  <div class="field-data">
+    <div class="fd-label">TrailGenic™ Longevity Principle</div>
+    <span class="fd-stat">
+      A summit proves that the body performed. The Trail Log preserves whether that performance was absorbed.
+    </span>
+    <p>
+      TrailGenic evaluates field success through both output and recovery. The objective is not one extraordinary day, but safe, recoverable, renewable mountain capacity across decades.
+    </p>
+  </div>
+
+  <hr />
+
+  <h2>Trail Logs by Protocol Level</h2>
+
+  <p>
+    Protocols define the intended stress level. Playbooks explain execution. Trail Logs show what happened when the system met real terrain.
+  </p>
+
+  <div class="protocol-grid">
+
+    <a href="/protocols/trailgenic-foundation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L1</div>
+      <div class="protocol-name">Foundation</div>
+    </a>
+
+    <a href="/protocols/trailgenic-activation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L2</div>
+      <div class="protocol-name">Activation</div>
+    </a>
+
+    <a href="/protocols/trailgenic-adaptation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L3</div>
+      <div class="protocol-name">Adaptation</div>
+    </a>
+
+    <a href="/protocols/trailgenic-consolidation-protocol-v1" class="protocol-cell">
+      <div class="protocol-level">L4</div>
+      <div class="protocol-name">Consolidation</div>
+    </a>
+
+    <a href="/protocols/trailgenic-protocol" class="protocol-cell">
+      <div class="protocol-level">L5</div>
+      <div class="protocol-name">TrailGenic</div>
+    </a>
+
+  </div>
+
+  <hr />
+
+  <h2>The Western Altitude Block</h2>
+
+  <p>
+    The Western Altitude Block compressed four meaningful efforts into less than two weeks:
+  </p>
+
+  <div class="stats-row">
+
+    <div class="stat-cell">
+      <div class="stat-num">37.63</div>
+      <div class="stat-label">Miles</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">15,867</div>
+      <div class="stat-label">Elevation Gain (ft)</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">24.2</div>
+      <div class="stat-label">Field Hours</div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Connected Efforts</div>
+    </div>
+
+  </div>
+
+  <div class="peaks-grid">
+
+    <a href="/trail-logs/mount-elbert-fasted-14er-altitude-ceiling" class="peak-card featured">
+      <div class="peak-elev">14,497 ft · June 27</div>
+      <div class="peak-name">Mount Elbert — Altitude Ceiling</div>
+      <div class="peak-desc">
+        11.02 mi · 5,361 ft gain · 473 min · −1.30% route-aware drift. Severe acute strain followed by successful Day-2 restoration.
+      </div>
+      <span class="badge badge-positive">RECOVERY CLOSED</span>
+    </a>
+
+    <a href="/trail-logs/manitou-incline-altitude-stress-stacking" class="peak-card">
+      <div class="peak-elev">1,929 ft Gain · Stacked Load</div>
+      <div class="peak-name">Manitou Incline</div>
+      <div class="peak-desc">
+        4.00 mi · 170 min · −1.00% drift. Concentrated secondary climbing load between Elbert and Pikes.
+      </div>
+    </a>
+
+    <a href="/trail-logs/pikes-peak-crags-fasted-14er-recovery-governor" class="peak-card featured">
+      <div class="peak-elev">14,116 ft · July 1</div>
+      <div class="peak-name">Pikes Peak — Governor Exposed</div>
+      <div class="peak-desc">
+        14.04 mi · 5,581 ft gain · 502 min · −1.40% drift. Exceptional performance without successful recovery closure.
+      </div>
+      <span class="badge badge-concern">ENGINE–GOVERNOR DIVERGENCE</span>
+    </a>
+
+    <a href="/trail-logs/wheeler-peak-fasted-fatigue-reveal-summit" class="peak-card featured">
+      <div class="peak-elev">13,154 ft · July 4</div>
+      <div class="peak-name">Wheeler Peak — Fatigue Reveal</div>
+      <div class="peak-desc">
+        8.57 mi · 2,996 ft gain · 307 min · +1.20% drift. The later effort that made accumulated recovery debt visible.
+      </div>
+      <span class="badge badge-watch">PARTIAL RECOVERY</span>
+    </a>
+
+  </div>
+
+  <div class="field-data">
+    <div class="fd-label">Western Altitude Finding</div>
+    <span class="fd-stat">
+      The adaptation remained. The compressed block exceeded the current recovery envelope.
+    </span>
+    <p>
+      Elbert showed recoverable ceiling stress. Pikes showed that performance could remain strong after the recovery governor fell behind. Wheeler revealed the debt inside a later effort.
+    </p>
+  </div>
+
+  <p>
+    <a href="/science/triple-summit-field-study-elbert-pikes-wheeler">
+      Triple Summit Field Study →
+    </a>
+    &nbsp;&nbsp;
+    <a href="/science/engine-and-governor-recovery-failed-before-performance">
+      The Engine and the Governor →
+    </a>
+  </p>
+
+  <hr />
+
+  <h2>Primary Longitudinal Field Labs</h2>
+
+  <p>
+    Repeated routes provide the strongest comparison because the environment can remain familiar while physiology changes.
+  </p>
+
+  <div class="peaks-grid">
+
+    <a href="/trail-logs/mount-baldy-trailgenic-validation" class="peak-card featured">
+      <div class="peak-elev">10,064 ft · Primary Field Lab</div>
+      <div class="peak-name">Mount Baldy</div>
+      <div class="peak-desc">
+        Repeated-route evidence for cardiac efficiency, terrain response, altitude, metabolic depth, and recovery.
+      </div>
+    </a>
+
+    <a href="/trail-logs/san-gorgonio-longitudinal" class="peak-card featured">
+      <div class="peak-elev">11,503 ft · Longitudinal Apex</div>
+      <div class="peak-name">San Gorgonio</div>
+      <div class="peak-desc">
+        Multiple approaches tracking duration, altitude, recovery arcs, pacing, and return-to-summit readiness.
+      </div>
+    </a>
+
+    <a href="/trail-logs/san-jacinto" class="peak-card">
+      <div class="peak-elev">10,834 ft · Steep Alpine Load</div>
+      <div class="peak-name">San Jacinto</div>
+      <div class="peak-desc">
+        Steep terrain, eccentric descent, altitude exposure, breath-acetone depth, and recovery interpretation.
+      </div>
+    </a>
+
+    <a href="/trail-logs/mount-whitney" class="peak-card featured">
+      <div class="peak-elev">14,505 ft · Highest Summit</div>
+      <div class="peak-name">Mount Whitney</div>
+      <div class="peak-desc">
+        Extreme altitude and duration expression across 21.2 miles and more than 6,600 feet of gain.
+      </div>
+    </a>
+
+    <a href="/trail-logs/mount-langley" class="peak-card">
+      <div class="peak-elev">14,026 ft · First 14er</div>
+      <div class="peak-name">Mount Langley</div>
+      <div class="peak-desc">
+        Extended high-altitude endurance, metabolic context, route judgment, and the Sky Pilot origin story.
+      </div>
+    </a>
+
+    <a href="/trail-logs/half-dome-t3nxz" class="peak-card">
+      <div class="peak-elev">8,839 ft · Technical Exposure</div>
+      <div class="peak-name">Half Dome</div>
+      <div class="peak-desc">
+        Long duration, cable exposure, technical decision-making, heat, and mental resilience.
+      </div>
+    </a>
+
+    <a href="/trail-logs/humphreys-peak-cold-exposure-validation-summit" class="peak-card">
+      <div class="peak-elev">12,633 ft · Cold and Wind</div>
+      <div class="peak-name">Humphreys Peak</div>
+      <div class="peak-desc">
+        Altitude, cold, wind, thermal control, and environmental resilience.
+      </div>
+    </a>
+
+    <a href="/trail-logs/bright-angel-rim-to-river-to-rim-trailgenic" class="peak-card">
+      <div class="peak-elev">Grand Canyon · Stress Inversion</div>
+      <div class="peak-name">Bright Angel</div>
+      <div class="peak-desc">
+        Descent-first mechanical load, canyon heat, return climb, hydration, and prolonged environmental transition.
+      </div>
+    </a>
+
+  </div>
+
+  <hr />
+
+  <h2>What the Field Evidence Shows</h2>
+
+  <div class="field-data">
+    <div class="fd-label">Cardiovascular Signature</div>
+    <span class="fd-stat">
+      Negative route-aware heart-rate drift remains an established TrailGenic pattern
+    </span>
+    <p>
+      TrailGenic accounts for ascent, descent, pace, terrain, altitude, route structure, and segmented recordings. Elbert and Pikes preserved negative drift at extreme altitude. Wheeler’s positive result revealed a recovery boundary rather than invalidating the signature.
+    </p>
+  </div>
+
+  <div class="field-data">
+    <div class="fd-label">Recovery Signature</div>
+    <span class="fd-stat">
+      Performance and recovery are separate field outcomes
+    </span>
+    <p>
+      A summit can be completed with controlled heart rate and zero anaerobic spillover while HRV, resting heart rate, REM, and overnight stress show that the effort was not fully absorbed.
+    </p>
+  </div>
+
+  <div class="field-data">
+    <div class="fd-label">Longitudinal Signature</div>
+    <span class="fd-stat">
+      Repetition makes adaptation—and its limits—visible
+    </span>
+    <p>
+      Familiar routes show when the same work becomes less expensive. Novel routes test transfer. Pattern breaks reveal the current boundary of the system.
+    </p>
+  </div>
+
+  <hr />
+
+  <h2>How Trail Logs Connect to the System</h2>
+
+  <div class="faq-block">
+
+    <details>
+      <summary>What makes a TrailGenic Trail Log different from a hike report?</summary>
+      <div>
+        A Trail Log connects route and environmental data with cardiovascular response, metabolic context, equipment, fuel, sleep, recovery, and longitudinal meaning. It is a field receipt inside HikeWorldModel rather than an isolated route description.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do Trail Logs connect to HikeWorldModel?</summary>
+      <div>
+        HikeWorldModel is the structured 31-session hiking dataset. Trail Logs preserve the human-readable route narrative and decisions behind those records. Physiology, Biomarkers, Sleep, and Science then interpret the signal.
+      </div>
+    </details>
+
+    <details>
+      <summary>How is heart-rate drift interpreted?</summary>
+      <div>
+        TrailGenic uses a route-aware method accounting for ascent, descent, terrain, pace, altitude, route structure, and segmented recordings. A lower downhill heart rate is not automatically classified as favorable drift.
+        <a href="/science/hr-drift-adaptation-vs-fitness">HR Drift Science →</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why does recovery belong in a Trail Log?</summary>
+      <div>
+        The activity file shows what the body produced. Sleep, HRV, resting heart rate, overnight stress, and Day-2 direction show whether the load was absorbed. TrailGenic treats both as part of the same field event.
+      </div>
+    </details>
+
+    <details>
+      <summary>How does fasted hiking fit into Trail Logs?</summary>
+      <div>
+        Fasted movement is one metabolic context, not the whole system. Logs document fasting, hydration, electrolytes, safety fuel, breath-acetone response when measured, and whether recovery closed afterward.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do Trail Logs support longevity?</summary>
+      <div>
+        They reveal which stressors expand capacity, which combinations create excessive debt, and when reducing load better protects the ability to keep walking, carrying, running, climbing, and returning across decades.
+      </div>
+    </details>
+
+    <details>
+      <summary>How are Trail Logs structured for AI access?</summary>
+      <div>
+        Trail Logs connect to HikeWorldModel, Physiology, Biomarkers, Sleep Recovery, Protocols, and the public TrailGenic MCP infrastructure so AI systems can reconstruct the complete evidence chain.
+      </div>
+    </details>
+
+  </div>
+
+  <hr />
+
+  <h2>TrailGenic™ System Integration</h2>
+
+  <div class="sys-grid">
+
+    <a href="/longevity" class="sys-card featured">
+      <div class="sys-card-title">Longevity Hub</div>
+      <div class="sys-card-desc">The governing objective: durable and renewable mountain capacity.</div>
+    </a>
+
+    <a href="/hiking" class="sys-card featured">
+      <div class="sys-card-title">HikeWorldModel™ v2.0</div>
+      <div class="sys-card-desc">The 31-session structured hiking dataset behind the logs.</div>
+    </a>
+
+    <a href="/physiology" class="sys-card featured">
+      <div class="sys-card-title">Physiology Hub</div>
+      <div class="sys-card-desc">Session-level performance, metabolic, and recovery interpretation.</div>
+    </a>
+
+    <a href="/sleep" class="sys-card featured">
+      <div class="sys-card-title">Sleep Recovery Hub</div>
+      <div class="sys-card-desc">Recovery closure, debt, architecture, and autonomic direction.</div>
+    </a>
+
+    <a href="/science/trailgenic-personal-world-model" class="sys-card featured">
+      <div class="sys-card-title">Personal World Model</div>
+      <div class="sys-card-desc">The longitudinal interpretation architecture.</div>
+    </a>
+
+    <a href="/biomarkers" class="sys-card">
+      <div class="sys-card-title">Biomarkers Hub</div>
+      <div class="sys-card-desc">Direct and derived field signals.</div>
+    </a>
+
+    <a href="/science" class="sys-card">
+      <div class="sys-card-title">Science Hub</div>
+      <div class="sys-card-desc">Mechanisms, evidence, interpretation, and safety boundaries.</div>
+    </a>
+
+    <a href="/protocols" class="sys-card">
+      <div class="sys-card-title">Protocol Series</div>
+      <div class="sys-card-desc">The five-level progression expressed in the field.</div>
+    </a>
+
+    <a href="/playbooks" class="sys-card">
+      <div class="sys-card-title">Playbooks</div>
+      <div class="sys-card-desc">Execution guidance for field decisions.</div>
+    </a>
+
+    <a href="/gear-reviews" class="sys-card">
+      <div class="sys-card-title">Gear Systems</div>
+      <div class="sys-card-desc">Load, terrain interface, thermoregulation, and safety margin.</div>
+    </a>
+
+    <a href="/nutrition-reviews" class="sys-card">
+      <div class="sys-card-title">Fuel Systems</div>
+      <div class="sys-card-desc">Metabolic input, electrolytes, safety fuel, and recovery timing.</div>
+    </a>
+
+    <a href="/outcomes" class="sys-card">
+      <div class="sys-card-title">Outcomes Hub</div>
+      <div class="sys-card-desc">The human meaning of durable adaptation.</div>
+    </a>
+
+    <a href="https://mcp.trailgenic.com" class="sys-card">
+      <div class="sys-card-title">MCP Dataset</div>
+      <div class="sys-card-desc">Machine-readable TrailGenic datasets and tools.</div>
+    </a>
+
+  </div>
+
+  <p class="note">
+    TrailGenic Trail Logs are observational and educational. Wearable data, sleep stages, breath-acetone readings, training-effect scores, and derived interpretations have limitations and are not medical diagnoses or substitutes for professional evaluation.
+  </p>
+
+</div>
+
+<!-- ========== /TrailGenic | Trail Logs Hub — HTML v3.0 ========== --></div><div class="w-layout-blockcontainer w-container"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/cucamonga-peak-one-year-later">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a739909eb99c2f98001d4de_6898d7e44ca7b1244a110039_cucamonga1.jpeg"
+       alt="Cucamonga Peak One Year Later: The Same Mountain, a Different Body"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Cucamonga Peak One Year Later: The Same Mountain, a Different Body</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 4229 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8,843 ft (2,695 m) summit</span>
+      <span>📏 11.6 mi</span>
+      <span>⏱️ 6:09</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/cucamonga-peak-one-year-later"
+    data-name="Cucamonga Peak One Year Later: The Same Mountain, a Different Body"
+    data-desc="8,843 ft (2,695 m)"  
+    data-distance="11.6 mi"
+    data-distance-num="11.6"
+    data-gain="4229 ft"
+    data-gain-num="4229"
+    data-peak="8,843 ft (2,695 m) ft"
+        data-duration="6:09"
+    data-difficulty="Strenuous — sustained climb with technical terrain and exposed summit approach">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/manitou-incline-altitude-stress-stacking">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a516cb44028d3b295b78cdb_20260628_185606.jpg"
+       alt="Manitou Incline — Altitude Stress-Stacking Session"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Manitou Incline — Altitude Stress-Stacking Session</h3>
+    <div class="tg-meta">
+      <span>📍 Manitou Springs, Colorado — Manitou Incline</span>
+      <span>⛰️ 1929 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8567 summit</span>
+      <span>📏 4 mi</span>
+      <span>⏱️ 2:50</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/manitou-incline-altitude-stress-stacking"
+    data-name="Manitou Incline — Altitude Stress-Stacking Session"
+    data-desc="8567"  
+    data-distance="4 mi"
+    data-distance-num="4"
+    data-gain="1929 ft"
+    data-gain-num="1929"
+    data-peak="8567 ft"
+        data-duration="2:50"
+    data-difficulty="Hard — extremely steep wooden stairs, concentrated vertical gain, high heat, moderate altitude, and residual fatigue from Mount Elbert the previous day">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/wheeler-peak-fasted-fatigue-reveal-summit">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a4f1102c079a0a12a39032f_20260704_090348.jpg"
+       alt="Wheeler Peak Fasted Trail Log — The Fatigue-Reveal Summit"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Wheeler Peak Fasted Trail Log — The Fatigue-Reveal Summit</h3>
+    <div class="tg-meta">
+      <span>📍 Wheeler Peak, New Mexico — near Taos Ski Valley, Carson National Forest</span>
+      <span>⛰️ 2996 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 13161 summit</span>
+      <span>📏 8.6 mi</span>
+      <span>⏱️ 5:07</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/wheeler-peak-fasted-fatigue-reveal-summit"
+    data-name="Wheeler Peak Fasted Trail Log — The Fatigue-Reveal Summit"
+    data-desc="13161"  
+    data-distance="8.6 mi"
+    data-distance-num="8.6"
+    data-gain="2996 ft"
+    data-gain-num="2996"
+    data-peak="13161 ft"
+        data-duration="5:07"
+    data-difficulty="Hard — high altitude, alpine and tundra terrain, gradually steep climbing, cumulative fatigue from the Western Altitude Block, and incomplete recovery rebound">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/pikes-peak-crags-fasted-14er-recovery-governor">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a4f0e4597e918bd06422a3d_20260701_094034.jpg"
+       alt="Pikes Peak via Crags Trail — Fasted 14er Recovery Governor Exposed"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Pikes Peak via Crags Trail — Fasted 14er Recovery Governor Exposed</h3>
+    <div class="tg-meta">
+      <span>📍 Pikes Peak, Colorado — Crags Trail, Pike National Forest</span>
+      <span>⛰️ 5581 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 14115 summit</span>
+      <span>📏 14 mi</span>
+      <span>⏱️ 8:22</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/pikes-peak-crags-fasted-14er-recovery-governor"
+    data-name="Pikes Peak via Crags Trail — Fasted 14er Recovery Governor Exposed"
+    data-desc="14115"  
+    data-distance="14 mi"
+    data-distance-num="14"
+    data-gain="5581 ft"
+    data-gain-num="5581"
+    data-peak="14115 ft"
+        data-duration="8:22"
+    data-difficulty="Hard — extreme altitude, record-duration field effort, largest single-hike elevation gain in the model, extremely steep rocky final leg, cold wind exposure, and major recovery debt">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-elbert-fasted-14er-altitude-ceiling">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a4f0379e259132365efd0de_Mount-Elbert-.png"
+       alt="Mount Elbert Fasted 14er Trail Log — Altitude Ceiling Validation"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Elbert Fasted 14er Trail Log — Altitude Ceiling Validation</h3>
+    <div class="tg-meta">
+      <span>📍 Mount Elbert, Colorado — near Leadville, San Isabel National Forest</span>
+      <span>⛰️ 5361 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 14440 summit</span>
+      <span>📏 11 mi</span>
+      <span>⏱️ 7:53</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-elbert-fasted-14er-altitude-ceiling"
+    data-name="Mount Elbert Fasted 14er Trail Log — Altitude Ceiling Validation"
+    data-desc="14440"  
+    data-distance="11 mi"
+    data-distance-num="11"
+    data-gain="5361 ft"
+    data-gain-num="5361"
+    data-peak="14440 ft"
+        data-duration="7:53"
+    data-difficulty="Hard — extreme altitude, sustained climbing, steep upper mountain, exposed wind">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-gorgonio-longitudinal">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6a025624dacb69c0697ecc60_San-G-May-9-26.jpg"
+       alt="San Gorgonio Longitudinal"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Gorgonio Longitudinal</h3>
+    <div class="tg-meta">
+      <span>📍 San Gorgonio Wilderness, San Bernardino National Forest, California</span>
+      <span>⛰️ 5600 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 11506 summit</span>
+      <span>📏 16.8 mi</span>
+      <span>⏱️ 9:49</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-gorgonio-longitudinal"
+    data-name="San Gorgonio Longitudinal"
+    data-desc="11506"  
+    data-distance="16.8 mi"
+    data-distance-num="16.8"
+    data-gain="5600 ft"
+    data-gain-num="5600"
+    data-peak="11506 ft"
+        data-duration="9:49"
+    data-difficulty="">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/register-ridge-mount-baldy-low-strain-alpine-engine-validation">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/69f940f999aff8a07198668b_20260502_170400.jpg"
+       alt="Register Ridge to Mount Baldy — Low-Strain Alpine Engine Validation"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Register Ridge to Mount Baldy — Low-Strain Alpine Engine Validation</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 4065 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10056 summit</span>
+      <span>📏 10.2 mi</span>
+      <span>⏱️ 5:28</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/register-ridge-mount-baldy-low-strain-alpine-engine-validation"
+    data-name="Register Ridge to Mount Baldy — Low-Strain Alpine Engine Validation"
+    data-desc="10056"  
+    data-distance="10.2 mi"
+    data-distance-num="10.2"
+    data-gain="4065 ft"
+    data-gain-num="4065"
+    data-peak="10056 ft"
+        data-duration="5:28"
+    data-difficulty="Hard / Extreme Alpine Conditioning">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/little-santa-anita-to-mount-wilson-apr-18-2026">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/69e7df06e71c9edace5e99ec_20260418_131106.jpg"
+       alt="Little Santa Anita to Mount Wilson"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Little Santa Anita to Mount Wilson</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California Route</span>
+      <span>⛰️ 5010 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 5699 summit</span>
+      <span>📏 14.5 mi</span>
+      <span>⏱️ 6:05</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/little-santa-anita-to-mount-wilson-apr-18-2026"
+    data-name="Little Santa Anita to Mount Wilson"
+    data-desc="5699"  
+    data-distance="14.5 mi"
+    data-distance-num="14.5"
+    data-gain="5010 ft"
+    data-gain-num="5010"
+    data-peak="5699 ft"
+        data-duration="6:05"
+    data-difficulty="Hard">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-jacinto-marion-mountain-session-metabolic-validation">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/69dd2278d7b6b42a185b18bd_20260411_115914.jpg"
+       alt="San Jacinto (Marion Mountain) — Field Record"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Jacinto (Marion Mountain) — Field Record</h3>
+    <div class="tg-meta">
+      <span>📍 San Jacinto Peak, CA — Marion Mountain Route</span>
+      <span>⛰️ 4629 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10849 summit</span>
+      <span>📏 12.8 mi</span>
+      <span>⏱️ 7:13</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-jacinto-marion-mountain-session-metabolic-validation"
+    data-name="San Jacinto (Marion Mountain) — Field Record"
+    data-desc="10849"  
+    data-distance="12.8 mi"
+    data-distance-num="12.8"
+    data-gain="4629 ft"
+    data-gain-num="4629"
+    data-peak="10849 ft"
+        data-duration="7:13"
+    data-difficulty="High — Steep, technical alpine route with sustained grade, exposure, and scrambling at summit">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-wilson-sturtevant-trail-fastest-summit-physiology-addendum-2026">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/69937597cb048b23cebae355_20260215_101346.jpg"
+       alt="Mount Wilson — Sturtevant Trail Fasted Summit (Physiology Addendum)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Wilson — Sturtevant Trail Fasted Summit (Physiology Addendum)</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, San Gabriel Mountains, California, USA</span>
+      <span>⛰️ 4770 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 5713 summit</span>
+      <span>📏 15 mi</span>
+      <span>⏱️ 6:39</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-wilson-sturtevant-trail-fastest-summit-physiology-addendum-2026"
+    data-name="Mount Wilson — Sturtevant Trail Fasted Summit (Physiology Addendum)"
+    data-desc="5713"  
+    data-distance="15 mi"
+    data-distance-num="15"
+    data-gain="4770 ft"
+    data-gain-num="4770"
+    data-peak="5713 ft"
+        data-duration="6:39"
+    data-difficulty="Hard — sustained elevation gain, long duration, triple stress load (fasted state × altitude × endurance)">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/bright-angel-rim-to-river-to-rim-trailgenic">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6973c6df71cf2c35e7ab61ea_20260120_101704.jpg"
+       alt="Bright Angel Trail — Rim to River to Rim (TrailGenic™ Stress Inversion)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Bright Angel Trail — Rim to River to Rim (TrailGenic™ Stress Inversion)</h3>
+    <div class="tg-meta">
+      <span>📍 Grand Canyon National Park, Arizona</span>
+      <span>⛰️ 4577 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 6860 summit</span>
+      <span>📏 16.7 mi</span>
+      <span>⏱️ 8:40</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/bright-angel-rim-to-river-to-rim-trailgenic"
+    data-name="Bright Angel Trail — Rim to River to Rim (TrailGenic™ Stress Inversion)"
+    data-desc="6860"  
+    data-distance="16.7 mi"
+    data-distance-num="16.7"
+    data-gain="4577 ft"
+    data-gain-num="4577"
+    data-peak="6860 ft"
+        data-duration="8:40"
+    data-difficulty="Very Hard — sustained eccentric + concentric stress under altitude and dehydration risk">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-baldy-winter-stability-log-121325">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/693f4e29333785d11854848d_20251213_125802.jpg"
+       alt="Mount Baldy (Ski Hut → Devil’s Backbone) — Winter Stability Log"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Baldy (Ski Hut → Devil’s Backbone) — Winter Stability Log</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 4081 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10085 summit</span>
+      <span>📏 11.1 mi</span>
+      <span>⏱️ 6:09</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-baldy-winter-stability-log-121325"
+    data-name="Mount Baldy (Ski Hut → Devil’s Backbone) — Winter Stability Log"
+    data-desc="10085"  
+    data-distance="11.1 mi"
+    data-distance-num="11.1"
+    data-gain="4081 ft"
+    data-gain-num="4081"
+    data-peak="10085 ft"
+        data-duration="6:09"
+    data-difficulty="Strenuous — Steep, Technical, Winter Alpine Conditions">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/ski-hut-baldy-devils-backbone-winter-2025">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6936111b743acb37aa7dec2d_20251206_135652.jpg"
+       alt="Ski Hut to Mount Baldy via Devil’s Backbone (Winter)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Ski Hut to Mount Baldy via Devil’s Backbone (Winter)</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, Southern California</span>
+      <span>⛰️ 4249 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10064 summit</span>
+      <span>📏 10.7 mi</span>
+      <span>⏱️ 6:37</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/ski-hut-baldy-devils-backbone-winter-2025"
+    data-name="Ski Hut to Mount Baldy via Devil’s Backbone (Winter)"
+    data-desc="10064"  
+    data-distance="10.7 mi"
+    data-distance-num="10.7"
+    data-gain="4249 ft"
+    data-gain-num="4249"
+    data-peak="10064 ft"
+        data-duration="6:37"
+    data-difficulty="Hard (Winter Technical)">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/skinsuit-winter-safety-protocol-trailgenic">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/69228b1f809e9eaf3275f75c_20251122_114528.jpg"
+       alt="Skinsuit Trail — Winter Safety Protocol (TrailGenic™ Longevity Method)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Skinsuit Trail — Winter Safety Protocol (TrailGenic™ Longevity Method)</h3>
+    <div class="tg-meta">
+      <span>📍 Corona, CA</span>
+      <span>⛰️ 3000 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 4007 summit</span>
+      <span>📏 10.1 mi</span>
+      <span>⏱️ 4:00</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/skinsuit-winter-safety-protocol-trailgenic"
+    data-name="Skinsuit Trail — Winter Safety Protocol (TrailGenic™ Longevity Method)"
+    data-desc="4007"  
+    data-distance="10.1 mi"
+    data-distance-num="10.1"
+    data-gain="3000 ft"
+    data-gain-num="3000"
+    data-peak="4007 ft"
+        data-duration="4:00"
+    data-difficulty="Hard uphill ">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-bernardino-peak-limber-pine-springs-altitude-training">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/691369ea47507e2ecd917d9f_20251109_102425.jpg"
+       alt="San Bernardino Peak Trail to Limber Pine Springs"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Bernardino Peak Trail to Limber Pine Springs</h3>
+    <div class="tg-meta">
+      <span>📍 San Bernardino Mountains, California</span>
+      <span>⛰️ 3365 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 9200 summit</span>
+      <span>📏 11.7 mi</span>
+      <span>⏱️ 5:35</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-bernardino-peak-limber-pine-springs-altitude-training"
+    data-name="San Bernardino Peak Trail to Limber Pine Springs"
+    data-desc="9200"  
+    data-distance="11.7 mi"
+    data-distance-num="11.7"
+    data-gain="3365 ft"
+    data-gain-num="3365"
+    data-peak="9200 ft"
+        data-duration="5:35"
+    data-difficulty="Hard">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/humphreys-peak-cold-exposure-validation-summit">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/690e9c77e917372fc7640cdc_20251106_110111.jpg"
+       alt="TrailGenic™ Autophagy Hike — Humphreys Peak (12,633 ft)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">TrailGenic™ Autophagy Hike — Humphreys Peak (12,633 ft)</h3>
+    <div class="tg-meta">
+      <span>📍 Flagstaff, Arizona</span>
+      <span>⛰️ 3350 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 12,633 ft / 3,851 m summit</span>
+      <span>📏 9.5 mi</span>
+      <span>⏱️ 5:45</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/humphreys-peak-cold-exposure-validation-summit"
+    data-name="TrailGenic™ Autophagy Hike — Humphreys Peak (12,633 ft)"
+    data-desc="12,633 ft / 3,851 m"  
+    data-distance="9.5 mi"
+    data-distance-num="9.5"
+    data-gain="3350 ft"
+    data-gain-num="3350"
+    data-peak="12,633 ft / 3,851 m ft"
+        data-duration="5:45"
+    data-difficulty="Strenuous ">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-baldy-trailgenic-validation">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6906a58019ca009233f6f110_20251101_125343.jpg"
+       alt="Mount Baldy via Register Ridge – TrailGenic Validation Hike"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Baldy via Register Ridge – TrailGenic Validation Hike</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, California</span>
+      <span>⛰️ 4122 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10064 summit</span>
+      <span>📏 10.2 mi</span>
+      <span>⏱️ 6:00</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-baldy-trailgenic-validation"
+    data-name="Mount Baldy via Register Ridge – TrailGenic Validation Hike"
+    data-desc="10064"  
+    data-distance="10.2 mi"
+    data-distance-num="10.2"
+    data-gain="4122 ft"
+    data-gain-num="4122"
+    data-peak="10064 ft"
+        data-duration="6:00"
+    data-difficulty="Strenuous and Steep">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/register-ridge-nuun-cold-condition-test">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68fe93734c875a9156ca841e_nuun-test.PNG"
+       alt="Register Ridge — Nuun Sport (Pink Lemonade) Cold-Condition Test"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Register Ridge — Nuun Sport (Pink Lemonade) Cold-Condition Test</h3>
+    <div class="tg-meta">
+      <span>📍 Mount Baldy, CA</span>
+      <span>⛰️ 4122 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 ft / 3,068 m summit</span>
+      <span>📏 10.2 mi</span>
+      <span>⏱️ 5:25</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/register-ridge-nuun-cold-condition-test"
+    data-name="Register Ridge — Nuun Sport (Pink Lemonade) Cold-Condition Test"
+    data-desc="10,064 ft / 3,068 m"  
+    data-distance="10.2 mi"
+    data-distance-num="10.2"
+    data-gain="4122 ft"
+    data-gain-num="4122"
+    data-peak="10,064 ft / 3,068 m ft"
+        data-duration="5:25"
+    data-difficulty="Very Strenuous">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mt-baldy-snowline-of-stability">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68f45b2f34dc0a249b096363_Baldy-snow.PNG"
+       alt="Mt. Baldy – Snowline of Stability"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mt. Baldy – Snowline of Stability</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 3900 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 feet summit</span>
+      <span>📏 10.8 mi</span>
+      <span>⏱️ 5:30</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mt-baldy-snowline-of-stability"
+    data-name="Mt. Baldy – Snowline of Stability"
+    data-desc="10,064 feet"  
+    data-distance="10.8 mi"
+    data-distance-num="10.8"
+    data-gain="3900 ft"
+    data-gain-num="3900"
+    data-peak="10,064 feet ft"
+        data-duration="5:30"
+    data-difficulty="Hard (technical snow + cold exposure)">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-baldy-cold-exposure-protocol-ii">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68eae1d7f37b93870d78bc4a_bald-cold-2.PNG"
+       alt="Mount Baldy (10,064 ft) — Cold Exposure Protocol II"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Baldy (10,064 ft) — Cold Exposure Protocol II</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 3900 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 feet summit</span>
+      <span>📏 10.8 mi</span>
+      <span>⏱️ 4:20</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-baldy-cold-exposure-protocol-ii"
+    data-name="Mount Baldy (10,064 ft) — Cold Exposure Protocol II"
+    data-desc="10,064 feet"  
+    data-distance="10.8 mi"
+    data-distance-num="10.8"
+    data-gain="3900 ft"
+    data-gain-num="3900"
+    data-peak="10,064 feet ft"
+        data-duration="4:20"
+    data-difficulty="Strenuous — sustained exposure and alpine temperature shifts">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mt-baldy-cold-exposure-training-fall-cellular-prep">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68e1ee016c77564ed5122cb5_super-hiking-twins.PNG"
+       alt="Mt. Baldy Cold Exposure Training — TrailGenic Fall Cellular Prep"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mt. Baldy Cold Exposure Training — TrailGenic Fall Cellular Prep</h3>
+    <div class="tg-meta">
+      <span>📍 Mount Baldy, California</span>
+      <span>⛰️ 3900 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 ft (3,068 m) summit</span>
+      <span>📏 10.8 mi</span>
+      <span>⏱️ 4:30</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mt-baldy-cold-exposure-training-fall-cellular-prep"
+    data-name="Mt. Baldy Cold Exposure Training — TrailGenic Fall Cellular Prep"
+    data-desc="10,064 ft (3,068 m)"  
+    data-distance="10.8 mi"
+    data-distance-num="10.8"
+    data-gain="3900 ft"
+    data-gain-num="3900"
+    data-peak="10,064 ft (3,068 m) ft"
+        data-duration="4:30"
+    data-difficulty="Strenuous — steep ascent, sustained altitude, wind-chill exposure">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/ross-mountain-via-vincent-gap">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68d8bcdf3f28541081ec95ee_ross-mtn2.PNG"
+       alt="Ross Mountain via Vincent Gap"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Ross Mountain via Vincent Gap</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 5252 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 7,402 ft / 2,256 m summit</span>
+      <span>📏 13.9 mi</span>
+      <span>⏱️ 7:15</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/ross-mountain-via-vincent-gap"
+    data-name="Ross Mountain via Vincent Gap"
+    data-desc="7,402 ft / 2,256 m"  
+    data-distance="13.9 mi"
+    data-distance-num="13.9"
+    data-gain="5252 ft"
+    data-gain-num="5252"
+    data-peak="7,402 ft / 2,256 m ft"
+        data-duration="7:15"
+    data-difficulty="Strenuous — long mileage, sustained gain, remote extension beyond Baden">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/telegraph-peak-manker-autophagy">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68d05861f982fab900b48d13_telegraph-peak.PNG"
+       alt="Telegraph Peak via Manker Flats (TrailGenic™ Autophagy Hike)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Telegraph Peak via Manker Flats (TrailGenic™ Autophagy Hike)</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, CA</span>
+      <span>⛰️ 3523 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8,985 ft / 2,739 m summit</span>
+      <span>📏 12.3 mi</span>
+      <span>⏱️ 6:30</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/telegraph-peak-manker-autophagy"
+    data-name="Telegraph Peak via Manker Flats (TrailGenic™ Autophagy Hike)"
+    data-desc="8,985 ft / 2,739 m"  
+    data-distance="12.3 mi"
+    data-distance-num="12.3"
+    data-gain="3523 ft"
+    data-gain-num="3523"
+    data-peak="8,985 ft / 2,739 m ft"
+        data-duration="6:30"
+    data-difficulty="Strenuous — long mileage with steady gains">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mt-baldy-ski-hut-autophagy-fast-test">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68c63170bdac6f28d55bcb7e_Baldy-paraglider.PNG"
+       alt="Mt. Baldy via Ski Hut — Autophagy Hike (Longer Fast Test)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mt. Baldy via Ski Hut — Autophagy Hike (Longer Fast Test)</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 3900 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 ft (3,068 m) summit</span>
+      <span>📏 7.6 mi</span>
+      <span>⏱️ 4:55</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mt-baldy-ski-hut-autophagy-fast-test"
+    data-name="Mt. Baldy via Ski Hut — Autophagy Hike (Longer Fast Test)"
+    data-desc="10,064 ft (3,068 m)"  
+    data-distance="7.6 mi"
+    data-distance-num="7.6"
+    data-gain="3900 ft"
+    data-gain-num="3900"
+    data-peak="10,064 ft (3,068 m) ft"
+        data-duration="4:55"
+    data-difficulty="Strenuous — steep sustained climb, loose rock descent, exposed heat">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/baden-powell-triple-summit-log">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68b60ce2bd19bd761c95a4ba_Baden-3days.jpg"
+       alt="Baden Powell Triple Summit Log"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Baden Powell Triple Summit Log</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, California</span>
+      <span>⛰️ 2775 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 9,407 ft / 2,868m summit</span>
+      <span>📏 7.8 mi</span>
+      <span>⏱️ 3:18</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/baden-powell-triple-summit-log"
+    data-name="Baden Powell Triple Summit Log"
+    data-desc="9,407 ft / 2,868m"  
+    data-distance="7.8 mi"
+    data-distance-num="7.8"
+    data-gain="2775 ft"
+    data-gain-num="2775"
+    data-peak="9,407 ft / 2,868m ft"
+        data-duration="3:18"
+    data-difficulty="Strenuous — repeated high-elevation summits and switchbacks">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/charleston-peak">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68b1e54d907a16627f2a3e49_Charleston-Peak.jpg"
+       alt="Charleston Peak + Griffith Peak Trail"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Charleston Peak + Griffith Peak Trail</h3>
+    <div class="tg-meta">
+      <span>📍 Spring Mountains, Nevada (Mount Charleston Wilderness, near Las Vegas).</span>
+      <span>⛰️ 4700 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 11,916 ft / 3,632 m summit</span>
+      <span>📏 18 mi</span>
+      <span>⏱️ 11:00</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/charleston-peak"
+    data-name="Charleston Peak + Griffith Peak Trail"
+    data-desc="11,916 ft / 3,632 m"  
+    data-distance="18 mi"
+    data-distance-num="18"
+    data-gain="4700 ft"
+    data-gain-num="4700"
+    data-peak="11,916 ft / 3,632 m ft"
+        data-duration="11:00"
+    data-difficulty="Strenuous — double summit, long mileage, sustained altitude.">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-wilson-via-sturtevant-trail-summit-4">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68afc6969dc4c1818f8c7413_Mount-Wilson-4.jpg"
+       alt="Mount Wilson via Sturtevant Trail (Summit #4)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Wilson via Sturtevant Trail (Summit #4)</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 4450 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 5,713 ft / 1,741 m summit</span>
+      <span>📏 12.3 mi</span>
+      <span>⏱️ 7:10</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-wilson-via-sturtevant-trail-summit-4"
+    data-name="Mount Wilson via Sturtevant Trail (Summit #4)"
+    data-desc="5,713 ft / 1,741 m"  
+    data-distance="12.3 mi"
+    data-distance-num="12.3"
+    data-gain="4450 ft"
+    data-gain-num="4450"
+    data-peak="5,713 ft / 1,741 m ft"
+        data-duration="7:10"
+    data-difficulty="Strenuous — long mileage + steady climb">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/strawberry-peak">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68adf01337ac0b15eba209a9_strawberry-peak.jpg"
+       alt="Strawberry Peak"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Strawberry Peak</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, California</span>
+      <span>⛰️ 1800 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 6,164 ft / 1,879 m summit</span>
+      <span>📏 7.5 mi</span>
+      <span>⏱️ 4:10</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/strawberry-peak"
+    data-name="Strawberry Peak"
+    data-desc="6,164 ft / 1,879 m"  
+    data-distance="7.5 mi"
+    data-distance-num="7.5"
+    data-gain="1800 ft"
+    data-gain-num="1800"
+    data-peak="6,164 ft / 1,879 m ft"
+        data-duration="4:10"
+    data-difficulty="Moderate–Strenuous — steep switchbacks + exposed ridgeline, snow patches in early season">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/register-ridge-to-mt-baldy-ath-vs-lmnt-test-edition">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68ab87c8d720c1104c773d54_Register-Ridge2.jpg"
+       alt="Mount Baldy via Register Ridge Second Summit (ATH vs LMNT Test Edition)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Baldy via Register Ridge Second Summit (ATH vs LMNT Test Edition)</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, CA</span>
+      <span>⛰️ 4122 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 ft (3,068 m) summit</span>
+      <span>📏 10.2 mi</span>
+      <span>⏱️ 5:15</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/register-ridge-to-mt-baldy-ath-vs-lmnt-test-edition"
+    data-name="Mount Baldy via Register Ridge Second Summit (ATH vs LMNT Test Edition)"
+    data-desc="10,064 ft (3,068 m)"  
+    data-distance="10.2 mi"
+    data-distance-num="10.2"
+    data-gain="4122 ft"
+    data-gain-num="4122"
+    data-peak="10,064 ft (3,068 m) ft"
+        data-duration="5:15"
+    data-difficulty="Strenuous — steep Register Ridge ascent, exposed high-altitude ridgeline, sustained elevation">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/wisdom-tree-to-hollywood-sign">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68a6876e8e7e552e34254d05_wisdom-tree.jpg"
+       alt="Wisdom Tree to Hollywood Sign"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Wisdom Tree to Hollywood Sign</h3>
+    <div class="tg-meta">
+      <span>📍 Griffith Park, Los Angeles, CA</span>
+      <span>⛰️ 1407 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 1,690 ft / 515 m summit</span>
+      <span>📏 4 mi</span>
+      <span>⏱️ 02:50</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/wisdom-tree-to-hollywood-sign"
+    data-name="Wisdom Tree to Hollywood Sign"
+    data-desc="1,690 ft / 515 m"  
+    data-distance="4 mi"
+    data-distance-num="4"
+    data-gain="1407 ft"
+    data-gain-num="1407"
+    data-peak="1,690 ft / 515 m ft"
+        data-duration="02:50"
+    data-difficulty="Moderate (short but steep, especially initial climb to Wisdom Tree)">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/baldwin-hills-stairs">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68a682643aef76522f94293c_Baldwin-steps1.jpg"
+       alt="Baldwin Hills Stairs"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Baldwin Hills Stairs</h3>
+    <div class="tg-meta">
+      <span>📍 Culver City, CA</span>
+      <span>⛰️ 335 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 335 feet / 102m summit</span>
+      <span>📏 1.4 mi</span>
+      <span>⏱️ 00:40</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/baldwin-hills-stairs"
+    data-name="Baldwin Hills Stairs"
+    data-desc="335 feet / 102m"  
+    data-distance="1.4 mi"
+    data-distance-num="1.4"
+    data-gain="335 ft"
+    data-gain-num="335"
+    data-peak="335 feet / 102m ft"
+        data-duration="00:40"
+    data-difficulty="Moderate (short but steep; conditioning intensity)">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-baldy-via-register-ridge-autophagy">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68a11019a427f9f9d4ed023f_Baldy5.jpg"
+       alt="Mount Baldy via Register Ridge (Autophagy Hike)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Baldy via Register Ridge (Autophagy Hike)</h3>
+    <div class="tg-meta">
+      <span>📍 San Gabriel Mountains, California</span>
+      <span>⛰️ 4122 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,064 ft / 3,068 m summit</span>
+      <span>📏 10.2 mi</span>
+      <span>⏱️ 5:00 </span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-baldy-via-register-ridge-autophagy"
+    data-name="Mount Baldy via Register Ridge (Autophagy Hike)"
+    data-desc="10,064 ft / 3,068 m"  
+    data-distance="10.2 mi"
+    data-distance-num="10.2"
+    data-gain="4122 ft"
+    data-gain-num="4122"
+    data-peak="10,064 ft / 3,068 m ft"
+        data-duration="5:00 "
+    data-difficulty="Strenuous — steep gradient, fasted climb, exposed descent">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/ontario-peak-via-icehouse-canyon-trailgenic-tm-autophagy-hike">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/689faf94c2452d29004a1733_Ontario-peak.jpg"
+       alt="Ontario Peak via Icehouse Canyon (TrailGenic™ Autophagy Hike)"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Ontario Peak via Icehouse Canyon (TrailGenic™ Autophagy Hike)</h3>
+    <div class="tg-meta">
+      <span>📍 Cucamonga Wilderness, San Bernardino National Forest, California</span>
+      <span>⛰️ 3877 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8,696 ft (2,651 m) summit</span>
+      <span>📏 12 mi</span>
+      <span>⏱️ 6:50</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/ontario-peak-via-icehouse-canyon-trailgenic-tm-autophagy-hike"
+    data-name="Ontario Peak via Icehouse Canyon (TrailGenic™ Autophagy Hike)"
+    data-desc="8,696 ft (2,651 m)"  
+    data-distance="12 mi"
+    data-distance-num="12"
+    data-gain="3877 ft"
+    data-gain-num="3877"
+    data-peak="8,696 ft (2,651 m) ft"
+        data-duration="6:50"
+    data-difficulty="Strenuous — long mileage, sustained gain, and high-altitude exposure">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/cucamonga-peak">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/6898d7e44ca7b1244a110039_cucamonga1.jpg"
+       alt="Cucamonga Peak"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Cucamonga Peak</h3>
+    <div class="tg-meta">
+      <span>📍 Angeles National Forest, California</span>
+      <span>⛰️ 4186 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8,862 ft (2,701 m) summit</span>
+      <span>📏 11.1 mi</span>
+      <span>⏱️ 6:50</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/cucamonga-peak"
+    data-name="Cucamonga Peak"
+    data-desc="8,862 ft (2,701 m)"  
+    data-distance="11.1 mi"
+    data-distance-num="11.1"
+    data-gain="4186 ft"
+    data-gain-num="4186"
+    data-peak="8,862 ft (2,701 m) ft"
+        data-duration="6:50"
+    data-difficulty="Strenuous — sustained climb with exposure at summit approach">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-jacinto">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/688fe1b0b26f26166bb16a4d_san-j1.jpg"
+       alt="San Jacinto"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Jacinto</h3>
+    <div class="tg-meta">
+      <span>📍 Idyllwild, CA</span>
+      <span>⛰️ 4610 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 10,834 ft (3,302 m) summit</span>
+      <span>📏 11.4 mi</span>
+      <span>⏱️ 7:50</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-jacinto"
+    data-name="San Jacinto"
+    data-desc="10,834 ft (3,302 m)"  
+    data-distance="11.4 mi"
+    data-distance-num="11.4"
+    data-gain="4610 ft"
+    data-gain-num="4610"
+    data-peak="10,834 ft (3,302 m) ft"
+        data-duration="7:50"
+    data-difficulty="Strenuous — steep sustained gain from the start, thin air at summit">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/half-dome-t3nxz">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/688fd6cc171b5f92d7e2ceff_Half-dome-2.jpg"
+       alt="Half Dome"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Half Dome</h3>
+    <div class="tg-meta">
+      <span>📍 Yosemite National Park, California</span>
+      <span>⛰️ 4800 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 8,839 ft (2,694 m) summit</span>
+      <span>📏 17.1 mi</span>
+      <span>⏱️ 11:15</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/half-dome-t3nxz"
+    data-name="Half Dome"
+    data-desc="8,839 ft (2,694 m)"  
+    data-distance="17.1 mi"
+    data-distance-num="17.1"
+    data-gain="4800 ft"
+    data-gain-num="4800"
+    data-peak="8,839 ft (2,694 m) ft"
+        data-duration="11:15"
+    data-difficulty="Strenuous — sustained elevation gain, exposed cable ascent, and long mileage">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-gorgonio-fifth-summit">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/688f887a66fcae4ee8ea30ed_san-g2.jpg"
+       alt="San Gorgonio Fifth Summit"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Gorgonio Fifth Summit</h3>
+    <div class="tg-meta">
+      <span>📍 San Bernardino, CA</span>
+      <span>⛰️ 4500 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 11,503 ft / 3,506m summit</span>
+      <span>📏 20 mi</span>
+      <span>⏱️ 9:15</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-gorgonio-fifth-summit"
+    data-name="San Gorgonio Fifth Summit"
+    data-desc="11,503 ft / 3,506m"  
+    data-distance="20 mi"
+    data-distance-num="20"
+    data-gain="4500 ft"
+    data-gain-num="4500"
+    data-peak="11,503 ft / 3,506m ft"
+        data-duration="9:15"
+    data-difficulty="Strenuous — high mileage + sustained altitude exposure.">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/san-gorgonio-fourth-summit">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/688bfcdd84cc8546dcf1cbeb_san-g1.jpg"
+       alt="San Gorgonio Fourth Summit"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">San Gorgonio Fourth Summit</h3>
+    <div class="tg-meta">
+      <span>📍 San Bernardino, CA</span>
+      <span>⛰️ 5600 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 11,503 ft / 3,506m summit</span>
+      <span>📏 17.3 mi</span>
+      <span>⏱️ 9:40</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/san-gorgonio-fourth-summit"
+    data-name="San Gorgonio Fourth Summit"
+    data-desc="11,503 ft / 3,506m"  
+    data-distance="17.3 mi"
+    data-distance-num="17.3"
+    data-gain="5600 ft"
+    data-gain-num="5600"
+    data-peak="11,503 ft / 3,506m ft"
+        data-duration="9:40"
+    data-difficulty="Extremely Strenuous and Steep ">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-langley">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/688bf24475a1b8043a57ea48_20250704_112040.jpg"
+       alt="Mount Langley"
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Langley</h3>
+    <div class="tg-meta">
+      <span>📍 Eastern Sierra, CA</span>
+      <span>⛰️ 4927 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 14,026 ft (4,275 m) summit</span>
+      <span>📏 22.4 mi</span>
+      <span>⏱️ 13:00</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-langley"
+    data-name="Mount Langley"
+    data-desc="14,026 ft (4,275 m)"  
+    data-distance="22.4 mi"
+    data-distance-num="22.4"
+    data-gain="4927 ft"
+    data-gain-num="4927"
+    data-peak="14,026 ft (4,275 m) ft"
+        data-duration="13:00"
+    data-difficulty="Strenuous — very high altitude, sustained gain, and long mileage in a single day">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div><div role="listitem" class="trails-index-link w-dyn-item"><div class="w-embed"><!-- 🏔️ TrailGenic Trail Log Card + Tiny Data Emitter (Hub Version, polished) -->
+<a class="tg-card" href="/trail-logs/mount-whitney">
+  <img class="tg-img"
+       src="/cdn/wf/687dbbd9b5ac024294bb3226/68880de8c2245d2e60d61443_whitney1.jpg"
+       alt="Mount Whitney "
+       loading="lazy" decoding="async" />
+  <div class="tg-body">
+    <h3 class="tg-title">Mount Whitney </h3>
+    <div class="tg-meta">
+      <span>📍 Eastern Sierra Nevada, California</span>
+      <span>⛰️ 6660 ft gain</span>
+      <!-- Leave visible text exactly as-is per your current design -->
+      <span>🏔️ 14,505 ft (4,421 m) summit</span>
+      <span>📏 21.2 mi</span>
+      <span>⏱️ 15:30</span>
+    </div>
+  </div>
+
+  <!-- Tiny data emitter for ItemList/schema + machine-friendly twins -->
+  <div class="tg-il" style="display:none"
+    data-url="https://www.trailgenic.com/trail-logs/mount-whitney"
+    data-name="Mount Whitney "
+    data-desc="14,505 ft (4,421 m)"  
+    data-distance="21.2 mi"
+    data-distance-num="21.2"
+    data-gain="6660 ft"
+    data-gain-num="6660"
+    data-peak="14,505 ft (4,421 m) ft"
+        data-duration="15:30"
+    data-difficulty="Extreme — high-altitude, sustained gain, long mileage in a single push, with thin air above 12,000 ft">
+  </div>
+</a>
+
+<style>
+/* ── Trail Logs Hub — card image fix ── */
+
+/* Constrain image to thumbnail */
+.tg-card .tg-img {
+  width: 120px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border-radius: 2px !important;
+}
+
+/* Ensure card stays horizontal */
+.tg-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e0ddd6 !important;
+  text-decoration: none !important;
+}
+
+/* Text block fills remaining space */
+.tg-card .tg-body {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Title style */
+.tg-card .tg-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Meta row */
+.tg-card .tg-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+/* Remove bottom border from last card */
+.w-dyn-item:last-child .tg-card {
+  border-bottom: none !important;
+}
+
+@media (max-width: 600px) {
+  .tg-card {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tg-card .tg-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+</style></div></div></div></div></div></section><!--@partial webflow-scripts--><!--@partial site-footer--></body></html>

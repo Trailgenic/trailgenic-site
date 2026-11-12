@@ -1,0 +1,94 @@
+<!DOCTYPE html><!-- Last Published: Wed Nov 11 2026 20:59:20 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.trailgenic.com" data-wf-page="68bc77380a8f3484e01681cf" data-wf-site="687d84a5f6e63c0b86866c3d" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Find</title><meta content="Find" property="og:title"/><meta content="Find" name="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="noindex" name="robots"/><link href="/cdn/wf/687d84a5f6e63c0b86866c3d/css/trailgenic-7b8304.webflow.shared.f3349561e.css" rel="stylesheet" type="text/css" integrity="sha384-fuuRK10QcmwJj4SiPwD3nfXOkdqHCIxScO5Nl8GUEFAuZBY3MadicsMVbsyOy24F" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["PT Serif:400,400italic,700,700italic","DM Serif Display:300,400,500,600,700","Instrument Sans:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/cdn/wf/687d84a5f6e63c0b86866c3d/68aa29b635da48b9430790e7_trailgenic_flower_favicon_32.png" rel="shortcut icon" type="image/x-icon"/><link href="/cdn/wf/687d84a5f6e63c0b86866c3d/68aa2946ea8e96c73c1d3465_trailgenic_webclip_256.png" rel="apple-touch-icon"/><!--@partial site-head--><!-- TrailGenic utility noindex -->
+<meta name="robots" content="noindex, nofollow">
+<!-- /TrailGenic utility noindex --></head><body><div class="w-embed"><section id="tg-find" style="max-width:960px;margin:40px auto;padding:0 16px;"> <header style="margin-bottom:16px;"> <h1 style="font-size:28px;line-height:1.2;margin:0 0 8px;">Search TrailGenic</h1> <p style="opacity:.7;margin:0;">Try: <em>autophagy</em>, <em>San Gorgonio</em>, <em>LMNT</em>. Filters: <code>type:trail</code>, <code>type:science</code>, <code>tag:autophagy</code> </p> </header> <form id="tg-form" action="#" style="margin:0;"> <label for="q" style="display:block;font-size:14px;margin:12px 0 6px;">Query</label> <input id="q" type="search" placeholder="Search TrailGenic…" autocomplete="off" style="width:100%;padding:12px 14px;border:1px solid #ddd;border-radius:10px;font-size:16px;"> </form> <div id="tg-hint" style="font-size:12px;opacity:.65;margin-top:8px;"> Tip: combine filters with text (e.g., <code>type:trail tag:autophagy san</code>) </div> <div id="results" style="margin-top:18px;display:grid;gap:12px;"></div> </section></div><!--@partial webflow-scripts--><!--@partial site-footer--><script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script>
+(function () {
+  const SEARCH_ENDPOINT = '/search-index'; // same-origin
+
+  function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; }
+
+  // Robustly fetch JSON by selecting the <pre> content
+  async function loadIndex() {
+    const res = await fetch(SEARCH_ENDPOINT, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Index fetch failed: ' + res.status);
+    const html = await res.text();
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const pre = doc.querySelector('pre');
+    if (!pre) throw new Error('No <pre> block found on /search-index');
+    const text = pre.textContent.trim();
+    try { return JSON.parse(text); }
+    catch (e) { throw new Error('Invalid JSON in <pre>: ' + e.message); }
+  }
+
+  function parseQuery(q){
+    const parts = q.trim().split(/\s+/).filter(Boolean);
+    const filters = { type:null, tag:null }; const terms=[];
+    for (const p of parts){
+      if (p.startsWith('type:')) filters.type = p.slice(5).toLowerCase();
+      else if (p.startsWith('tag:'))  filters.tag  = p.slice(4).toLowerCase();
+      else terms.push(p);
+    }
+    return { text: terms.join(' '), filters };
+  }
+
+  function applyFilters(items, f){
+    return items.filter(it=>{
+      const okType=!f.type || (it.type && it.type.toLowerCase().includes(f.type));
+      const okTag =!f.tag  || (Array.isArray(it.tags) && it.tags.some(t => String(t).toLowerCase().includes(f.tag)));
+      return okType && okTag;
+    });
+  }
+
+  async function start(){
+    const $q = document.getElementById('q');
+    const $form = document.getElementById('tg-form');
+    const $results = document.getElementById('results');
+
+    if ($form) $form.addEventListener('submit', e => { e.preventDefault(); runSearch($q.value); });
+
+    let DATA=[];
+    try { DATA = await loadIndex(); }
+    catch (err) {
+      console.error(err);
+      $results.innerHTML = '<div style="padding:12px;border:1px solid #eee;border-radius:10px;">Could not load search index. ' + err.message + '</div>';
+      return;
+    }
+
+    const fuse = new Fuse(DATA, {
+      keys: [
+        { name:'title',       weight:0.5 },
+        { name:'tags',        weight:0.2 },
+        { name:'description', weight:0.2 },
+        { name:'ai_search',   weight:0.1 }
+      ],
+      threshold: 0.35,
+      ignoreLocation: true
+    });
+
+    function render(list){
+      if(!list.length){ $results.innerHTML = '<div style="padding:12px;border:1px solid #eee;border-radius:10px;">No results.</div>'; return; }
+      $results.innerHTML = list.slice(0, 30).map(item=>{
+        const t = item.item || item;
+        return `
+          <a href="${t.url}" style="display:block;padding:14px;border:1px solid #eee;border-radius:12px;text-decoration:none;">
+            <div style="font-weight:600;font-size:16px;">${t.title}</div>
+            <div style="font-size:14px;margin-top:8px;">${t.description || ''}</div>
+            <div style="font-size:11px;opacity:.6;margin-top:8px;">${Array.isArray(t.tags)&&t.tags.length ? '#'+t.tags.join(' #') : ''}</div>
+          </a>`;
+      }).join('');
+    }
+
+    const runSearch = debounce(val=>{
+      const { text, filters } = parseQuery(val);
+      if(!text && !filters.type && !filters.tag){ $results.innerHTML=''; return; }
+      if(!text){ render(applyFilters(DATA, filters)); return; }
+      render(applyFilters(fuse.search(text).map(r=>r.item), filters));
+    }, 120);
+
+    $q.addEventListener('input', e=>runSearch(e.target.value));
+  }
+
+  document.readyState==='loading' ? document.addEventListener('DOMContentLoaded', start) : start();
+})();
+</script>
+</body></html>

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node build.mjs",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/about-us-new",
+      "statusCode": 301
+    },
+    {
+      "source": "/search-index-json",
+      "destination": "/search-index",
+      "statusCode": 301
+    },
+    {
+      "source": "/science/ai-science-endurance-brands",
+      "destination": "/playbooks/ai-trust-playbook-endurance-brands",
+      "statusCode": 301
+    },
+    {
+      "source": "/science/salomon-vest-comparison-5-12-sense-pro-6",
+      "destination": "/playbooks/hydration-vest-selection-playbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/science/labor-day-reset-why-nature-frees-the-mind-more-than-a-day-off",
+      "destination": "/playbooks/nature-reset-playbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides",
+      "destination": "/playbooks",
+      "statusCode": 301
+    }
+  ]
+}

@@ -2478,7 +2478,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("/cdn/wfjs/static/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3042,7 +3042,7 @@ textarea.w-input, textarea.w-select {
   background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---green);
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---border-color--border-primary);
   color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---white);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3053,7 +3053,7 @@ textarea.w-input, textarea.w-select {
   border-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---border-color--border-primary);
   background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---green);
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---border-color--border-primary);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3066,7 +3066,7 @@ textarea.w-input, textarea.w-select {
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-primary-a20);
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---text-color--text-inverse-primary);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3077,7 +3077,7 @@ textarea.w-input, textarea.w-select {
   border-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-primary-a20);
   background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---green);
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-primary-a20);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3090,7 +3090,7 @@ textarea.w-input, textarea.w-select {
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---white);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3101,7 +3101,7 @@ textarea.w-input, textarea.w-select {
   border-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
   background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---green);
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3114,7 +3114,7 @@ textarea.w-input, textarea.w-select {
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
   transition: border-color .2s ease, color undefined ease, background-color undefined cubic-bezier(.165, .84, .44, 1), box-shadow undefined ease;
   color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---white);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -3125,7 +3125,7 @@ textarea.w-input, textarea.w-select {
   border-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
   background-color: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---green);
   box-shadow: 0 0 0 1px var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1753056424771---core-color-tint--neutral-inverse-a20);
-  background-image: url("https://cdn.prod.website-files.com/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
+  background-image: url("/cdn/wf/663ae41a035a5092ac55e30d/663ae41a035a5092ac55e324_select-arrow-black.svg");
   background-position: 97%;
   background-repeat: no-repeat;
   background-size: 14px;
@@ -6023,7 +6023,7 @@ textarea.w-input, textarea.w-select {
   grid-row-gap: .5rem;
   height: 2.5rem;
   color: inherit;
-  background-image: url("https://cdn.prod.website-files.com/687d84a5f6e63c0b86866c3d/687d8a0b3fb9103c3f762abe_TrailGenic%20logo.jpg");
+  background-image: url("/cdn/wf/687d84a5f6e63c0b86866c3d/687d8a0b3fb9103c3f762abe_TrailGenic-logo.jpg");
   background-position: 0 0;
   background-size: auto;
   justify-content: flex-start;
@@ -6202,7 +6202,7 @@ textarea.w-input, textarea.w-select {
 
 .nav_logo-icon {
   aspect-ratio: 1;
-  background-image: url("https://cdn.prod.website-files.com/687d84a5f6e63c0b86866c3d/687d8a0b3fb9103c3f762abe_TrailGenic%20logo.jpg");
+  background-image: url("/cdn/wf/687d84a5f6e63c0b86866c3d/687d8a0b3fb9103c3f762abe_TrailGenic-logo.jpg");
   background-position: 0 0;
   background-size: auto;
   flex: none;
@@ -6936,7 +6936,7 @@ img {
 .trail-card {
   mix-blend-mode: normal;
   background-color: #fff;
-  background-image: url("https://cdn.prod.website-files.com/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney%20Peak%201.avif");
+  background-image: url("/cdn/wf/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney-Peak-1.avif");
   background-position: 0 0;
   background-size: auto;
   border-radius: 8px;
@@ -6981,7 +6981,7 @@ img {
 }
 
 .image-2 {
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-image: url("/cdn/wfjs/img/background-image.svg");
   background-position: 0 0;
   background-size: auto;
 }
@@ -7393,7 +7393,7 @@ img {
 
 .rich-text-block-5 {
   text-align: left;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-image: url("/cdn/wfjs/img/background-image.svg");
   background-position: 50%;
   background-size: 0;
   justify-content: center;
@@ -9445,7 +9445,7 @@ img {
   }
 
   .div-block {
-    background-image: url("https://cdn.prod.website-files.com/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney%20Peak%201.avif");
+    background-image: url("/cdn/wf/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney-Peak-1.avif");
     background-position: 0 0;
     background-size: auto;
     border: 1px solid #e0e0e0;
@@ -9458,7 +9458,7 @@ img {
   }
 
   .collection-item {
-    background-image: url("https://cdn.prod.website-files.com/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney%20Peak%201.avif");
+    background-image: url("/cdn/wf/687d84a5f6e63c0b86866c3d/687d8a0ee85ded494e9fbfab_a8870e285d6ccda48ae92105c073a79e_Whiteney-Peak-1.avif");
     background-position: 0 0;
     background-size: auto;
   }
