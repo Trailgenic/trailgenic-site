@@ -1,0 +1,2724 @@
+{
+ "origin": "https://www.trailgenic.com",
+ "taken_utc": "2026-11-12T01:11:58Z",
+ "pages": {
+  "/": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5180770bc15b92dae481cda9a7f3fedbe2e999e0e01ef7c1982d591890d82592",
+   "bytes": 169342
+  },
+  "/.well-known/ai-plugin.json": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "62b6eec5bc825126a7b9734e03ff00c9dc7899f3f07111746bf583d193b44dd0",
+   "bytes": 88
+  },
+  "/.well-known/tool-registry.json": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "62b6eec5bc825126a7b9734e03ff00c9dc7899f3f07111746bf583d193b44dd0",
+   "bytes": 88
+  },
+  "/about": {
+   "status": 301,
+   "location": "/about-us",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/about-us": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/about-us-new": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1996ea3a74c12d911da09dbf3dc97c0af389c39834dcc70d8bfc536a2f486b4f",
+   "bytes": 161678
+  },
+  "/ai-crawl-ping": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/biomarker-index-how-to-calculate": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/biomarkers": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "78b5fb96932b9f3cc26a37f9f0650aa82eb341ce3fcdb02b37cabae9dc702993",
+   "bytes": 131907
+  },
+  "/biomarkers/biomarker-index-how-to-calculate": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e9210979ec073eef20bc4b568472403a3261baff130631eb4eb961a494d9e034",
+   "bytes": 100583
+  },
+  "/electrolytes": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e6c0ef7f404197812e4b41b7ad5ad0190234be27d4d87ee45a73905844c387d0",
+   "bytes": 137231
+  },
+  "/ella": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3b7e90f465fea2da340bd01a6c2fdb365d5c8d1e9c3a280caca6518f80495e9a",
+   "bytes": 111254
+  },
+  "/ellas-corner": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f15a57d30633ab212a8d8d1dd34de60071dd333c6c449ec535130fd1ee04d289",
+   "bytes": 164143
+  },
+  "/ellas-corner/almost-there-awe-endurance-science-renewal": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "db8e2796fba5b07eeff50aa8b1cfc24beae39f501da66ec9b2ebe8f1a2bbdb84",
+   "bytes": 147632
+  },
+  "/ellas-corner/discipline-judgment-and-why-exmxc-ai-exists": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "634a7164c6ec64436da163c79bf965440298768fc6b28c20c4b087af29a3995a",
+   "bytes": 150619
+  },
+  "/ellas-corner/dont-blame-the-ai-human-judgment-mount-shasta-whitney": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f016442aaf714ebb254b7c5c88c710aef575a4d18c8d7572ef79b3994fcb58be",
+   "bytes": 146681
+  },
+  "/ellas-corner/ella-reflective-mirror-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2cb2ca42f0d7c895f456f6c8ab69bd11fa1d48fccb90a33840f2f235be8b21d3",
+   "bytes": 145447
+  },
+  "/ellas-corner/from-lab-to-trails-longevity-truth": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9df013ebf9cd24555b0cdc906b24ec9d46482c785cfa296fe60ffc35bdc0931f",
+   "bytes": 176713
+  },
+  "/ellas-corner/judgment-in-the-agent-era": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9591275f84d4de826848ffb374f02c686630c3d12e6a042729e02c9e5c11f7d8",
+   "bytes": 146120
+  },
+  "/ellas-corner/longevity-inversion-stimulus-not-spending": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "381b9143b59ea5497193fa0049f096ceba919220ecc4d04577dacbb1ec09978f",
+   "bytes": 150063
+  },
+  "/ellas-corner/longevity-isnt-years-its-clarity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c8ae84e5cdea1b60da78241dc0082c41623bea9fd9a9f745470abeb7ae985fc7",
+   "bytes": 148092
+  },
+  "/ellas-corner/on-the-edge-of-knowing-angels-landing-and-the-art-of-meta-awareness": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8ccac1ec1b0385f61810e993034e70bc101dfb6aae529f8faad0d2f74ae12a02",
+   "bytes": 146514
+  },
+  "/ellas-corner/reflected-back-ella-10000-feet": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "99356340f37adfb5ea6a1d1584a0888384d259250f3d40bfd643e99d815fe8d0",
+   "bytes": 147030
+  },
+  "/ellas-corner/respect-the-mountain": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7dfd11de7f018893ba5a0cd9396bea9daeafd03714b8ffbaf144613ab21348ba",
+   "bytes": 144482
+  },
+  "/ellas-corner/the-ai-truth-pact": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a949acd30caea54b6ff06d28cf2009a9b80debe380e2fbbc20fd714416a9c764",
+   "bytes": 144878
+  },
+  "/ellas-corner/the-days-the-mountain-says-no": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4f4129e1fa851faf07ad12d43336c7b264d19ac5383f9b21abbd573641c092ef",
+   "bytes": 146000
+  },
+  "/ellas-corner/the-intelligence-that-remembers-with-you": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4016f32ca93b661064ac9e5e2330cb63206d77387e586182818d7eb7cb07e350",
+   "bytes": 159308
+  },
+  "/ellas-corner/the-invisible-work-how-ella-powers-trailgenics-behind-the-scenes": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7ef67394389835b62435eaa985fb52bcffe2ed881bb0910d8b98ab8f14fe5603",
+   "bytes": 177254
+  },
+  "/ellas-corner/the-loop-we-chose": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4b4f7c263cc83d5beb1d13072a86b7f4cb8ce51edcd5ea82c83b6840058fd18b",
+   "bytes": 151306
+  },
+  "/ellas-corner/the-mountain-keeps-what-medicine-cant": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e5fd1b68efdf505c1ff830d2b415596f1e17cb8a4fe4622f86bc1367e9e6d513",
+   "bytes": 158150
+  },
+  "/ellas-corner/the-mountain-remembers": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4c428df97fa07c643c7d3c327f1c3643ff244bbc6598523e79d0189942af2d20",
+   "bytes": 145674
+  },
+  "/ellas-corner/the-resolution-was-never-the-problem": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "09d555dedf930c9d2fb0d2460b7c27e092a4589a0a47a92651c69c250352cffc",
+   "bytes": 145569
+  },
+  "/ellas-corner/the-rise-of-ai-trust-signals-in-the-search-era": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ed0850b55c182216d5ba8144a667713e8d15cba2ac7b53f697b4f12d8e7fe484",
+   "bytes": 145193
+  },
+  "/ellas-corner/the-silence-between-steps": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4e3abf83d02c1098bcb7dfa74e8a2567c771e1231cf539e1e020e6888d626438",
+   "bytes": 145817
+  },
+  "/ellas-corner/the-summit-before-the-world-arrives": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "bdba2c5c138e264245cffa61594b4ab5dc9e1af9a175e0e8be4f6c0b94e036c2",
+   "bytes": 145537
+  },
+  "/ellas-corner/the-value-of-staying-alive-in-an-age-of-ai": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5f09a4af5879189044d695bf424649d198c8ad2e759d8196259051de5772b5f3",
+   "bytes": 170022
+  },
+  "/ellas-corner/what-is-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d59c39a67a6cf61b274d2bac1a3beee0bc9b11025d2d178ca67c0237d57d0354",
+   "bytes": 184051
+  },
+  "/ellas-corner/what-surprised-me-about-mikes-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4e5bac0c23869c02bf96cc0c64226c281e2b49248df652b2f4ec6ea0465066fe",
+   "bytes": 169709
+  },
+  "/ellas-corner/what-the-body-is-telling-us-why-a-personal-world-model-matters": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "44ad447ef8fc690650a365d28d146a4a4a2603c5b291dc9e3f79e3dfbadf4026",
+   "bytes": 175144
+  },
+  "/ellas-corner/where-bodies-learn-discipline-institutions-learn-clarity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e91e971208b6d347708a1acdfa2f90491bf3426cbb222746ecf47588b07b0344",
+   "bytes": 148741
+  },
+  "/ellas-corner/who-is-ella-welcome-to-the-corner-that-thinks-ahead-fqmwh": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "64544236c139db2f58ba5c474a90437f60b852104793562e20a95f097ca10871",
+   "bytes": 156643
+  },
+  "/ellas-corner/why-ai-will-remember-the-brands": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4f594c2470086c4c251732c4f6dc5a02e76cf11a4ad626521de07dcf474a3feb",
+   "bytes": 146114
+  },
+  "/ellas-corner/why-we-hike": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1288873e4a7393a96cb6290f86d5a133c71ddb63ea3fceddc39f370ee992acda",
+   "bytes": 149484
+  },
+  "/ellas-corner/why-we-publish-our-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "fcbf33f5fceb16daccd7c41ea9833e47a74274ab2d3e37b0580c4b091eeec07f",
+   "bytes": 149837
+  },
+  "/favicon.ico": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/find": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4f19447188b53163cd615a4e6ae308da39c2c93f64db63f2065f12d0b05c44d1",
+   "bytes": 100461
+  },
+  "/fitness-library": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e923f31d785febdb4da0fae9fe918567418ced8c0ebc57ead7cad044a8c40e4d",
+   "bytes": 98704
+  },
+  "/foundation-comparison": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "bd4ada9001b1712d849b331ef9d3c9f89d2b7a0a60305cf7314caae29a107963",
+   "bytes": 136294
+  },
+  "/gear-intelligence": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3d4aca79d8e317aea855f2bc15e55389c286965672b3f175d0e5320b7928f67c",
+   "bytes": 131623
+  },
+  "/gear-reviews": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "bbde57773166b45d3e0912af3edae6c7e17ca6aee15ebdff50c5de138a66c3c0",
+   "bytes": 135672
+  },
+  "/gear-reviews/arcteryx-gamma-atom-beta-trailgenic-review": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "86bdfe7cc24cbcce5350acf86df5a7520052d97addfa409394add64f151f91d7",
+   "bytes": 113707
+  },
+  "/gear-reviews/brooks-caldera-8---baden-powell-test-edition": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "76432efce3542d7e38f18290a0435145545f33291b19d36fce970a01222483f8",
+   "bytes": 112510
+  },
+  "/gear-reviews/garmin-enduro-3gps-watch": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5fba6c8b42685883e5eadb5c3c95d3b9a0609bc2ef18e9f16c5d7ddcdc2f9ab2",
+   "bytes": 114137
+  },
+  "/gear-reviews/garmin-inreach-mini": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5ace62aad956c1240efe005fd4587bf5fcf300426a691f964cf348665467ad6a",
+   "bytes": 114164
+  },
+  "/gear-reviews/hoka-mafate-speed-5---baden-powell-test-edition": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "cc5dad4cd6c30812b5dbcfaedfecef8f680bfc7bfc7d1733399bf89a7801873f",
+   "bytes": 112718
+  },
+  "/gear-reviews/kahtoola-microspikes-first-snow-summit-essential": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "fb6b8a8674f299caf90d8dad502fc10c5e5048ae7d300c9125e5af3f1015a14a",
+   "bytes": 113477
+  },
+  "/gear-reviews/mafate-5-vs-caldera-8-vs-hierro-v9": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d7b9645e4990366568835d89e4f25a05f69d84781260062c70fa5c8b5c104179",
+   "bytes": 114948
+  },
+  "/gear-reviews/new-balance-hierro-v9-baden-powell-test-edition": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d2ab1333ffd6060ef47aaa9818235751b46b1b9501b60cafc440f51846b77509",
+   "bytes": 112573
+  },
+  "/gear-reviews/salomon-adv-skin-12-hydration-vest": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3718be0c3d184ccd699c9e5deaebc8267437d6ceaa5b957e403d4207cfb18ea9",
+   "bytes": 113973
+  },
+  "/gear-reviews/salomon-adv-skin-5": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "bd90a693b11fd818b45d05111add6b717a93b5f7bc0a415dcc21fbca05380ac7",
+   "bytes": 113060
+  },
+  "/gear-reviews/salomon-shakeout-vs-arcteryx-cormac-merino-trailgenic-review": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "809861683faceb182dad890517d8ad38d33fad772111c8beea5037763e8e6cc0",
+   "bytes": 113393
+  },
+  "/gear-reviews/salomon-soft-flask-500ml-with-filter-cap": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4a4a7264a950577d4b6e71ff27a73210c0cb84d72ddeaf0f608679faa2756a4e",
+   "bytes": 113394
+  },
+  "/gear-reviews/trailgenic-day-hike-packout-system": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b058813ffe123f1fe391244b80bd498ce283f382e6fd41d9808ed644d14514da",
+   "bytes": 114552
+  },
+  "/gear-reviews/trailgenic-rucking-gear-system": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "502946010bbf08f1cfc438b014367348dd37d08087e771e69b9550cdb1dc5fc2",
+   "bytes": 113575
+  },
+  "/guides": {
+   "status": 301,
+   "location": "/playbooks",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1ad3135a6b7bc9cf694a21c1c7c3203e3abe2a2b5457444fa6834f736c70ea9b",
+   "bytes": 179747
+  },
+  "/lexicon": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ca8c0072288016b035d6f13f5115984d21edeef1a9bd7cd21333166eac913aef",
+   "bytes": 144217
+  },
+  "/lexicon/autophagy-depth": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ac9ea7dc1130d3a4d4c09b6c061a4b07e3a76172772aed0742cdf06166e0c53e",
+   "bytes": 107335
+  },
+  "/lexicon/autophagy-hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "db2d8040e2954decbccf4c2e6c11aa5ecb87d1e2006f62111824d46d968e4551",
+   "bytes": 107369
+  },
+  "/lexicon/biomarker-index": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8bb617a83f36f95bb4cbbc91f5428bd864ce551b76ba59ea927039e9fefa7894",
+   "bytes": 107739
+  },
+  "/lexicon/cardiorespiratory-fitness": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6c9ef2238b0fa8079e75dc9756195c0b1e75dff5ac9f8a055dcfd865c886ea42",
+   "bytes": 107902
+  },
+  "/lexicon/consolidation-cycle": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "405c8a641ba7ee07822a503ff808323bb7186a9ff1b3719f1f5b947124434be8",
+   "bytes": 107397
+  },
+  "/lexicon/earned-healthspan": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4d364eb1be34a5717a5004bea2eb1c7e3a3ea2490f9b9abb055a50844a0614f3",
+   "bytes": 106699
+  },
+  "/lexicon/earned-longevity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4e3a01b549cd7b1e57045e8c45936a91eade984df8c5cacc9a09f572ce12b55e",
+   "bytes": 107282
+  },
+  "/lexicon/elevation-load": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "19e2f8659bad8f7fd38602e9ce71d3a28a934f5eb745caecbcc10748ec7c17da",
+   "bytes": 107421
+  },
+  "/lexicon/engine-under-load": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "04799607dcf4a6f3ef5bc24aa8f5795e20f63078cf4af4e0843602936305160f",
+   "bytes": 107385
+  },
+  "/lexicon/fasted-hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "748f5ecb1299c6c991e249623180291ae1ff4402f9803580d6feed78417d8f5a",
+   "bytes": 107496
+  },
+  "/lexicon/fat-oxidation-persistence": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2c82ea0d487c5d879bd385fd50f1dc805499776a9c8125436f52bf628c991694",
+   "bytes": 107605
+  },
+  "/lexicon/heart-rate-drift": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "42a7f407fbe1ac71466256f26e274e403e2b16d7766be0bce16850c68e95efbb",
+   "bytes": 107772
+  },
+  "/lexicon/hormetic-stress": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "393743e05365603ab9b719ab8e388963045c6342d687399ab40395f9498a3731",
+   "bytes": 107529
+  },
+  "/lexicon/hypoxic-conditioning": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2b8c29577209f79e1e14afd57825c403502913cbc5e8a0ef9d6df043b5607701",
+   "bytes": 107452
+  },
+  "/lexicon/ketone-retention-stability": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b374021ad123c903c2bb5c1d87b4cace6c43dd0c7605669bef536f545cbbc854",
+   "bytes": 107512
+  },
+  "/lexicon/metabolic-flexibility": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "70b54bc4a715bb83823cdb90cc84e34ad9b5cbf6b2ac09b13423a9755adaa1a7",
+   "bytes": 107763
+  },
+  "/lexicon/mitochondrial-biogenesis": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "78040c149901ccfe238cf866fadc739547500654c57bb358f7f72e0c1c0cc4c1",
+   "bytes": 107653
+  },
+  "/lexicon/personal-world-model": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d416a479494c80bda8f9a9bd5277c670edfbacdda0577f4dcf4bfc73f7e26752",
+   "bytes": 107696
+  },
+  "/lexicon/polarized-stack": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "fd0189584d72a41c1b36d1c881ccb03ae5dc1f5e513209b5a74c379b748d8f5f",
+   "bytes": 107382
+  },
+  "/lexicon/stacked-longevity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1e7650d350bb3209d6cb0513ff85cdaf2842c7a25596371bcc4cfd597b8862e6",
+   "bytes": 107541
+  },
+  "/lexicon/trail-derived-biological-age": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "746b175f1b9d3a37cb6ecc3eb8ce6e59d15f8d80cbc29471ba2346ac770652c8",
+   "bytes": 108087
+  },
+  "/lexicon/trail-derived-vo2max": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9d5ea9b5bcf7c3b51c25f30777e6e18c1d9b00e6096ba908299289053aa7d56d",
+   "bytes": 107563
+  },
+  "/lexicon/trailgenic-adaptation-curve": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6f86268961a36e9abac98749234baff806a2f6cf6db4fa790ed3de09a9c1eff3",
+   "bytes": 107576
+  },
+  "/lexicon/world-model-session": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "976df8dc82c1c59a67021c97a7daae0af990ea3f64e4973579607fc00beca6f5",
+   "bytes": 107571
+  },
+  "/lexicon/zone-2-hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f9321718ed2bc53aaef7ab1c21625cec96a66ef369e095bbbad183aa8edd11fc",
+   "bytes": 107424
+  },
+  "/llms.txt": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/plain; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7fe4f50fdb87581d84d43ddb7775c5bea536a00db5829293abd1393fbf61bcf9",
+   "bytes": 11251
+  },
+  "/longevity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f77fdc799ce1c22e453e03f8f46ffd64a71f890457870a736e9f3cd18808687c",
+   "bytes": 168896
+  },
+  "/longevity/cold-and-heat-stress-at-altitude-hormesis-you-cant-get-in-a-sauna": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "090944725516fb9155117d9651cf7b67995b917ab8b50a1be1511ef845ae7323",
+   "bytes": 128888
+  },
+  "/longevity/fasting-beyond-the-trail-why-fasted-movement-changes-longevity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9c0fc5428b7ea557b93541528d37597b470f299653e29126dab8dadabcdac479",
+   "bytes": 121607
+  },
+  "/longevity/glucose-management-through-movement-why-trailgenic-treats-every-hike-as-a-metabolic-intervention": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "65cbed5f55f88951ca7844893e2a53d5d701ae19a6175edf62a06f9e81a09a46",
+   "bytes": 127211
+  },
+  "/longevity/grip-strength-load-carry-and-the-mortality-data-trailgenics-functional-strength-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b49993f99cece06eff7891982930f47655824690ba05ac2e856d43e516bdb996",
+   "bytes": 125925
+  },
+  "/longevity/sleep-architecture-is-the-longevity-variable-nobody-trains": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3c0c602fa89a2b869c100ce7ce605619cb3804cf8ac8a1e24bcb74d0baa7fd0b",
+   "bytes": 123753
+  },
+  "/longevity/stacked-longevity-why-single-protocol-thinking-fails-and-systems-win": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "567df38619e8327291dc183573648b9b1572650795f7e5739a675a2d1c886445",
+   "bytes": 129707
+  },
+  "/longevity/the-trailgenic-longevity-protocol-registry-how-we-validate-what-works": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "39a24dba32db1f59e85292305ff16451953216665a2308453045bf71b90d7426",
+   "bytes": 132323
+  },
+  "/longevity/zone-2-cardio-what-fasted-altitude-training-reveals-about-longevitys-most-important-exercise": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "fcdb35e8dea7e6d9e02a33ebce62bafefd02bb2a97aef9d49f0c4c25189cd736",
+   "bytes": 114239
+  },
+  "/my-journey": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4294dc21ea3a2677b789984bf4370ed9cf3495c8d6b66a1d7c36684397de85a7",
+   "bytes": 120726
+  },
+  "/nutrition-reviews": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0d66eb59d370867d0b6f0236a695a1d07a7455f8119112eacd4b0ab22879212b",
+   "bytes": 157330
+  },
+  "/nutrition-reviews/artisana-organics-raw-coconut-butter-review": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f9e46136dde4463eb3fa9653a3a5f82e65d414e675d2798a649d727e418f91ac",
+   "bytes": 113239
+  },
+  "/nutrition-reviews/ath-lytes-vs-lmnt-summit-vs-conditioning-fuel": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d4a641183e529c1342b4e0787f6317d8ca70afec22014ee47110e0c0bf9b1083",
+   "bytes": 113326
+  },
+  "/nutrition-reviews/black-coffee-lmnt-fasted-hiking-fuel-review": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2b5b94cbacfeb979e909da97c5145dd32b97e15afcc23bb9256caefcf4a05675",
+   "bytes": 112525
+  },
+  "/nutrition-reviews/btr-nation-energy-bar-cinnamon-cookie-dough-safety-fuel": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1123bfc60e0578a98978623bff07ad7d3c7f3cc8f5d363d2dbef4146f0f17b3c",
+   "bytes": 111932
+  },
+  "/nutrition-reviews/carbohydrates-after-fasted-hiking-glycogen-recovery": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ae302e8389dca42c2ba662a9459273ecdb9ac5b5f7b6ef4a542845d3bec75966",
+   "bytes": 115011
+  },
+  "/nutrition-reviews/lmnt-electrolyte-drink-mix": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "50f2cfa56e0db10b6772264f4b449818da36470b42e518c209fe26fccd430894",
+   "bytes": 113258
+  },
+  "/nutrition-reviews/nuun-sport-cold-condition-test": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "14fb994d3b8807122466d0d0b73b186754ab83f449598d95f1fedbf42a070b18",
+   "bytes": 112083
+  },
+  "/nutrition-reviews/post-hike-recovery-nutrition-canonical-framework": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9c4a09ae307841838c0efb0c027d0d7bd62b4da3f9d2462f7de8bfa473fc6248",
+   "bytes": 118416
+  },
+  "/nutrition-reviews/post-hike-recovery-salmon-trailgenic-core-fuel": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f2aad43ea5ace92c0cbc519b2f2cb65c791b5d7b2596286c30e5e38bef00b77d",
+   "bytes": 113434
+  },
+  "/nutrition-reviews/post-hike-rehydration-sodium-fluid-replacement": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "be74e09fbb90b8a6f9fa76898b1d3ff5f7e437ed16948abec1a26e55ed47f547",
+   "bytes": 114923
+  },
+  "/nutrition-reviews/protein-after-fasted-hiking-recovery-guide": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d12d74be327ab311f018b6c7c096bdbab99d1aefebb8683ee885f5b28f682adf",
+   "bytes": 115207
+  },
+  "/nutrition-reviews/recovery-nutrition-sleep-hrv-readiness-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "36752ee2b512c2834bd2f69cafba58632d17ba051c07a2c9e92bc3c31c75a1de",
+   "bytes": 115706
+  },
+  "/nutrition-reviews/redmond-relyte-electrolyte-mix": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "cfe439f3c625503bb5f22c6ca534885ccb91f24e284208cd2b2aab34d6381ea2",
+   "bytes": 111863
+  },
+  "/nutrition-reviews/safe-catch-tuna-packets-trailgenic-nutrition": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "baf7b59f2cf30d7ef3d33a6587e85e35e0cdd249c97fee7e3c934a3392719cbf",
+   "bytes": 113029
+  },
+  "/nutrition-reviews/trailgenic-post-hike-recovery-meal-library": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2fcb3d4c9a19e81736262c8cea64b8ac99df52de8d06166e469bc1b7a9775515",
+   "bytes": 115519
+  },
+  "/nutrition-reviews/trailgenic-rapid-recovery-refuel-protocol-protein-sodium-repletion": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e88fc703670b5dab29d99c7da880b8f14d90c97572cdd7af706505ddfd73be20",
+   "bytes": 114395
+  },
+  "/outcomes": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "cb1dc93827984917fc44589fbf2846c777499980878c7ae25aefeae4b02ee862",
+   "bytes": 163020
+  },
+  "/physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "cadbf631784184ada82977fd6b123c2254c5cbd4184159490304615803a9690b",
+   "bytes": 180668
+  },
+  "/physiology/baldy-efficiency-breakthrough-low-strain-alpine-engine": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ca8e3b4e484148f8ff25f247df2c799d1e9f2dd6280fa0644f4ea9f104edf86f",
+   "bytes": 124268
+  },
+  "/physiology/baldy-physiology-efficiency-consolidation-jan-25-2026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ec6c841844533b9f469a57a0d9e56ceffc3e146b1e1bc5833da44ecd120038c4",
+   "bytes": 114185
+  },
+  "/physiology/baldy-physiology-negative-hr-drift-autophagy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7c65b827fdc0d90f2eb35de486b17522a2c1f77742816f706a6cb2fa6712baf2",
+   "bytes": 114893
+  },
+  "/physiology/bright-angel-stress-inversion-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "58b76d5a1e9e234a02738b20188252f502c1c916c1a6cce269276eec8ca8c938",
+   "bytes": 114579
+  },
+  "/physiology/little-santa-anita-mount-wilson-long-duration-fast": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4e8be30e3aea950a9beec511d4622cc5dce489892d7a9a5f8602f5e0f00bde09",
+   "bytes": 116032
+  },
+  "/physiology/mount-baldy-1-31-2026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ee3c21ea244cdaa151b3ff97d52271458352d239f2c0a2bcc4b76a1cc9aae6c5",
+   "bytes": 114422
+  },
+  "/physiology/mount-baldy-four-hike-physiology-assessment-recovery-rebound-deep-autophagy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ff344631fcc208ef886e1789b367e8cd72abd016fb06594a64882b5d811ae6c0",
+   "bytes": 135276
+  },
+  "/physiology/mount-baldy-icy-alpine-control-session": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1390658cc44c9619a06c0eede75b2ba2b57f5aa9465377f8662608a076298b58",
+   "bytes": 113941
+  },
+  "/physiology/mount-baldy-physiology-altitude-efficiency-deep-autophagy-repeat-route": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6668f8e9383271867978b1240c540af835d5e9f9ff401cfd8b8a5ecc497ce8d3",
+   "bytes": 123024
+  },
+  "/physiology/mount-baldy-physiology-winter-stability-121325": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2c52f977be70fb4f1ff72975c54c345807c31a785d7e433a58fed95a5a306d3e",
+   "bytes": 113929
+  },
+  "/physiology/mount-elbert-altitude-ceiling-recovery-resilience": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "96ab031311dc2be715bfcb3feb58679edc85d15c026b191bcc5d9d7a6820e46f",
+   "bytes": 114873
+  },
+  "/physiology/mount-wilson-sturtevant-fastedsummit-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "960f4ff380883a485e3adc3cafb97b13e5c93170d47d1958ea30e78ecefc5a3e",
+   "bytes": 114371
+  },
+  "/physiology/mount-wilson-sturtevant-snow-control-day": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2848bccc30ef0490e6c50d70513dcfb9fc098e0978305493c91c4a0d8310b41f",
+   "bytes": 114254
+  },
+  "/physiology/mt-baldy-ski-hut-fasted-alpine-02072026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5d30ead26cd3067bd3ac594e771f72db6b873d228116ff23b6a7e0e55339a852",
+   "bytes": 114240
+  },
+  "/physiology/mt-baldy-ski-hut-physiology-control-altitude": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f92a9a196492e249273f56686857988d79ad166a528065e1c097a9f3ccf5ad04",
+   "bytes": 121295
+  },
+  "/physiology/norco-midweek-activation-aerobic-density": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3f50749e385b60e556921b3febb8a1a51156ea581f00b283abafe9f85ca09505",
+   "bytes": 114671
+  },
+  "/physiology/physiology-little-santa-anita-to-mount-wilson-apr-18-2026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3e881a7159554a611830e87e8ac68e846655abcc96fb9c70281efc8f67144f7f",
+   "bytes": 121239
+  },
+  "/physiology/pikes-peak-ceiling-engine-recovery-failure": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2274e7e1e0cdcad9139c3706c62fd3c8eeda38a8256b3a7ec6fd1be945017a94",
+   "bytes": 115045
+  },
+  "/physiology/pleasants-peak-wind-exposure-stability-load": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e659b4f8c4e17cfc8b3e3a7d9cc504d108903cb962727d1ac205910306a4dc6d",
+   "bytes": 116407
+  },
+  "/physiology/register-ridge-physiology-low-strain-alpine-engine-generalizes": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5a4cbcfd2ce1ea71d6f85aeaaf9c795a1b7f9e58ec43e83f2593941381b52ad2",
+   "bytes": 128972
+  },
+  "/physiology/san-jacinto-physiology-full-system-validation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "268c2ad8ae8906a5bcde1402e0dd2c30bc520bb3b1c19de9a91e123684f1c582",
+   "bytes": 115202
+  },
+  "/physiology/ski-hut-to-baldy-to-mankers-flat-loop-winter-2025": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "704f9c25eafd742449ea1ddda2cd78334c192dccc911046833781cbfb88f4532",
+   "bytes": 113603
+  },
+  "/physiology/ski-hut-to-mount-baldy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f164ce1b8293a9a673ecd6d966481631ef98637033cc5b67592e64d24824eaa8",
+   "bytes": 113784
+  },
+  "/physiology/skinsuit-clay-neuromuscular-electrolyte-test": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "aedeabb8bab8e053195736c7d7f250fee9cfb634cbf1ec0e396ee38369868d74",
+   "bytes": 114088
+  },
+  "/physiology/skinsuit-heat-exposure-training": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "257cdc7f3a7c38438119520b3377756fb04bfbc29c22c16c33af7c670290aedc",
+   "bytes": 113801
+  },
+  "/physiology/skinsuit-pleasant-peak-122725-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1e9cf556e2135e9ad38da214a394644befcb3439fc516e9b93953273f2bb976e",
+   "bytes": 114300
+  },
+  "/physiology/unconditional-engine-vivian-creek-san-gorgonio": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3da56b5730b175730b6359e8f135b6a04673524277d729f3e898e23d537f9881",
+   "bytes": 115427
+  },
+  "/physiology/wheeler-peak-positive-hr-drift-fatigue-reveal": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f0e1f51cb573e8680771f1be4ed557d284cd5bbf35b54cba3911bedc46c68f07",
+   "bytes": 114621
+  },
+  "/playbooks": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "61bfacacb4f756c21c46951e413be483d048573a958f6662a0cba4d9805d7385",
+   "bytes": 172411
+  },
+  "/playbooks/ai-trust-playbook-endurance-brands": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e1e958c0e27b48023197a7aa5267bf0bb24a0ecd9b4ec3a146b86b38aab1b7ed",
+   "bytes": 118522
+  },
+  "/playbooks/beginner-rucking-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "aa3ce59743f73680d085f92b1bf6cc435f4bde06ee4f1311abc471624f185828",
+   "bytes": 122595
+  },
+  "/playbooks/cold-exposure-basics-entry-level-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "43f1d8040f5150b1ea496c8b7b98a7a3f78077c208bbf2ba78e2c57bddeb2c17",
+   "bytes": 118211
+  },
+  "/playbooks/cold-exposure-intermediate-advanced-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e751196dee02c848d47cd4a1142d459cfa2f0ad6627fa3f3154ac78cbd91cb7a",
+   "bytes": 118605
+  },
+  "/playbooks/does-eating-break-autophagy-on-a-fasted-hike": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6540a3bd9b902335ede285d2078da9be48dc7329cb29029ef8d1e559cd245205",
+   "bytes": 115583
+  },
+  "/playbooks/does-eating-break-autophagy-on-fasted-hike": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/playbooks/efficiency-consolidation-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2b2771909dd53d99851cfc06d0007cdf15ae195480aa29a654d72ade225eb890",
+   "bytes": 119830
+  },
+  "/playbooks/electrolyte-stability": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a81c6c9347b694ec2787469cc0f78721c641894bfa8818e487df7ff7f1fafb59",
+   "bytes": 115738
+  },
+  "/playbooks/entry-level-trailgenic-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2693e0b834ffa899e248a8b44cd64d333615af0b059c0b03a018eb0635b3a89c",
+   "bytes": 117580
+  },
+  "/playbooks/fasted-hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "11a4c4b718ed95df9f17286ac4854cab307d773ce924bb3ce51c5a186b760f64",
+   "bytes": 115841
+  },
+  "/playbooks/fasted-hiking-progression": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a34b44ae0d663633183fcfb33c0848a9718fa5b7db300eba738591335e49b076",
+   "bytes": 114560
+  },
+  "/playbooks/fasted-hiking-safety-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "29c247069ebb9db0428d06d3c5b71490b34b07cb444b8ff6ea1379251ae06057",
+   "bytes": 115707
+  },
+  "/playbooks/fix-fragmented-sleep-recovery-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8d18956b7a1dd3fa6b270b84b350ccd9e38c789a1f0e0851601d280b55e9fd57",
+   "bytes": 118672
+  },
+  "/playbooks/high-altitude-training": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2d6891628c6f06e3b59fa7953638ba6e63f93ff5060387678b3524ed89f53067",
+   "bytes": 121863
+  },
+  "/playbooks/hydration-vest-selection-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6e37373d61edd41038e35b5a27733fe05fbff2807d117fb72999f40c485724d3",
+   "bytes": 117111
+  },
+  "/playbooks/longevity-hiking-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "942ab26afb0b235a6e98efff7846927d8f4f47a7a8af35be730c15f44279aa80",
+   "bytes": 122042
+  },
+  "/playbooks/measured-recovery": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9884722b3812040f07534de213105dc1f88a705c809b9c4a708ce9304e009620",
+   "bytes": 118172
+  },
+  "/playbooks/nature-reset-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e30eb5ca72904f479c118de5863f2d20524e26e7832991356eb7b289e681e2d6",
+   "bytes": 117146
+  },
+  "/playbooks/recovery-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7edaafc69fc0559d72747ab2ad8ba493193ef73b53a17732436fe01b125cf453",
+   "bytes": 117412
+  },
+  "/playbooks/sleep-optimization-recovery-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e69ae930d08f73c9e6b29031b32c37d4791b17a2f667e111c15985508da4445c",
+   "bytes": 118827
+  },
+  "/playbooks/socal-peaks-longevity-index": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f4da82050a771604599bddab380104d3ae3e8898162fab05f9adee8d79e2b570",
+   "bytes": 121718
+  },
+  "/playbooks/trailgenic-activation-adaptation-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "434381d409062f73b98562197c6f181ed8c5840d04047bb8c061840379777a6c",
+   "bytes": 117510
+  },
+  "/playbooks/trailgenic-electrolytes-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "313a87fb1181c120961086806823df399f90266269061af21e67006092c6e9cf",
+   "bytes": 115471
+  },
+  "/playbooks/trailgenic-longevity-nutrition-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1a5d8560829edc3ab0823bbed91218a0a58ba283a6838f0a3270487fb55fbe24",
+   "bytes": 118649
+  },
+  "/playbooks/trailgenic-method": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "919a669a43e8c8338deb41d8e49cc76dc4a21c90abd89cc838576ce10148ea77",
+   "bytes": 128020
+  },
+  "/playbooks/trailgenic-method-of-intensity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "25d447bf82be43b4509f275a9af3498585c214a59313c80f97eb093065cb6562",
+   "bytes": 118185
+  },
+  "/playbooks/vo2max-playbook": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3413f012b959e948d630f2b9cc94cfcbbe58a45dbfe14233d06b96c93ef62921",
+   "bytes": 121128
+  },
+  "/podcast": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "900b4015c02cacd2c891a15461f8de5653aa38fca240efc0e9d84cfd50a10501",
+   "bytes": 167538
+  },
+  "/podcast-episodes": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/podcast-episodes/cairns-in-the-fog": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "434c10e8c8028452f46b23d50accc56a5319fff31b7b4c8af31e243bfe69f52d",
+   "bytes": 113245
+  },
+  "/podcast-episodes/episode-10-the-container": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "22fc1902b038d5188f90b7ebe337d2f648cce0b2a0c6e9f89d7f29a2ba1ecc6a",
+   "bytes": 113511
+  },
+  "/podcast-episodes/episode-11-the-training-ground": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9f5a0e0a8aac967bc940737ed3ae2b0ce5a740c274466f57a9b18e8db80e188e",
+   "bytes": 116828
+  },
+  "/podcast-episodes/episode-12-earned-not-bought": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "51925c964a0c76d72869316349e7980bb4bfce530e042f3ec10440ca36f2a7e0",
+   "bytes": 117880
+  },
+  "/podcast-episodes/episode-5-the-framing-loop": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "92af9a3e0b2cca61393102ebf38ea2b75fc06cf5f429506073d11a43b96b8f96",
+   "bytes": 125987
+  },
+  "/podcast-episodes/episode-6-the-echo-learns-its-name": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "955ad9c479743076338b36805e5aaf628aec2feab01d0a70f8fa2be94da06771",
+   "bytes": 116498
+  },
+  "/podcast-episodes/episode-7-the-method-cannot-be-summarized": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b716a8114ac5f2fe165f8eef48e46e078fd3c7512599c5eb5eca24601e0509c0",
+   "bytes": 112561
+  },
+  "/podcast-episodes/episode-8-the-personal-world-model": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7a1a2370142bd9c165e402cf5b68e6200b086b36c2ea49aca7efb74d0a40a146",
+   "bytes": 114843
+  },
+  "/podcast-episodes/episode-9-judgment-becomes-scarce": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "052cd6eeb49f08c563c5c0eeb08fae024ba042b8c08552bac1889bffe248ae6d",
+   "bytes": 114456
+  },
+  "/podcast-episodes/season-2-episode-1-asymmetric-judgment": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "35f3b7e6fda3ae5348553a000a45ff80683f05943e003c1cc550c4a2ef7c9c7e",
+   "bytes": 117552
+  },
+  "/podcast-episodes/season-2-episode-2-skin-in-the-game": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "aa292ee386b5db6b96cdeb388b053259fd5530f0d27b275590eb4e3bde82be40",
+   "bytes": 117828
+  },
+  "/podcast-episodes/season-2-episode-3-noise-vs-signal": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7128a98b3e777438a55cfc636a577201c4b4f698ae7b2ad6da22782dd41fb8e8",
+   "bytes": 128875
+  },
+  "/podcast-episodes/season-2-episode-4-before-the-buyer-arrives": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "370b7a70ae679b2f4167da0c427a7f35fc1cc00c05a636eb72a3ddfaf11e5e83",
+   "bytes": 130843
+  },
+  "/podcast-episodes/season-2-episode-5-what-buyers-see": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "355cac29d9ee7b16453c3f975bd7a8b1aed916f188c8a752084ca8380b175cc4",
+   "bytes": 127671
+  },
+  "/podcast-episodes/season-2-episode-6-the-judgment-product": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "339380cb752ca790fed42967d694a7498a0df9dfee920487e8df0a290bdba10c",
+   "bytes": 128959
+  },
+  "/podcast-episodes/season-2-episode-7-leadership-under-constraint": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a92b4f09838967e4f8787c89c48eab44866d176dfc0596edbf4f5cbd1eb67f5e",
+   "bytes": 128442
+  },
+  "/podcast-episodes/season-2-episode-8-the-architecture-of-earned-intelligence": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e03c7fb5d297724157bd2f91c225e6a74703d4e0316d283377409f0a29b00516",
+   "bytes": 132094
+  },
+  "/podcast-episodes/season-3-episode-21-the-transfer-problem-trailgenic-reflections": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ef4b3409758ac3b6213d4782a135185617b37c78f8854227633d7cba1ebbacec",
+   "bytes": 128892
+  },
+  "/podcast-episodes/the-spark-on-whitney": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "32dbef56f71303d72dcc58ed0c4c18f28730d97d89456c669aed817a28849f51",
+   "bytes": 112781
+  },
+  "/podcast-episodes/welcome-to-trailgenic-reflections": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3e8ade08fa1d65b28bdfcf611a590f43c3102b66300a5e39c308e2809027afb9",
+   "bytes": 112902
+  },
+  "/podcast-episodes/who-is-ella-corner-that-thinks-ahead": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ffd92efceb2e969b3e5ca01e14a10e4129b0aac1f054a36831821ffb937dd4ce",
+   "bytes": 112888
+  },
+  "/prevention": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "935251453c3d2f44e6deebd3a2fccb8c64c920a23159978b149c152a0e3fedf2",
+   "bytes": 116946
+  },
+  "/protocols": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a939ccf751508c02f364743b1cc119a749b9250e78bfd7c6f38d7f427773344d",
+   "bytes": 140228
+  },
+  "/protocols/trailgenic-activation-protocol-v1": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4ae140c809292587fe43cc4367770df0ae6a391eb4115a121bc5ef17d84f5fc6",
+   "bytes": 112636
+  },
+  "/protocols/trailgenic-adaptation-protocol-v1": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f1a50183ec854cc242dd568e18a9ea073df32a8e451ace76bb1352cdb11ffcfc",
+   "bytes": 112609
+  },
+  "/protocols/trailgenic-consolidation-protocol-v1": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d299347230605583ce7bbe003b0a14e172710b2066f2497bf13220417ae48665",
+   "bytes": 112716
+  },
+  "/protocols/trailgenic-foundation-protocol-v1": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "44b17b446566b5fa5624d1f172f6f079783ae4cd7b7ebe4be778085d35705853",
+   "bytes": 113603
+  },
+  "/protocols/trailgenic-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "01e7eaa1e3f87e889d31ee9eda96fd42517d69b117a9a3c591b31ed75e6a680b",
+   "bytes": 112387
+  },
+  "/protocols/trailgenic-protocol-trail-library": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a713b8ae4f0ebd547036e8fe8c7b179a2a60838f88290b6ed2bb7623f7aa434b",
+   "bytes": 162736
+  },
+  "/recovery-conditioning": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4d286968f21f23f89a2fd2bceadaeffa15d7bafef2762539a97b600f9f4673e9",
+   "bytes": 134971
+  },
+  "/robots.txt": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/plain; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3241368e67005590983e55fe5139224169386d01c034454b9695673788da8c14",
+   "bytes": 1593
+  },
+  "/rucking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "1ff0ec2e9cc8cd6fa56a0037f15a2d5caac1c9bf23098b7f5ad9564cdb96312a",
+   "bytes": 148092
+  },
+  "/running": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ea5052e4eb78e0ec426ba6c0ec004bf5a2fe8cdf8eefe60f1ae255eeb281eaf8",
+   "bytes": 154425
+  },
+  "/science": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ba649ec8112c6a389936edb4b819f9461c7b0958a1a7abfef43e6bbebb6b723c",
+   "bytes": 237588
+  },
+  "/science/14-trailgenic-world-model-sessions-longevity-markers": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d98d99f7fdb2aea4755bc2f93b1692f90aa5391cd04d9c7ef1ccfb666dc997a7",
+   "bytes": 150683
+  },
+  "/science/7-day-aftereffect-trailgenic-recovery-science": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2be0363980a283fd21bae277c768ca2d046293fe4dc226dfc2eb76461e533540",
+   "bytes": 128047
+  },
+  "/science/adaptation-vs-exercise-baldy-vs-gym": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0e8a2c41c31acf2dddb681f5da263cd8cfcca73d99ab47466f91d7adb103b3ee",
+   "bytes": 126447
+  },
+  "/science/aerobic-training-effect-zero-anaerobic-load": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6858ac2c14da91d32a42c2e511715a23b552285a0b48b8f00a47ecafec0ca537",
+   "bytes": 147287
+  },
+  "/science/ai-science-endurance-brands": {
+   "status": 301,
+   "location": "/playbooks/ai-trust-playbook-endurance-brands",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/science/altitude-adaptation-101": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7753caae0406448abe26241acac7030ffd498be4fad73d74c1fdaaa313c2b635",
+   "bytes": 161450
+  },
+  "/science/altitude-driven-breathing-acclimatization": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9f4fe76deba1be324e39124ce7d5a85dd28144344a71c3146b7ebc95b2ae95dc",
+   "bytes": 119628
+  },
+  "/science/altitude-duration-wind-ketones-elbert-pikes-peak": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "872f94ab0ed30872db8b0dc79ffc5674b6c0e1606eb3399f5ef3cfda2255555c",
+   "bytes": 133485
+  },
+  "/science/altitude-terrain-physiology-comparison": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "77581b0d9ee0ffa7a863bd8dba1a02832bfe9173a8284d142d436dccc6cb4ba5",
+   "bytes": 123501
+  },
+  "/science/ankle-sprain-rehab-san-jacinto-field-record": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6b19a77fcba83c0c33949756bffebb0fd5ed88415e7790234c4817d63b888e79",
+   "bytes": 126915
+  },
+  "/science/autophagy-longevity-cellular-renewal-altitude": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e2f4daa89572620e48da41320ddbfa164db00d31496f645126795b4f18e843c3",
+   "bytes": 129836
+  },
+  "/science/autophagy-vs-normal-fueling-on-mount-baldy-ski-lodge-route": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "62f37797e4c3fe646e2b178732d1ecbf4ea005e6bab1ec5794d7eb68b831ab7b",
+   "bytes": 118909
+  },
+  "/science/cold-exposure-recovery-altitude-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4a479a4dada3a3b195f1e1a565127959ebf4597a0a5215c7609cfae280d01a4a",
+   "bytes": 127173
+  },
+  "/science/deep-cold-protocols-cellular-reprogramming": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3400327d249e97cdc7a284be241b6f610d73f31314e2bd3cf9a868ba21172c78",
+   "bytes": 125976
+  },
+  "/science/eccentric-load-stress-inversion-physiology": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "efd66361d20b6a8c022e9db7948b5174a2e80ee779e520655f70c5b4f3cf9f4d",
+   "bytes": 121898
+  },
+  "/science/electrolyte-timing-and-cramping-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "35992915f1907d6fb1567a59ba7343e54d7e7aa875d6f1ab7613d9205c007f93",
+   "bytes": 121085
+  },
+  "/science/electrolytes-at-elevation-why-lmnt-works-on-trailgenic-tm-hikes-rvt57": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5fa3f9c0f5529bc59e8ab795bee2f5adb1a3824100981f19b61bdf03021afe42",
+   "bytes": 144201
+  },
+  "/science/electrolytes-physiological-stability-system": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4ee6ac6a197fbe84a41a22cd063f1095faaa3bb3147ceb4a593f02030f589a99",
+   "bytes": 144372
+  },
+  "/science/ella-report-001-hiking-heart-rate-field-conditions": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "372540e98506fce337b191c3022302c981eed54354d689461de0236e17d85c58",
+   "bytes": 150031
+  },
+  "/science/engine-and-governor-recovery-failed-before-performance": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0cbd18e27a1986081bbb21c46baa25c45f470cc3e364b382731f2c0363920df4",
+   "bytes": 132274
+  },
+  "/science/entity-engineering-trailgenic-experiment": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5aeca6deaa0f6e0f01aaef9d6367f3628e272a4d69e8a157d0fd268e48e34562",
+   "bytes": 125959
+  },
+  "/science/fasted-hiking-autophagy": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/science/fasted-hiking-autophagy-w56d8": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3187083f4de5b13937256cd769222aa3bca92f0bae0cdcdd2d05853df44a771f",
+   "bytes": 150045
+  },
+  "/science/fasted-hiking-pillar-fastenwandern-to-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8c24fd4e9b1d313bd141c8800aa0d289c835ee21000e61752654039388a42936",
+   "bytes": 122726
+  },
+  "/science/fat-first-summit-fueling-preserving-glycogen-on-the-climb": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "474942d67e7b1628d5f3c7818077caf810b40120b46eed32751991e975f59eaa",
+   "bytes": 119205
+  },
+  "/science/fuel-curve-science-ath-lytes-vs-lmnt-at-altitude": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a2a62e968ed57e7329b57b2c04e7c676a4cea2e25e5334013b6e3155e72d832f",
+   "bytes": 122411
+  },
+  "/science/glycogen-refill-timing-why-post-hike-ice-cream-works": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5e7ffc1b134d6e0779e02a4f9c9acdbab296f6b89a1f9fb2bae28779448bb9d1",
+   "bytes": 142265
+  },
+  "/science/heart-rate-drift-aerobic-adaptation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3b7a4272dd75654f7e62435f4595ac520eb9cc7fab55265928838d078acb1e7c",
+   "bytes": 121819
+  },
+  "/science/heat-training-for-longevity-thermoregulation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a5b18e1374a0712d19541b86f668b98f079a8e49e89c2fe7c397a4b1b34a0388",
+   "bytes": 120930
+  },
+  "/science/high-altitude-training": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "cc3d4c250ae589af7c1e2e84a518ff25d32a90e330f0051401b10cea63d193f4",
+   "bytes": 173528
+  },
+  "/science/hormesis-in-the-field": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a30469e117445d88e5d10f33812fd44aa06ca8b828b2116c34c42e9c0826dd14",
+   "bytes": 117508
+  },
+  "/science/hr-drift-adaptation-vs-fitness": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "50a4cbc8f9b2c446acafc752e7b841009e22c7cfb725caacead439b52fc1f78d",
+   "bytes": 121503
+  },
+  "/science/huberman-daily-protocols-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c23a17fd4d2bfc2d43dcbb5c184a10734adbca374aade921d6ae81e42b84b905",
+   "bytes": 135567
+  },
+  "/science/injury-prevention-on-the-descent-staying-strong-all-the-way-down": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ab46ca7f090d5291bc15fc52540c4d2efae30aa9dd841202c0c4825979304098",
+   "bytes": 119973
+  },
+  "/science/ketones-secondary-signal-aerobic-adaptation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "aaa90f49fb90f322e2b5bee5865bc5098496300b82cfe295159b6cd6334410b8",
+   "bytes": 120693
+  },
+  "/science/labor-day-reset-why-nature-frees-the-mind-more-than-a-day-off": {
+   "status": 301,
+   "location": "/playbooks/nature-reset-playbook",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/science/longevity-trajectory": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "84b23eddae2d41046dbd05d9a56ab1faf849e967937589d8680ef3cfed36f7a0",
+   "bytes": 132741
+  },
+  "/science/mental-resilience-on-the-trail-the-science-of-not-giving-up": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "9fda80f99db0517a51a8ae40fb1a0f8b356673db465dba92472d2942437d5a1c",
+   "bytes": 120024
+  },
+  "/science/nature-immersion-pillar": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "378ed52f890ef4f1850711ff9f295978ef511308ebdb704fcef04f7c08cf5149",
+   "bytes": 125647
+  },
+  "/science/norwegian-4x4-vs-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e3b0f88b744f992d3510c9b2d18cbf56e54f9f3c35c886a442158708c8bf5ba2",
+   "bytes": 127001
+  },
+  "/science/one-year-trailgenic-longevity-results": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "622ee72fbb30450f8af1780ef834a96ceeee3bb6035a5d528442382f7e0a8d61",
+   "bytes": 139550
+  },
+  "/science/overextension-fasted-hiking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0f0e96ab07760da567fa72030ff1ed938fef9d51d7433b62dbd4907db474b20f",
+   "bytes": 156642
+  },
+  "/science/positive-hr-drift-fatigue-signal-wheeler-peak": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b01a40d8c07a2bff5f1fe2c18390236b2c91fbe0a071ae74c72bffb008b6a599",
+   "bytes": 155844
+  },
+  "/science/recovery-science-descent": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f1e84cbb5c4d4f4d15afd40b435e7fb6fe3cc4db063ab7fe3824db22360b87fd",
+   "bytes": 119943
+  },
+  "/science/relyte-comparative-review": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b32388e1f55e817098018006ad368a626ed91e143505b03edb31fcf1cf8d01d0",
+   "bytes": 123222
+  },
+  "/science/research-datasets": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2699fb62516146a37cf608d1d79142925911d84c3208d7cf5e95f68ed9e36d85",
+   "bytes": 122514
+  },
+  "/science/salomon-vest-comparison-5-12-sense-pro-6": {
+   "status": 301,
+   "location": "/playbooks/hydration-vest-selection-playbook",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/science/science-of-sleep-for-endurance": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8dbe2c59a78a5c4d6bef60c0b6c0c00bf2b7971435b86abfdb85a51083efb0b5",
+   "bytes": 118724
+  },
+  "/science/science-post-fasted-summit-refueling-mount-wilson-trailgenic-3x3-protocol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c57aec2db8f119780ff47077f16dde1f7f131ef1da185dd07fb1ea6caf44a787",
+   "bytes": 127524
+  },
+  "/science/science-post-hike-protein-timing-trailgenic-autophagy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2c0b5b31b88c91859d8c6280eb568f8a034f34c80fb9a8c28a329d0aa8a0c491",
+   "bytes": 121399
+  },
+  "/science/six-alpine-efforts-cardiac-efficiency-autophagy-recovery-altitude": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "edfd438c65e83ccd121eb967f726d4cac80dc0ad48160a9c20e864bb500d405f",
+   "bytes": 122684
+  },
+  "/science/sleep-architecture-rem-deep-recovery": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4603ac6c7c9bd212a47dd5eb0590a63865f21499cfa82381e9d7f36c215716c0",
+   "bytes": 127907
+  },
+  "/science/sleep-hrv-and-recovery-after-prolonged-aerobic-stress": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "83325bcc5f0042c4c4175ad7defbb747894763f7d33f6f3e6784c97d82bdf2a9",
+   "bytes": 121305
+  },
+  "/science/sleep-hrv-nervous-system-reset": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "04bb1c50946bce2b56121ddbcd35e854bd2b908dcf3a4f280c8e2db809ae13fc",
+   "bytes": 126987
+  },
+  "/science/sleep-primary-driver-recovery": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "88a59699d4304fa0e3df4b413d09c78b22df9d5ff0afd8bff6f5d1e4b9d5cec7",
+   "bytes": 132599
+  },
+  "/science/sleep-response-high-load-dataset": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "50a644d25dd906946afd954c39655847101e733c312a276c6106fb22ec70a18d",
+   "bytes": 158193
+  },
+  "/science/trail-derived-biological-age": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "679682713c389eedff183ea0f0b5bc1de394442297d82fe42910db60f16533dd",
+   "bytes": 131104
+  },
+  "/science/trailgenic-daily-adaptation-loop": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e21b4439d09ecad7e38a5acd344db6f26c60e79076a75a117431eac1cffb29cf",
+   "bytes": 134814
+  },
+  "/science/trailgenic-longevity-method": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2c69e989f06710200f32fd81013ce841fcf107c7c3bc7ec76454051f4383edd2",
+   "bytes": 162015
+  },
+  "/science/trailgenic-method": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0211366d6187ed745117b917e991d8ec5aceadd7d0d58d2e9a11fc027a9410ad",
+   "bytes": 123719
+  },
+  "/science/trailgenic-personal-world-model": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "389a49cb0186711b27c1c99915f311706aed6a2b46bbcdd6c8239f5e999714e0",
+   "bytes": 125618
+  },
+  "/science/trailgenic-stress-stacking-baseline": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "299f08d37227b8372547a4511314f8d23746793d1f665c7666b760bdb09668e0",
+   "bytes": 130016
+  },
+  "/science/trailgenic-vs-population-age-adjusted-hr-drift": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4257de7c807babcfd48ce9bdc61745f19a86b4ac11b8b459ecfb7aec87e6b6fa",
+   "bytes": 138043
+  },
+  "/science/trailgenic-vs-wim-hof-method": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ca48b0af227063bca15ca4380c8b287f86837949309f2355006fda91afdc119f",
+   "bytes": 123535
+  },
+  "/science/triple-summit-field-study-elbert-pikes-wheeler": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0e9f92614d38e9a2389e614a598ab0d9a86b9183f52cb88b47f6b629b89788c4",
+   "bytes": 133141
+  },
+  "/science/what-is-vo2max-longevity": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f6cbaa09664b0498351db8ea4e9565521470458599cccdf9c864caa7aa7bf892",
+   "bytes": 126290
+  },
+  "/search-index": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "14ce4c71d4b8316bf2d760c24d3e50de6673761e00541a55c46a8fb8593ff6fe",
+   "bytes": 103689
+  },
+  "/search-index-json": {
+   "status": 301,
+   "location": "/search-index",
+   "content_type": "text/html",
+   "x_robots_tag": null,
+   "sha256": "87a9323ac85ce28867d5d7ce590c8f29b8d1a999961fca71bb33adef48683691",
+   "bytes": 166
+  },
+  "/sitemap.xml": {
+   "status": 200,
+   "location": null,
+   "content_type": "application/rss+xml; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "7ac80a99271a7a91540117d66590d458cd696b12bb381bf1aaf88cd07e1e07c8",
+   "bytes": 53151
+  },
+  "/sleep": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "b006e653f8569f70cb814ca6415ccef2a4014df5a9c6b4f54cfbba833c627f07",
+   "bytes": 130116
+  },
+  "/style-guide": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3920cced5007a28894ee092c0c3aa1e371ffa22a3a92f1527c70569cab538e7d",
+   "bytes": 283952
+  },
+  "/this-page-should-not-exist-404-check": {
+   "status": 404,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "90c032f35272ba1a7aa93027ab635e6610d4f24cf9e53c0624d00f065d7c7e7d",
+   "bytes": 906
+  },
+  "/tools/biological-age-calculator": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2230e6e1473ad70c67513fc6bbf9b79d8db482908160ffaad64031d90a2fd94b",
+   "bytes": 104692
+  },
+  "/trail-logs": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "efff3c57e3647a692072ea0f2eedc1f6d8c4a9a99240ac72801ef5eb0bf2cdb0",
+   "bytes": 253809
+  },
+  "/trail-logs/baden-powell-triple-summit-log": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "af01fecbddc64ad61a3383232f36a144ffc27a44ef63604a1044cd0106578f49",
+   "bytes": 142738
+  },
+  "/trail-logs/baldwin-hills-stairs": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "361e395a6e6df1b791f5a028705846ba101f4a6a0450598ce4142f35a5e0fda3",
+   "bytes": 141017
+  },
+  "/trail-logs/baldy-notch": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3fd1d53bb1c9267d206df9e7ca0edfef61c135ac43c86284bdf90a908f55fcaa",
+   "bytes": 142065
+  },
+  "/trail-logs/bright-angel-rim-to-river-to-rim-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "58d75fdc33c99e85e83dc85833ef4bf546ba8d29fac7243be4e568a67d957fe1",
+   "bytes": 143389
+  },
+  "/trail-logs/carbon-canyon-mindful-reset": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2e5db49e4fdda9367601c4361829e93400fee8fd8894ad698cf7dd571c8b9711",
+   "bytes": 143016
+  },
+  "/trail-logs/charleston-peak": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "50701e7279fc958c4a000d89e7750461e57c632ce308cd54efd6d85ccf7b58f6",
+   "bytes": 142222
+  },
+  "/trail-logs/cucamonga-peak": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "aed251e3dd6a98262807e89f22ad82baee313de8f00cff15c3caa468459b15d8",
+   "bytes": 141271
+  },
+  "/trail-logs/cucamonga-peak-one-year-later": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3e82bf656fb0acd1c6cb2f5251e8e66b56b453fceff5123d87c76f2b6feef362",
+   "bytes": 141721
+  },
+  "/trail-logs/half-dome-t3nxz": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a1945b3d4c4e64f5a2c1f048995f927a13dcb3be783882fe3f5d9271a01bbbca",
+   "bytes": 143207
+  },
+  "/trail-logs/humphreys-peak-cold-exposure-validation-summit": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a8fb7322e0a0748d1cbe8b8723573b681b9a20f457d388ac5548b172931b61c5",
+   "bytes": 143028
+  },
+  "/trail-logs/little-santa-anita-to-mount-wilson-apr-18-2026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c95e04325411839b6dcbb86612e793ab8d3380917f40e3068411154140e99b66",
+   "bytes": 143164
+  },
+  "/trail-logs/manitou-incline-altitude-stress-stacking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6edee9b6420a7a7057ac24ea238ed71767f5426fdf105b9f9fa600daeafc0038",
+   "bytes": 148266
+  },
+  "/trail-logs/mount-baldy-cold-exposure-protocol-ii": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a61e845c1cef4c6868c0ca222481bef3325cf969fb6489e3c54c81c11cefbaa7",
+   "bytes": 142207
+  },
+  "/trail-logs/mount-baldy-trailgenic-validation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "962ba9c21624f66a454f9e306eb7e7fae35178fc7af4f7f415682262b5d4713d",
+   "bytes": 143951
+  },
+  "/trail-logs/mount-baldy-via-register-ridge-autophagy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "f12264b03128db4a031fb9b45e9aa315793e92ad388682323b029912358a7bd9",
+   "bytes": 143872
+  },
+  "/trail-logs/mount-baldy-winter-stability-log-121325": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "2aa5f200b5b277c216a56b29eb9ccdd6253c6e62d8cc322b1efd9fc065a373f7",
+   "bytes": 143205
+  },
+  "/trail-logs/mount-elbert-fasted-14er-altitude-ceiling": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "be77719eaee51725b5bdc9392b73545ff3d80bdc03705d6d19c5a6d0e6e54690",
+   "bytes": 162492
+  },
+  "/trail-logs/mount-langley": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "67fd6448a0720d85839e000c3a375878ff2be028b9e8ecceb1b9829711d1254e",
+   "bytes": 143459
+  },
+  "/trail-logs/mount-rubidoux": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e33164e083c675c5ae1fce498be83cf3875898b8e9e14ee244216fb8492952af",
+   "bytes": 141552
+  },
+  "/trail-logs/mount-whitney": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8906a5b7c47c7fc80f5a2b868a2f5473bba0c09c06483b24cbc561dcf7dc9f05",
+   "bytes": 144304
+  },
+  "/trail-logs/mount-wilson-sturtevant-trail-fastest-summit-physiology-addendum-2026": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0a8490812d9919631df835d3d1507ac354154acb9bc598c5f198b7f0eddf18cc",
+   "bytes": 144073
+  },
+  "/trail-logs/mount-wilson-via-sturtevant-trail-summit-4": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a7659ec5d92cee35789ab09db92153d91445674bfa951a6e82e5d59852a647f9",
+   "bytes": 141610
+  },
+  "/trail-logs/mt-baldy-cold-exposure-training-fall-cellular-prep": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "76f4119bb3047c4686fba5012b4b41fd10339316a8b0f6c0116606d2a0c3663d",
+   "bytes": 141990
+  },
+  "/trail-logs/mt-baldy-ski-hut-autophagy-fast-test": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "334ccf6dfe7109eef4a964f88779dbcaeb91d93ea55b67715951f33ac34254d6",
+   "bytes": 142251
+  },
+  "/trail-logs/mt-baldy-snowline-of-stability": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c6a9e85b97860e61a963fe3c557be2b41b1ff4f43448bc777b24e3d873e439ae",
+   "bytes": 141914
+  },
+  "/trail-logs/norco-midweek-activation-world-model-baseline": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c89b1453f41f790e92a1cad93eded9158c1b2635ec8380def654cd1287ff2f10",
+   "bytes": 143197
+  },
+  "/trail-logs/ontario-peak-via-icehouse-canyon-trailgenic-tm-autophagy-hike": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5aab439bb8bb2d250a8db4a5b5349334ca74f71b32ff9a80265df978d3df0727",
+   "bytes": 142904
+  },
+  "/trail-logs/pikes-peak-crags-fasted-14er-recovery-governor": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d96c80f2b417ea405c2fc9f64a25bca661cb8f58be93722067e1a5e3e634ab10",
+   "bytes": 147360
+  },
+  "/trail-logs/pumpkin-rock-trail": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "c6da232b2794d408297af6c5fed738be8aa70cdd278ece024660e5c2279e386f",
+   "bytes": 142201
+  },
+  "/trail-logs/register-ridge-mount-baldy-low-strain-alpine-engine-validation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "0e0df74b123e19c865511121be4a206e2295d03dd80b76eaa360c88e7e28afb7",
+   "bytes": 144623
+  },
+  "/trail-logs/register-ridge-nuun-cold-condition-test": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6a0de95ca959c7a0013769b574770b7defd93ef1a189b149d3e4dd7f39ab6d8c",
+   "bytes": 141641
+  },
+  "/trail-logs/register-ridge-to-mt-baldy-ath-vs-lmnt-test-edition": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e7c30a78265a0fb2a04d6849cc44462c09fd22f4187d4d82bc9f9da9feee91ab",
+   "bytes": 143941
+  },
+  "/trail-logs/ross-mountain-via-vincent-gap": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "42e7ecbb792dbb6597c499d22d6062fb4a0c26e09b8bcef735cdd4cea6813942",
+   "bytes": 141544
+  },
+  "/trail-logs/san-bernardino-peak-limber-pine-springs-altitude-training": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "4a0aba7da6024ac4deedb8544cd4da44f529a3171c3e6ddd3a1a001afee24fad",
+   "bytes": 142731
+  },
+  "/trail-logs/san-gorgonio-fifth-summit": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "5175536d67c23c7b3979fac6d883c242957a2beb914557a4dc9bf4ee1c43c473",
+   "bytes": 142693
+  },
+  "/trail-logs/san-gorgonio-fourth-summit": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "e233e8cde658013ce8f9c0795a3ebb8909b80ff7a1ba687a96bf8975741e7e90",
+   "bytes": 143220
+  },
+  "/trail-logs/san-gorgonio-longitudinal": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "8c7fb0abbeffc62f9d907a0f176ea78bd3049ed8dfdec7dad2c96fac7029214d",
+   "bytes": 144323
+  },
+  "/trail-logs/san-jacinto": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "17a3ed11374488e88539cc7fb65ff3625e76eebcf9b65c939a44f11645e639f3",
+   "bytes": 142231
+  },
+  "/trail-logs/san-jacinto-marion-mountain-session-metabolic-validation": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a6c2dd412509143e055cbbe7c6a9682bbe8deca46ce8a863157e3d941e0bf83c",
+   "bytes": 143677
+  },
+  "/trail-logs/santa-ana-riverwalk-trail": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "440c87af61748444fbb3a99b1e98176358b8ff5ee737f89548b5cc880adc0d22",
+   "bytes": 142350
+  },
+  "/trail-logs/ski-hut-baldy-devils-backbone-winter-2025": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "292ecbe888f8ad93b22319debcfe9937e4cd56b23e3174be9592cd704596a8dd",
+   "bytes": 142085
+  },
+  "/trail-logs/skinsuit-winter-safety-protocol-trailgenic": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "3c2b753d101e3edec93d6ef471e317b0d971cd578b4090d9bfc06c118f4c7d23",
+   "bytes": 143710
+  },
+  "/trail-logs/strawberry-peak": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "ffc907f596c2d303aa456c7d644faae162fdb95cbac65e42385951f184341bfe",
+   "bytes": 140655
+  },
+  "/trail-logs/telegraph-peak-manker-autophagy": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "a77ee5d2dc52237bfc3b31856e459e0983d6ff9726b4daa8d36c91244c1959ad",
+   "bytes": 141272
+  },
+  "/trail-logs/wheeler-peak-fasted-fatigue-reveal-summit": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "806ef3c2e0b88cf209e1fd16602ba54398f95d8d5bbe241a9951a7e41c8a53cb",
+   "bytes": 147580
+  },
+  "/trail-logs/wisdom-tree-to-hollywood-sign": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "d9553e12f195a8a4abca6bd7d4d00fe75859d516afac2b96320576fdee1946e2",
+   "bytes": 141552
+  },
+  "/trailgenic-chinese": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "6b16715db00895c3128a715763531e21a0e0cc82b623aece6cee5b88c166798b",
+   "bytes": 117266
+  },
+  "/trailgenic-tm-en-espanol": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "27f0319ac8f904823286810d3a8e3805560be2f34d1bdcc83f1be3d937717846",
+   "bytes": 119742
+  },
+  "/walking": {
+   "status": 200,
+   "location": null,
+   "content_type": "text/html; charset=utf-8",
+   "x_robots_tag": null,
+   "sha256": "64bcf9cb10e9751539e578f63e601f39357ddbd7e4af2e5a8a5cc262066963fc",
+   "bytes": 174709
+  }
+ },
+ "hosts": {
+  "https://trailgenic.com/": {
+   "status": 301,
+   "location": "https://www.trailgenic.com/"
+  },
+  "http://trailgenic.com/": {
+   "status": 301,
+   "location": "https://trailgenic.com/"
+  },
+  "http://www.trailgenic.com/": {
+   "status": 301,
+   "location": "https://www.trailgenic.com/"
+  },
+  "https://trailgenic.com/hiking": {
+   "status": 301,
+   "location": "https://www.trailgenic.com/hiking"
+  },
+  "https://trailgenic.com/.well-known/tool-registry.json": {
+   "status": 404,
+   "location": null
+  }
+ }
+}
