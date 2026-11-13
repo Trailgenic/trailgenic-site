@@ -1,6 +1,30 @@
 # TrailGenic Release Ledger
 
-One entry per release, newest first. Record the source dataset (its snapshot path and SHA-256 in `Trailgenic/world-model-data`) and cutoff, affected pages, the review decision, the deployed commit, and the live URLs. Add an entry for a deferred report review too, with what is missing and the next review date.
+One entry per batch, newest first. Add an entry for a deferred report review too, with what is missing and the next review date.
+
+### Entry format
+
+Copy this block for each batch:
+
+```
+## YYYY-MM-DD · Weekly hub batch | Monthly aggregate release | Correction | Other
+
+- **Snapshot:** snapshots/YYYY-MM-DD/<file>.xlsx in Trailgenic/world-model-data
+- **SHA-256:** <full fingerprint>
+- **Data cutoff:** <latest session date included>; per hub if they differ
+- **Changed pages and release IDs:**
+  - /walking: YYYY-MM-DD.N (cutoff YYYY-MM-DD, sessions added: ...)
+  - ...
+- **Skipped:** <hubs with no eligible new sessions, or "none">
+- **Page update date:** YYYY-MM-DD (visible "Updated", dateModified and sitemap lastmod aligned on substantive edits)
+- **Review:** <reviewer> PASS on <commit> (list any HOLDs first)
+- **Deployed:** <merge commit on main>
+- **Live check:** <result>
+- **Live URLs:** <changed pages>
+- **Notes:** <carried-forward sessions, historical cohorts kept, intervening changes relevant to citation measurement>
+```
+
+Older entries below predate this format.
 
 Published data on the site is not all at the same cutoff:
 
