@@ -1,0 +1,5 @@
+{
+  "_note": "Intended changes since the 2026-11-11 cutover. Redirects live in vercel.json and are checked from there.",
+  "removed_pages": ["/style-guide"],
+  "added_files": ["/favicon.ico"]
+}

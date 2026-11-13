@@ -35,6 +35,26 @@
       "source": "/guides",
       "destination": "/playbooks",
       "statusCode": 301
+    },
+    {
+      "source": "/podcast-episodes",
+      "destination": "/podcast",
+      "statusCode": 301
+    },
+    {
+      "source": "/biomarker-index-how-to-calculate",
+      "destination": "/biomarkers/biomarker-index-how-to-calculate",
+      "statusCode": 301
+    },
+    {
+      "source": "/playbooks/does-eating-break-autophagy-on-fasted-hike",
+      "destination": "/playbooks/does-eating-break-autophagy-on-a-fasted-hike",
+      "statusCode": 301
+    },
+    {
+      "source": "/science/fasted-hiking-autophagy",
+      "destination": "/science/fasted-hiking-autophagy-w56d8",
+      "statusCode": 301
     }
   ]
 }

@@ -21,9 +21,9 @@ jobs:
         with: { node-version: 20 }
       - name: Build
         run: node build.mjs
-      - name: Local parity (build vs snapshot)
+      - name: Changes since cutover (build vs snapshot)
         run: python3 tools/parity_local.py
-      - name: Remote parity (deployment vs build)
+      - name: Deployment check (deployment vs build)
         env:
           INPUT_BASE: ${{ github.event.inputs.base }}
         run: |

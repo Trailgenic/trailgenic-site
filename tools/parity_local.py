@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Check the built site against the live-site snapshot, file by file.
+"""List what the build changes compared with the cutover snapshot.
 
-Every page in public/ must equal the snapshot page with only the self-hosting
-rewrite applied (Webflow file addresses -> /cdn/ copies, integrity hashes
-recomputed). Text files must be byte-identical. Writes reports/parity-local.json.
+At cutover every page had to match the snapshot exactly. Since then, edits are
+intended, so this script reports which pages differ (for the reviewer) and fails
+only if a page disappeared without being listed in tools/changes.json.
+Writes reports/parity-local.json and reports/changes-since-cutover.md.
 """
 import json
 import os
@@ -39,9 +40,19 @@ for p, r in pages.items():
     if left:
         results["webflow_refs_left"][p] = sorted(set(left))
 
+REMOVED = set(json.load(open(os.path.join(ROOT, "tools", "changes.json"))).get("removed_pages", []))
+unexpected_missing = [p for p in results["missing"] if p not in REMOVED]
 os.makedirs(os.path.join(ROOT, "reports"), exist_ok=True)
+md = ["# Changes since the 2026-11-11 cutover", "",
+      f"- Pages unchanged: {len(results['identical'])}",
+      f"- Pages changed: {len(results['different'])}",
+      f"- Pages removed on purpose: {len([p for p in results['missing'] if p in REMOVED])}",
+      f"- Pages missing without being listed: {len(unexpected_missing)}", "", "## Changed pages", ""]
+md += [f"- `{p}`" for p in sorted(results["different"])]
+md += ["", "## Removed pages", ""] + [f"- `{p}`" for p in sorted(results["missing"])]
+open(os.path.join(ROOT, "reports", "changes-since-cutover.md"), "w").write("\n".join(md) + "\n")
 json.dump(results, open(os.path.join(ROOT, "reports", "parity-local.json"), "w"), indent=1)
 print({k: len(v) for k, v in results.items()})
-if results["different"] or results["missing"]:
-    print("FIRST PROBLEMS:", (results["different"] + results["missing"])[:10])
+if unexpected_missing:
+    print("PAGES MISSING WITHOUT BEING LISTED IN tools/changes.json:", unexpected_missing[:20])
     sys.exit(1)
