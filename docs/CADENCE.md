@@ -37,7 +37,7 @@ Adopted November 13, 2026. The first hub and aggregate deployments under this rh
 - **One release:** one independent review and one live check.
 - **December 1, 2026 (first aggregate release):**
   - Reconcile the 108-session baseline (`2026-09-30.1`) to the latest verified total, preserving the historical cohorts.
-  - Check /biomarkers. Its page data carries `counts` with `total: 108` under release `2026-09-30.1`, which reads as a current total, not a historical reference. Confirm that during the pass and update or relabel it accordingly.
+  - Check /biomarkers. Its page data carries `counts` with `total: 108` under release `2026-09-30.1`, which reads as a current total, not a historical reference. Confirmed November 13 (Ella): current page data says `total: 108`; the visible revision date is September 30 but `dateModified` still says September 24. In the pass, reconcile the count against the latest verified snapshot and align the dates when the page changes.
 
 ### Rules for both speeds
 
