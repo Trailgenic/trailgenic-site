@@ -1,7 +1,7 @@
 # Changes since the 2026-11-11 cutover
 
-- Pages unchanged: 2
-- Pages changed: 318
+- Pages unchanged: 1
+- Pages changed: 319
 - Pages removed on purpose: 1
 - Pages missing without being listed: 0
 
@@ -273,6 +273,7 @@
 - `/science/triple-summit-field-study-elbert-pikes-wheeler`
 - `/science/what-is-vo2max-longevity`
 - `/search-index`
+- `/sitemap.xml`
 - `/sleep`
 - `/tools/biological-age-calculator`
 - `/trail-logs`

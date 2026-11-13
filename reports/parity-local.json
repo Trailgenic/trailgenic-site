@@ -1,7 +1,6 @@
 {
  "identical": [
-  "/robots.txt",
-  "/sitemap.xml"
+  "/robots.txt"
  ],
  "different": [
   "/",
@@ -270,6 +269,7 @@
   "/science/triple-summit-field-study-elbert-pikes-wheeler",
   "/science/what-is-vo2max-longevity",
   "/search-index",
+  "/sitemap.xml",
   "/sleep",
   "/tools/biological-age-calculator",
   "/trail-logs",
