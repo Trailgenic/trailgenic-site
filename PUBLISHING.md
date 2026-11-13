@@ -24,6 +24,10 @@ Each page file is the full page as Webflow published it. Lines like `<!--@partia
 
 Reviewer for routine edits: Ella's builder drafts, Ella's checker reviews the preview (step 4), and the automated build checks must pass. Mike is not required for routine edits. (Pending Mike's confirmation.)
 
+## Cadence and release ledger
+
+`docs/CADENCE.md` sets the publishing rhythms and roles. Record every release, and every deferred report review, in `docs/RELEASES.md`.
+
 ## Undo
 
 - **Fastest:** in Vercel, open the project's Deployments, find the previous production deployment, and choose **Promote to Production** (or **Instant Rollback**). The site switches back in seconds.
