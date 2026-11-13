@@ -1,7 +1,7 @@
 # Changes since the 2026-11-11 cutover
 
-- Pages unchanged: 3
-- Pages changed: 317
+- Pages unchanged: 2
+- Pages changed: 318
 - Pages removed on purpose: 1
 - Pages missing without being listed: 0
 
@@ -91,6 +91,7 @@
 - `/lexicon/trailgenic-adaptation-curve`
 - `/lexicon/world-model-session`
 - `/lexicon/zone-2-hiking`
+- `/llms.txt`
 - `/longevity`
 - `/longevity/cold-and-heat-stress-at-altitude-hormesis-you-cant-get-in-a-sauna`
 - `/longevity/fasting-beyond-the-trail-why-fasted-movement-changes-longevity`

@@ -4,12 +4,12 @@
 // assets      self-hosted images, stylesheets, scripts and downloads (served under /cdn/)
 // The build fails, leaving the live site untouched, if a page uses a missing
 // partial, links a /cdn/ file that does not exist, or carries a stale integrity hash.
-// It also fails if a page's <head> is malformed, or if an indexable page does not carry
-// exactly one canonical tag, inside <head>, naming its own address. Pages marked
-// noindex and the 404 page must carry none.
+// It also fails if a page breaks the rules in tools/check-page.mjs (head structure and
+// canonical tags), which are checked on the parsed page, not with text patterns.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { checkPage } from "./tools/check-page.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, "public");
@@ -48,24 +48,7 @@ for (const file of walk(pagesDir)) {
     const digest = crypto.createHash(m[2]).update(fs.readFileSync(fp)).digest("base64");
     if (digest !== m[3]) errors.push(`${rel}: integrity hash out of date for ${m[1]}`);
   }
-  {
-    const url = "https://www.trailgenic.com/" + rel.replace(/\.html$/, "").replace(/^index$/, "");
-    const headEnd = html.toLowerCase().indexOf("</head>");
-    const head = html.slice(0, headEnd);
-    const bare = head.replace(/<(script|style|noscript)\b[\s\S]*?<\/\1>/gi, "");
-    if (/<(div|section|p|a|img|h[1-6])\b/i.test(bare)) errors.push(`${rel}: page content inside <head>`);
-    const tags = [...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)];
-    const noindex = (head.match(/<meta\b[^>]*name="robots"[^>]*>/gi) || []).some((t) => /noindex/i.test(t)) || rel === "404.html";
-    if (noindex) {
-      if (tags.length) errors.push(`${rel}: noindex page should not carry a canonical tag`);
-    } else if (tags.length !== 1) {
-      errors.push(`${rel}: expected exactly 1 canonical tag, found ${tags.length}`);
-    } else {
-      const href = (tags[0][0].match(/href="([^"]*)"/) || [])[1];
-      if (tags[0].index > headEnd) errors.push(`${rel}: canonical tag is outside <head>`);
-      if (href !== url) errors.push(`${rel}: canonical is ${href}, expected ${url}`);
-    }
-  }
+  errors.push(...checkPage(rel, html));
   const dest = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, html);

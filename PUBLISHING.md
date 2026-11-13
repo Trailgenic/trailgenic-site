@@ -18,7 +18,7 @@ Each page file is the full page as Webflow published it. Lines like `<!--@partia
 
 1. **Branch.** Create a branch from `main` (for example `edit/hiking-2026-11-20`).
 2. **Edit** the page file, partial, file or redirect. For a new page, add `src/pages/<address>.html` (copy the closest existing page) and its sitemap entry.
-3. **Push the branch.** Vercel builds a preview automatically and posts its address on the commit (GitHub shows it under the commit's checks). The build stops with a clear message if a page uses an unknown partial, links a `/cdn/` file that does not exist, or carries an out-of-date integrity hash. A failed build never touches the live site.
+3. **Push the branch.** Vercel builds a preview automatically and posts its address on the commit (GitHub shows it under the commit's checks). The build stops with a clear message if a page uses an unknown partial, links a `/cdn/` file that does not exist, or carries an out-of-date integrity hash. It also stops if a page breaks the page rules in `tools/check-page.mjs`: the head must be well formed, every indexable page needs exactly one canonical tag in the head naming its own address, and pages marked noindex (and the 404 page) carry none. Those rules have their own tests (`npm test`), which run before every build. A failed build never touches the live site.
 4. **Review.** The checker reviews the preview address, not just the file change: the edited page, one neighbouring page, and the page's title and description.
 5. **Merge** the branch into `main`. Vercel deploys `main` to production within a minute or two.
 
@@ -34,4 +34,7 @@ Reviewer for routine edits: Ella's builder drafts, Ella's checker reviews the pr
 - Keep every published address. If a page must move, add a 301 in `vercel.json` from the old address.
 - Keep each page's canonical tag, title and description in its `<head>` in step with the page.
 - Do not edit `public/`; it is rebuilt from scratch on every deploy.
-- To check a change locally: `node build.mjs` (needs Node 20+), then open files in `public/`.
+- To check a change locally: `npm ci` once, then `npm test && node build.mjs` (needs Node 20+), then open files in `public/`.
+- `python3 tools/orphans.py` (after a build) refreshes `reports/orphans.md`, the list of pages that few or no other pages link to.
+- The founder blood-pressure summary is one sentence, used word for word on the homepage, About, Outcomes, My Journey, Prevention and in `llms.txt`. If it changes, change it in all six places and bump the record version on `/prevention#blood-pressure-record`.
+- The three Method pages share one core definition (the `#core-definition` box). Change it in all three and in `llms.txt` together.

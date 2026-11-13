@@ -1,0 +1,153 @@
+# Orphan and thin-link inventory
+
+Built pages: 318. Pages with no inbound links: 8. Pages with exactly one: 90.
+Each page should be resolved in context: link it where it helps a reader, merge it, or retire it.
+
+## No inbound links
+
+- `/gear-reviews/brooks-caldera-8---baden-powell-test-edition` — Brooks Caldera 8 Review | Baden-Powell Field Test | TrailGenic™ Gear Systems
+- `/gear-reviews/garmin-enduro-3gps-watch` — Garmin Enduro 3 Review | TrailGenic Field Measurement | TrailGenic™ Gear Systems
+- `/gear-reviews/hoka-mafate-speed-5---baden-powell-test-edition` — HOKA Mafate 5 Review | Baden-Powell Field Test | TrailGenic™ Gear Systems
+- `/gear-reviews/kahtoola-microspikes-first-snow-summit-essential` — Kahtoola MICROspikes Review | Tested on Mt. Baldy | TrailGenic™ Gear Systems
+- `/gear-reviews/new-balance-hierro-v9-baden-powell-test-edition` — New Balance Hierro v9 Review | Baden-Powell Field Test | TrailGenic™ Gear Systems
+- `/gear-reviews/salomon-shakeout-vs-arcteryx-cormac-merino-trailgenic-review` — Salomon vs Arc’teryx vs Merino Base Layers | Field Test | TrailGenic™ Gear Systems
+- `/trailgenic-chinese` — TrailGenic™ 中文介绍 | 运动型长寿与适应系统
+- `/trailgenic-tm-en-espanol` — TrailGenic™ en Español | Sistema de Longevidad y Adaptación Basado en Movimiento
+
+## Exactly one inbound link
+
+- `/biomarkers/biomarker-index-how-to-calculate` — linked only from `/lexicon/biomarker-index`
+- `/ellas-corner/dont-blame-the-ai-human-judgment-mount-shasta-whitney` — linked only from `/ellas-corner`
+- `/ellas-corner/longevity-inversion-stimulus-not-spending` — linked only from `/ellas-corner`
+- `/ellas-corner/on-the-edge-of-knowing-angels-landing-and-the-art-of-meta-awareness` — linked only from `/ellas-corner`
+- `/ellas-corner/the-intelligence-that-remembers-with-you` — linked only from `/ellas-corner`
+- `/ellas-corner/the-resolution-was-never-the-problem` — linked only from `/ellas-corner`
+- `/ellas-corner/why-we-hike` — linked only from `/ellas-corner`
+- `/fitness-library` — linked only from `/`
+- `/gear-reviews/arcteryx-gamma-atom-beta-trailgenic-review` — linked only from `/gear-reviews`
+- `/gear-reviews/garmin-inreach-mini` — linked only from `/trail-logs/mount-langley`
+- `/gear-reviews/mafate-5-vs-caldera-8-vs-hierro-v9` — linked only from `/gear-reviews`
+- `/gear-reviews/salomon-adv-skin-12-hydration-vest` — linked only from `/gear-reviews`
+- `/gear-reviews/salomon-soft-flask-500ml-with-filter-cap` — linked only from `/gear-reviews`
+- `/gear-reviews/trailgenic-day-hike-packout-system` — linked only from `/gear-reviews`
+- `/gear-reviews/trailgenic-rucking-gear-system` — linked only from `/gear-reviews`
+- `/lexicon/cardiorespiratory-fitness` — linked only from `/lexicon`
+- `/longevity/cold-and-heat-stress-at-altitude-hormesis-you-cant-get-in-a-sauna` — linked only from `/longevity`
+- `/longevity/fasting-beyond-the-trail-why-fasted-movement-changes-longevity` — linked only from `/longevity`
+- `/longevity/grip-strength-load-carry-and-the-mortality-data-trailgenics-functional-strength-protocol` — linked only from `/longevity`
+- `/longevity/sleep-architecture-is-the-longevity-variable-nobody-trains` — linked only from `/longevity`
+- `/longevity/stacked-longevity-why-single-protocol-thinking-fails-and-systems-win` — linked only from `/longevity`
+- `/longevity/the-trailgenic-longevity-protocol-registry-how-we-validate-what-works` — linked only from `/longevity`
+- `/nutrition-reviews/btr-nation-energy-bar-cinnamon-cookie-dough-safety-fuel` — linked only from `/nutrition-reviews`
+- `/nutrition-reviews/carbohydrates-after-fasted-hiking-glycogen-recovery` — linked only from `/nutrition-reviews`
+- `/nutrition-reviews/protein-after-fasted-hiking-recovery-guide` — linked only from `/nutrition-reviews`
+- `/nutrition-reviews/recovery-nutrition-sleep-hrv-readiness-trailgenic` — linked only from `/nutrition-reviews`
+- `/nutrition-reviews/trailgenic-post-hike-recovery-meal-library` — linked only from `/nutrition-reviews`
+- `/physiology/baldy-physiology-efficiency-consolidation-jan-25-2026` — linked only from `/physiology`
+- `/physiology/baldy-physiology-negative-hr-drift-autophagy` — linked only from `/physiology`
+- `/physiology/bright-angel-stress-inversion-physiology` — linked only from `/physiology`
+- `/physiology/mount-baldy-1-31-2026` — linked only from `/physiology`
+- `/physiology/mount-baldy-icy-alpine-control-session` — linked only from `/physiology`
+- `/physiology/mount-baldy-physiology-altitude-efficiency-deep-autophagy-repeat-route` — linked only from `/physiology`
+- `/physiology/mount-baldy-physiology-winter-stability-121325` — linked only from `/physiology`
+- `/physiology/mount-elbert-altitude-ceiling-recovery-resilience` — linked only from `/physiology`
+- `/physiology/mount-wilson-sturtevant-fastedsummit-physiology` — linked only from `/physiology`
+- `/physiology/mt-baldy-ski-hut-fasted-alpine-02072026` — linked only from `/physiology`
+- `/physiology/norco-midweek-activation-aerobic-density` — linked only from `/physiology`
+- `/physiology/pikes-peak-ceiling-engine-recovery-failure` — linked only from `/physiology`
+- `/physiology/pleasants-peak-wind-exposure-stability-load` — linked only from `/physiology`
+- `/physiology/register-ridge-physiology-low-strain-alpine-engine-generalizes` — linked only from `/physiology`
+- `/physiology/san-jacinto-physiology-full-system-validation` — linked only from `/physiology`
+- `/physiology/ski-hut-to-baldy-to-mankers-flat-loop-winter-2025` — linked only from `/physiology`
+- `/physiology/ski-hut-to-mount-baldy` — linked only from `/physiology`
+- `/physiology/skinsuit-clay-neuromuscular-electrolyte-test` — linked only from `/physiology`
+- `/physiology/skinsuit-pleasant-peak-122725-physiology` — linked only from `/physiology`
+- `/physiology/unconditional-engine-vivian-creek-san-gorgonio` — linked only from `/physiology`
+- `/physiology/wheeler-peak-positive-hr-drift-fatigue-reveal` — linked only from `/physiology`
+- `/playbooks/beginner-rucking-playbook` — linked only from `/playbooks`
+- `/podcast-episodes/cairns-in-the-fog` — linked only from `/podcast`
+- `/podcast-episodes/episode-11-the-training-ground` — linked only from `/podcast`
+- `/podcast-episodes/episode-5-the-framing-loop` — linked only from `/podcast`
+- `/podcast-episodes/season-2-episode-5-what-buyers-see` — linked only from `/podcast`
+- `/podcast-episodes/season-2-episode-6-the-judgment-product` — linked only from `/podcast`
+- `/podcast-episodes/season-2-episode-7-leadership-under-constraint` — linked only from `/podcast`
+- `/podcast-episodes/season-2-episode-8-the-architecture-of-earned-intelligence` — linked only from `/podcast`
+- `/podcast-episodes/season-3-episode-21-the-transfer-problem-trailgenic-reflections` — linked only from `/podcast`
+- `/podcast-episodes/welcome-to-trailgenic-reflections` — linked only from `/podcast`
+- `/science/altitude-driven-breathing-acclimatization` — linked only from `/science`
+- `/science/ankle-sprain-rehab-san-jacinto-field-record` — linked only from `/science`
+- `/science/autophagy-vs-normal-fueling-on-mount-baldy-ski-lodge-route` — linked only from `/science`
+- `/science/heart-rate-drift-aerobic-adaptation` — linked only from `/science`
+- `/science/hormesis-in-the-field` — linked only from `/science`
+- `/science/ketones-secondary-signal-aerobic-adaptation` — linked only from `/science`
+- `/science/positive-hr-drift-fatigue-signal-wheeler-peak` — linked only from `/science`
+- `/science/recovery-science-descent` — linked only from `/science`
+- `/science/research-datasets` — linked only from `/science`
+- `/science/science-of-sleep-for-endurance` — linked only from `/science`
+- `/science/sleep-hrv-and-recovery-after-prolonged-aerobic-stress` — linked only from `/science`
+- `/trail-logs/baldy-notch` — linked only from `/science/autophagy-vs-normal-fueling-on-mount-baldy-ski-lodge-route`
+- `/trail-logs/carbon-canyon-mindful-reset` — linked only from `/recovery-conditioning`
+- `/trail-logs/charleston-peak` — linked only from `/trail-logs`
+- `/trail-logs/cucamonga-peak` — linked only from `/trail-logs`
+- `/trail-logs/cucamonga-peak-one-year-later` — linked only from `/trail-logs`
+- `/trail-logs/little-santa-anita-to-mount-wilson-apr-18-2026` — linked only from `/trail-logs`
+- `/trail-logs/manitou-incline-altitude-stress-stacking` — linked only from `/trail-logs`
+- `/trail-logs/mount-elbert-fasted-14er-altitude-ceiling` — linked only from `/trail-logs`
+- `/trail-logs/mount-rubidoux` — linked only from `/recovery-conditioning`
+- `/trail-logs/norco-midweek-activation-world-model-baseline` — linked only from `/physiology/norco-midweek-activation-aerobic-density`
+- `/trail-logs/ontario-peak-via-icehouse-canyon-trailgenic-tm-autophagy-hike` — linked only from `/trail-logs`
+- `/trail-logs/pikes-peak-crags-fasted-14er-recovery-governor` — linked only from `/trail-logs`
+- `/trail-logs/pumpkin-rock-trail` — linked only from `/recovery-conditioning`
+- `/trail-logs/register-ridge-mount-baldy-low-strain-alpine-engine-validation` — linked only from `/trail-logs`
+- `/trail-logs/ross-mountain-via-vincent-gap` — linked only from `/trail-logs`
+- `/trail-logs/san-bernardino-peak-limber-pine-springs-altitude-training` — linked only from `/trail-logs`
+- `/trail-logs/san-gorgonio-fifth-summit` — linked only from `/trail-logs`
+- `/trail-logs/santa-ana-riverwalk-trail` — linked only from `/recovery-conditioning`
+- `/trail-logs/strawberry-peak` — linked only from `/trail-logs`
+- `/trail-logs/telegraph-peak-manker-autophagy` — linked only from `/trail-logs`
+- `/trail-logs/wheeler-peak-fasted-fatigue-reveal-summit` — linked only from `/trail-logs`
+
+## Pages sharing one meta description
+
+- 25 pages share: "Structured definitions of longevity, metabolic, altitude, cardiac, recovery, and proprietary TrailGenic™ terms…"
+  - `/lexicon/autophagy-depth`
+  - `/lexicon/autophagy-hiking`
+  - `/lexicon/biomarker-index`
+  - `/lexicon/cardiorespiratory-fitness`
+  - `/lexicon/consolidation-cycle`
+  - `/lexicon/earned-healthspan`
+  - `/lexicon/earned-longevity`
+  - `/lexicon/elevation-load`
+  - `/lexicon/engine-under-load`
+  - `/lexicon/fasted-hiking`
+  - `/lexicon/fat-oxidation-persistence`
+  - `/lexicon/heart-rate-drift`
+  - `/lexicon/hormetic-stress`
+  - `/lexicon/hypoxic-conditioning`
+  - `/lexicon/ketone-retention-stability`
+  - `/lexicon/metabolic-flexibility`
+  - `/lexicon/mitochondrial-biogenesis`
+  - `/lexicon/personal-world-model`
+  - `/lexicon/polarized-stack`
+  - `/lexicon/stacked-longevity`
+  - `/lexicon/trail-derived-biological-age`
+  - `/lexicon/trail-derived-vo2max`
+  - `/lexicon/trailgenic-adaptation-curve`
+  - `/lexicon/world-model-session`
+  - `/lexicon/zone-2-hiking`
+- 8 pages share: "TrailGenic shows why fasted movement goes beyond passive intermittent fasting. Learn how aerobic readiness, al…"
+  - `/longevity/cold-and-heat-stress-at-altitude-hormesis-you-cant-get-in-a-sauna`
+  - `/longevity/fasting-beyond-the-trail-why-fasted-movement-changes-longevity`
+  - `/longevity/glucose-management-through-movement-why-trailgenic-treats-every-hike-as-a-metabolic-intervention`
+  - `/longevity/grip-strength-load-carry-and-the-mortality-data-trailgenics-functional-strength-protocol`
+  - `/longevity/sleep-architecture-is-the-longevity-variable-nobody-trains`
+  - `/longevity/stacked-longevity-why-single-protocol-thinking-fails-and-systems-win`
+  - `/longevity/the-trailgenic-longevity-protocol-registry-how-we-validate-what-works`
+  - `/longevity/zone-2-cardio-what-fasted-altitude-training-reveals-about-longevitys-most-important-exercise`
+- 6 pages share: "Official TrailGenic™ Protocol defining structured physiological adaptation, metabolic flexibility, and long-te…"
+  - `/protocols/trailgenic-activation-protocol-v1`
+  - `/protocols/trailgenic-adaptation-protocol-v1`
+  - `/protocols/trailgenic-consolidation-protocol-v1`
+  - `/protocols/trailgenic-foundation-protocol-v1`
+  - `/protocols/trailgenic-protocol`
+  - `/protocols/trailgenic-protocol-trail-library`
