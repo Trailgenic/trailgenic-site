@@ -1,8 +1,8 @@
 # TrailGenic Release Ledger
 
-One entry per release, newest first. Record the source dataset and cutoff, affected pages, the review decision, the deployed commit, and the live URLs. Add an entry for a deferred report review too, with what is missing and the next review date.
+One entry per release, newest first. Record the source dataset (its snapshot path and SHA-256 in `Trailgenic/world-model-data`) and cutoff, affected pages, the review decision, the deployed commit, and the live URLs. Add an entry for a deferred report review too, with what is missing and the next review date.
 
-The site's published dataset snapshot is September 30, 2026 (108 sessions). No release below changed it. The master workbook held 110 sessions as of November 11, 2026 (through Ruck 20 and Walk 27); that difference awaits the first Rhythm 1 release.
+The site's published dataset snapshot is September 30, 2026 (108 sessions). No release below changed it. The first frozen snapshot, `snapshots/2026-11-11/` in `Trailgenic/world-model-data` (SHA-256 `8460f353…a7c8c6`), holds 110 sessions through Ruck 20 and Walk 27. That difference awaits the first Rhythm 1 release.
 
 ---
 

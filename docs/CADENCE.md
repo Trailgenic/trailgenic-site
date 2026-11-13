@@ -12,7 +12,14 @@ Owner: Ella. Adopted November 13, 2026. Either Ella or Claude can pick up from t
 ## Rhythm 1: Site and dataset updates
 
 - **When:** checked once a month. Released only when the evidence warrants it. No qualifying change means no release, and the "as of" dates stay put.
-- **Intake:** reconcile the latest master workbook with the release ledger. Sessions are logged when they happen, so monthly counts vary (October 2026 had none because of an ankle injury).
+- **Data flow:**
+  - Mike logs each session in the master workbook right after it happens. That working file is the only copy anyone edits.
+  - Publishing waits for this monthly check; it does not follow each session.
+- **Intake:**
+  - Commit a frozen copy of the master to the private repository `Trailgenic/world-model-data`, under `snapshots/YYYY-MM-DD/`. That date is the data cutoff.
+  - Log it in that repository's `SNAPSHOTS.md`.
+  - Reconcile it with this ledger.
+- **Session counts vary.** October 2026 had none because of an ankle injury.
 - **Scope:** supported changes to the four modality hubs (/walking, /rucking, /running, /hiking), /foundation-comparison and /science/research-datasets, bundled into one release.
 - **Cohort rule:**
   - Foundation's same-route comparisons stay tied to their own cohort.
