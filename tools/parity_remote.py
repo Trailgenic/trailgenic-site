@@ -6,8 +6,11 @@ Usage: BASE=https://trailgenic-site.vercel.app python3 tools/parity_remote.py
 
 For every address the live Webflow site answered when the snapshot was taken:
   200 pages and files  -> must return 200 with exactly the built bytes
-  301 redirects        -> must return 301 to the same target (/about -> /about-us-new by design)
+  301 redirects        -> must return 301 to the same target
   404 addresses        -> must still return 404
+Intended changes since cutover override the snapshot: every redirect in vercel.json
+must answer 301 to its target, pages listed as removed in tools/changes.json must
+return 404, and files listed as added must match the build.
 Also checks every self-hosted file, the cited addresses, trailing-slash handling,
 and that the 404 page is the built one. Writes reports/parity-remote.json and .md.
 """
@@ -28,7 +31,10 @@ from convert import page_file  # noqa: E402
 BASE = os.environ["BASE"].rstrip("/")
 PUB = os.path.join(ROOT, "public")
 UA = "Mozilla/5.0 TrailGenicParityCheck/1.0"
-INTENDED = {"/about": "/about-us-new"}
+VERCEL = json.load(open(os.path.join(ROOT, "vercel.json")))
+REDIRECTS = {r["source"]: r["destination"] for r in VERCEL.get("redirects", [])}
+CHANGES = json.load(open(os.path.join(ROOT, "tools", "changes.json")))
+REMOVED = set(CHANGES.get("removed_pages", []))
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -68,14 +74,23 @@ def main():
     pages = json.load(open(os.path.join(ROOT, "snapshot", "manifest.json")))["pages"]
     checks = []
     for path, rec in pages.items():
-        if rec["status"] == 200:
+        if path in REDIRECTS:
+            checks.append(("redirect", path, 301, None, REDIRECTS[path]))
+        elif path in REMOVED:
+            checks.append(("not_found", path, 404, None, None))
+        elif rec["status"] == 200:
             local = os.path.join(PUB, page_file(path) if "html" in (rec["content_type"] or "") else path.lstrip("/"))
             checks.append(("page", path, 200, open(local, "rb").read(), None))
         elif rec["status"] in (301, 302, 308):
-            target = INTENDED.get(path, loc_path(rec["location"]))
+            target = loc_path(rec["location"])
             checks.append(("redirect", path, 301, None, target))
         else:
             checks.append(("not_found", path, 404, None, None))
+    for src, dst in REDIRECTS.items():
+        if src not in pages:
+            checks.append(("redirect", src, 301, None, dst))
+    for f in CHANGES.get("added_files", []):
+        checks.append(("page", f, 200, open(os.path.join(PUB, f.lstrip("/")), "rb").read(), None))
     nf = open(os.path.join(PUB, "404.html"), "rb").read()
     for sample in ("/hiking/", "/science/trailgenic-method/", "/prevention/"):
         checks.append(("trailing_slash", sample, 308, None, sample.rstrip("/")))
