@@ -70,7 +70,7 @@ The site's published dataset snapshot is September 30, 2026 (108 sessions). No r
 ## 2026-11-13 · Dataset structured-data fix
 
 - **Source dataset / cutoff:** no dataset change.
-- **Affected pages:** three physiology pages (Dataset description and creator markup)
+- **Affected pages:** 12 pages (7 physiology, 4 science including /science/research-datasets, 1 protocols): Dataset description and creator markup
 - **Decision:** merged as pull request #1 (`fix/dataset-structured-data`)
 - **Deployed:** `aa6f212`
 - **Live check:** none recorded. Covered by the full live checks after later releases.
