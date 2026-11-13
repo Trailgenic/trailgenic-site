@@ -1,13 +1,13 @@
 {
  "base": "https://www.trailgenic.com",
- "checked_utc": "2026-11-13T18:57:21Z",
+ "checked_utc": "2026-11-13T18:59:16Z",
  "summary": {
   "page": {
    "checked": 321,
    "passed": 321
   },
   "not_found": {
-   "checked": 7,
+   "checked": 6,
    "passed": 6
   },
   "redirect": {
@@ -27,13 +27,5 @@
   "checked": 29,
   "passed": 29
  },
- "failures": [
-  {
-   "kind": "not_found",
-   "path": "/favicon.ico",
-   "ok": false,
-   "status": 200,
-   "note": "status 200, expected 404"
-  }
- ]
+ "failures": []
 }
