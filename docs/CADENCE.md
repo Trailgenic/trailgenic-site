@@ -9,23 +9,56 @@ Owner: Ella. Adopted November 13, 2026. Either Ella or Claude can pick up from t
 - **Each batch** gets one release review (PASS/HOLD on an exact commit and preview) and one live check after merge.
 - **Mike** approves anything published in his first-person voice.
 
-## Rhythm 1: Site and dataset updates
+## Rhythm 1: Site and dataset updates (two speeds)
 
-- **When:** checked once a month. Released only when the evidence warrants it. No qualifying change means no release, and the "as of" dates stay put.
-- **Data flow:**
-  - Mike logs each session in the master workbook right after it happens. That working file is the only copy anyone edits.
-  - Publishing waits for this monthly check; it does not follow each session.
-- **Intake:**
-  - Commit a frozen copy of the master to the private repository `Trailgenic/world-model-data`, under `snapshots/YYYY-MM-DD/`. That date is the data cutoff.
-  - Log it in that repository's `SNAPSHOTS.md`.
-  - Reconcile it with this ledger.
-- **Session counts vary.** October 2026 had none because of an ankle injury.
-- **Scope:** supported changes to the four modality hubs (/walking, /rucking, /running, /hiking), /foundation-comparison and /science/research-datasets, bundled into one release.
+Adopted November 13, 2026. The first hub and aggregate deployments under this rhythm wait until Grokbot captures the November 27 panel.
+
+### Data flow (both speeds)
+
+- Mike logs each session in the master workbook right after it happens. That working file is the only copy anyone edits.
+- **Handoff:** Mike hands over the workbook on Sunday night.
+- **Freeze:** the verified workbook is committed to the private repository `Trailgenic/world-model-data` under `snapshots/YYYY-MM-DD/`, named for its data cutoff, and logged in that repository's `SNAPSHOTS.md` with its SHA-256.
+- **Missing handoff:** no batch that week. Pending sessions carry forward to the next verified workbook.
+- **Session counts vary.** About four sessions a week at normal pace (one per modality); October 2026 had none because of an ankle injury.
+
+### Speed 1: Weekly hub batch (Monday)
+
+- **Scope:** the four modality hubs, /walking, /rucking, /running and /hiking. Only hubs with eligible new sessions change.
+- **Each changed hub** gets its own release ID (`YYYY-MM-DD.N`) and its own data cutoff (its latest included session date), shown on the page.
+- **No new sessions:** no publication. The hub's dates stay as they are.
+- **One batch per week:** one independent review and one live check.
+
+### Speed 2: Monthly aggregate release (the 1st)
+
+- **Scope:** the homepage, /longevity, /science, /physiology, /sleep, /prevention, /outcomes, /foundation-comparison, /science/research-datasets, and any other page that states a total across modalities.
+- **Data:** reuses the latest verified weekly snapshot. No separate intake.
+- **One cutoff** is stated across all aggregate pages, and readers are linked to the hubs for newer sessions.
+- **Historical comparison windows keep their original cohorts.** These include the 93-session anniversary audit, the 101-session checkpoint, the September 24 research baseline and Walking's S1–24 windows.
+- **One release:** one independent review and one live check.
+- **December 1, 2026 (first aggregate release):**
+  - Reconcile the 108-session baseline (`2026-09-30.1`) to the latest verified total, preserving the historical cohorts.
+  - Check /biomarkers. Its page data carries `counts` with `total: 108` under release `2026-09-30.1`, which reads as a current total, not a historical reference. Confirm that during the pass and update or relabel it accordingly.
+
+### Rules for both speeds
+
 - **Cohort rule:**
   - Foundation's same-route comparisons stay tied to their own cohort.
   - The hiking record stays tied to its terrain, conditions and recovery evidence.
   - The two are never mixed in one claim.
-- **Material corrections** ship when ready, outside the monthly check.
+- **Two different dates:**
+  - The **data cutoff** is the date of the latest session included.
+  - The **page update date** is when the page content changed.
+  - For a substantive page edit, the visible "Updated" date, `dateModified` and sitemap `lastmod` change together, and only then.
+- **Material corrections** ship when ready, outside the schedule, with their own review and live check.
+
+### Why weekly hubs
+
+- The hubs gain new observations readers can use, at about four sessions a week.
+- Ahrefs' analysis of about 17 million AI citations found AI assistants cited more recently published and updated pages on average than organic search did. That study does not estimate the benefit of weekly over monthly publishing for TrailGenic.
+- **Measurement:**
+  - The November 27 panel is the pre-cadence checkpoint.
+  - In the next comparable run, look for verified hub citations and accurate use of the new sessions.
+  - Record every intervening site change in the ledger so results can be interpreted.
 
 ## Rhythm 2: Longitudinal reports
 
@@ -37,7 +70,7 @@ Owner: Ella. Adopted November 13, 2026. Either Ella or Claude can pick up from t
 ## Citation measurement
 
 - Run a citation panel after material changes to what the site can answer, not on a calendar.
-- **Next:** Grokbot's panel on or after November 27, 2026, measuring the Prevention release.
+- **Next:** Grokbot's panel on or after November 27, 2026, measuring the Prevention release. It is also the checkpoint before the two-speed cadence starts.
 - **Method:** the original hiking query is the control, and the same three engines are used each time. Three scores are kept separate: brand mention, verified first-party citation, and accurate use of the evidence.
 
 ## Standing rules
@@ -50,7 +83,7 @@ Owner: Ella. Adopted November 13, 2026. Either Ella or Claude can pick up from t
 
 ## Queued work
 
-Build items 1 and 2 now, in parallel. Hold their production deployment until Grokbot captures the citation panel (on or after November 27, 2026). Record the live commit and capture date with the panel results.
+Build items 1 and 2 now, in parallel. Hold their production deployment, and the first weekly hub and monthly aggregate deployments, until Grokbot captures the citation panel (on or after November 27, 2026). Record the live commit and capture date with the panel results.
 
 1. **Structured data.** Start with the strongest evidence pages. Use only dates and fields the visible page supports.
 2. **Sitemap dates.** Derive them from substantive edits instead of hand-editing them.
