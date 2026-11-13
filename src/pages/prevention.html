@@ -7,7 +7,7 @@
       "@id": "https://www.trailgenic.com/prevention#webpage",
       "url": "https://www.trailgenic.com/prevention",
       "name": "Movement-Based Prevention | TrailGenic",
-      "description": "Evidence-informed movement implementation, an original decision framework, and a source-linked prevention evidence map. Educational only; not clinically validated.",
+      "description": "Evidence-informed movement implementation, the founder’s first-person account and blood-pressure record, published research on walking and blood pressure, an original decision framework, and a source-linked prevention evidence map. Educational only; not clinically validated.",
       "isPartOf": {
         "@id": "https://www.trailgenic.com/#website"
       },
@@ -20,7 +20,7 @@
         "@id": "https://ellaentity.ai/#ella",
         "name": "Ella"
       },
-      "dateModified": "2026-10-29"
+      "dateModified": "2026-11-13"
     },
     {
       "@type": "CreativeWork",
@@ -43,6 +43,19 @@
       }
     },
     {
+        "@type": "Observation",
+        "@id": "https://www.trailgenic.com/prevention#blood-pressure-record",
+        "identifier": "TG-BP-001",
+        "name": "Founder blood-pressure record (TG-BP-001)",
+        "url": "https://www.trailgenic.com/prevention#blood-pressure-record",
+        "version": "1.0",
+        "dateModified": "2026-11-13",
+        "description": "Founder-reported blood-pressure record: 153 mmHg systolic in 2023, when a doctor advised long-term medication; 112–118 / 68–74 mmHg across 2024–2026, without medication. This is one person’s record. It does not establish what caused the change or predict anyone else’s result.",
+        "observationAbout": { "@type": "Person", "name": "Mike Ye" },
+        "measurementTechnique": "Founder-reported; home blood-pressure monitoring for 2024–2026 readings",
+        "isPartOf": { "@id": "https://www.trailgenic.com/prevention#webpage" }
+      },
+      {
       "@type": "BreadcrumbList",
       "@id": "https://www.trailgenic.com/prevention#breadcrumbs",
       "itemListElement": [
@@ -68,7 +81,7 @@
 <meta property="og:url" content="https://www.trailgenic.com/prevention">
 <meta name="twitter:card" content="summary">
 <!-- Structured data is maintained in Webflow page schema. --></head><body><div class="w-embed">
-<!-- TrailGenic Prevention | canonical HTML Embed draft v0.1 | 2026-10-29 | NOT APPROVED FOR PUBLICATION -->
+<!-- TrailGenic Prevention | v0.2 | 2026-11-13 -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&display=swap');
 .tgp{--ink:#1a1a18;--sub:#605f5b;--gold:#a8893e;--line:#dfdbd2;--paper:#fbf9f5;--warm:#f4efe6;font-family:'EB Garamond',Georgia,serif;color:var(--ink);background:#fff;max-width:1000px;margin:0 auto;padding:54px 28px 88px;font-size:19px;line-height:1.65;box-sizing:border-box}
@@ -112,6 +125,13 @@
 .tgp li{margin:0 0 9px}
 .tgp .navgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:19px}
 .tgp .navgrid a{padding:18px 15px;border:1px solid var(--line);background:var(--paper);display:block;text-decoration:none;font-family:'DM Mono',monospace;font-size:12px}
+.tgp .account{margin:22px 0 30px;padding:6px 0 6px 26px;border-left:3px solid var(--gold)}
+.tgp .account p{font-size:21px;line-height:1.6;color:#2b2925}
+.tgp .account p:last-child{margin-bottom:0}
+.tgp .record{background:var(--paper);border:1px solid var(--line);padding:28px 26px 20px;scroll-margin-top:24px}
+.tgp .record .tablewrap{background:#fff}
+.tgp .fine{font-family:'DM Mono',monospace;font-size:13px;line-height:1.7;color:#6f6b62}
+.tgp .record td:first-child{font-size:12px;white-space:nowrap}
 .tgp .foot{padding:36px 0 0;font-size:15px}
 .tgp .foot p{font-size:14px}
 @media(max-width:760px){.tgp{padding:35px 18px 65px}.tgp .columns,.tgp .navgrid{grid-template-columns:1fr 1fr}.tgp .six{grid-template-columns:1fr}.tgp .block{padding:43px 0}}
@@ -124,7 +144,7 @@
 <h1>Movement-Based Prevention</h1>
 <p class="intro">Science tells us why movement matters. A sustainable practice has to answer a harder question: how do you begin, return, observe, and adapt in real life?</p>
 <p>TrailGenic translates established physical-activity evidence into a repeatable implementation framework. Start with accessible movement. Make practice sustainable. Record what happened and what followed. Revise the next reasonable decision.</p>
-<div class="meta">By Mike Ye × Ella (AI) · Editorial version v0.1 · October 29, 2026 · Educational; no independent clinical review</div>
+<div class="meta">By Mike Ye × Ella (AI) · Editorial version v0.2 · November 13, 2026 · Educational; no independent clinical review</div>
 <div class="notice"><p><strong>Evidence boundary:</strong> This is an educational movement framework, not medical care, a personalized exercise prescription, or a clinically validated disease-prevention program. TrailGenic’s longitudinal field record involves one person and does not prove prevention outcomes.</p></div>
 </header>
 <section class="block" aria-labelledby="definition">
@@ -138,8 +158,49 @@
 <div class="card"><span class="number">ADAPTATION</span><strong>Let context inform the next choice.</strong><p>Record activity and what followed. Interpret observations conservatively; a wearable estimate is not a diagnosis.</p></div>
 </div>
 </section>
+<section class="block" aria-labelledby="founder-story">
+<div class="eyebrow">02 / WHY THIS EXISTS</div>
+<h2 id="founder-story">The founder’s account</h2>
+<p class="fine">First-person account by Mike Ye, founder of TrailGenic. One person’s experience, in his words.</p>
+<blockquote class="account">
+<p>In 2023, a doctor told me I would be on blood pressure medication for life. My systolic reading was 153.</p>
+<p>I grew up in a poor immigrant family. Doctor visits were rare, medication was expensive, and prevention wasn’t taught. So when I heard “for life,” I wanted to know what was still in my own hands.</p>
+<p>I had spent my career in mergers and acquisitions, where nothing is accepted blindly and every assumption gets tested. I pointed that same discipline at my own body. I went up... hike by hike, with a blood pressure monitor at home to tell me whether it was working.</p>
+<p>I reversed my hypertension. Since 2024 my readings have stayed between 112 and 118 over 68 to 74, without medication.</p>
+<p>My own path ran through fasted hiking, altitude, electrolytes, cold, and disciplined recovery. None of that is required to begin. What carries over is simpler... movement you can repeat, an honest record of what followed, and patience.</p>
+<p>Where I grew up, health was something you earned because you could not afford to buy it. Mountains don’t charge admission. That is why I built TrailGenic... so the practice, and the record behind it, are open to anyone.</p>
+<p>This is my experience. I can’t promise anyone the same result, and I would never tell anyone to skip their doctor.</p>
+</blockquote>
+<div class="record" id="blood-pressure-record">
+<div class="eyebrow">RECORD TG-BP-001 · FOUNDER BLOOD-PRESSURE RECORD · V1.0 · NOVEMBER 13, 2026</div>
+<h3>Blood-pressure record</h3>
+<p>Founder-reported blood-pressure record: 153 mmHg systolic in 2023, when a doctor advised long-term medication; 112–118 / 68–74 mmHg across 2024–2026, without medication. This is one person’s record. It does not establish what caused the change or predict anyone else’s result.</p>
+<div class="tablewrap"><table><thead><tr><th>Period</th><th>Reading</th><th>Measurement setting</th><th>Medication</th><th>Source</th></tr></thead><tbody>
+<tr><td>2023</td><td>153 mmHg systolic. Diastolic value not published.</td><td>Clinical context: a doctor advised long-term blood-pressure medication. Exact date and device not published.</td><td>Long-term medication advised by a doctor.</td><td>Founder-reported by Mike Ye. Not independently verified.</td></tr>
+<tr><td>2024–2026</td><td>112–118 mmHg systolic / 68–74 mmHg diastolic, repeated readings.</td><td>Home blood-pressure monitoring. Individual dated readings and device not published.</td><td>None.</td><td>Founder-reported by Mike Ye. Not independently verified.</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>What this record shows:</strong> one person’s reported readings before and during a sustained movement practice.</li>
+<li><strong>What it does not show:</strong> which factors caused the change. Hiking, altitude, fasting, electrolytes, cold exposure, and recovery habits all changed over the same period. It also does not show what another person should expect, or that movement replaces clinical care.</li>
+<li><strong>Record status:</strong> the readings are published as ranges, as reported. If dated individual readings are added, the record version will change and the change will be noted here.</li>
+</ul>
+<p style="margin-bottom:0">Blood-pressure diagnosis and treatment belong with qualified clinical care. Do not stop or change prescribed medication without your clinician.</p>
+</div>
+</section>
+<section class="block" aria-labelledby="walking-blood-pressure-research">
+<div class="eyebrow">03 / PUBLISHED RESEARCH</div>
+<h2 id="walking-blood-pressure-research">What published research says about walking and blood pressure</h2>
+<p>This section summarizes external research. It is separate from the founder record above, and none of it was produced by TrailGenic. Source access checked November 13, 2026; no independent clinical review has been conducted.</p>
+<div class="tablewrap"><table><thead><tr><th>Entry</th><th>Finding &amp; population</th><th>Evidence class / source</th><th>Does not establish</th></tr></thead><tbody>
+<tr><td>BP-R1</td><td>A Cochrane review included 73 randomized trials with 5,763 participants aged 16 to 84. In the 5,060 participants pooled for systolic blood pressure, walking lowered it by 4.11 mmHg on average (95% CI −5.22 to −3.01; moderate-certainty evidence). In the 4,711 pooled for diastolic blood pressure, the average fall was 1.79 mmHg (95% CI −2.51 to −1.07; low-certainty evidence).</td><td>Systematic review of randomized trials · <a href="https://doi.org/10.1002/14651858.CD008823.pub2">Lee et al., “Walking for hypertension,” Cochrane Database of Systematic Reviews (2021)</a></td><td>That any one person will see this change, or a change the size of the founder record.</td></tr>
+<tr><td>BP-R2</td><td>Increasing physical activity lowers systolic and diastolic blood pressure by about 3 to 4 mmHg on average.</td><td>Professional society scientific statement on physical activity · <a href="https://doi.org/10.1161/HYP.0000000000000196">American Heart Association, Hypertension (2021)</a></td><td>What any one person will see, or which treatment a person needs today.</td></tr>
+<tr><td>BP-R3</td><td>Current US guideline: lifestyle measures, including physical activity, are recommended for all adults to prevent and treat high blood pressure. For adults with stage 1 hypertension at lower cardiovascular risk, the guideline recommends starting with lifestyle changes and adding medication if blood pressure is still 130/80 mmHg or higher after 3 to 6 months. For stage 2 hypertension, it recommends starting medication together with lifestyle changes.</td><td>Clinical practice guideline · <a href="https://doi.org/10.1161/CIR.0000000000001356">2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults, Circulation (2025)</a></td><td>That medication is unnecessary for a given person. Treatment decisions belong with a clinician.</td></tr>
+<tr><td>BP-R4</td><td>Regular physical activity can help people keep a healthy weight and lower their blood pressure. It is one of several habits, alongside diet, sleep, limiting alcohol, and not smoking, that help prevent high blood pressure.</td><td>Public-health guidance · <a href="https://www.cdc.gov/high-blood-pressure/prevention/index.html">CDC, Preventing High Blood Pressure</a></td><td>The right activity or amount for an individual.</td></tr>
+</tbody></table></div>
+<div class="callout"><p><strong>How the research and the founder record relate:</strong> The trials report average reductions of a few mmHg from walking programs. The founder record reports a much larger change, over years, during a practice that changed several things at once. The research supports the direction of the change. It does not explain the size of one person’s change, and the founder record should not be read as a typical result.</p></div>
+</section>
 <section class="block" aria-labelledby="framework">
-<div class="eyebrow">02 / ORIGINAL KNOWLEDGE OBJECT</div>
+<div class="eyebrow">04 / ORIGINAL KNOWLEDGE OBJECT</div>
 <h2 id="framework">The TrailGenic Movement Implementation Map</h2>
 <p><strong>Object ID:</strong> TG-PREV-MAP · <strong>Editorial version:</strong> v0.1, 2026-10-29 · <strong>Type:</strong> Educational decision framework · <strong>Authors:</strong> Mike Ye and Ella (AI).</p>
 <p>This six-stage implementation map is TrailGenic’s proposed contribution: a traceable way to translate general activity guidance into questions about real-world execution. It is <strong>not</strong> a tested clinical algorithm, safety clearance, individualized plan, or disease-risk score.</p>
@@ -155,7 +216,7 @@
 <p><strong>Provenance and limitation:</strong> This map derives from TrailGenic’s repeatable practice → response → recovery → return interpretation model, supported by the September 2026 World Model Datasets Charter and Project Bible. It has not been independently evaluated for adherence, prevention outcomes, or clinical safety. Its six stages are proposed operational concepts, not validated thresholds.</p>
 </section>
 <section class="block" aria-labelledby="modalities">
-<div class="eyebrow">03 / ACCESSIBLE MOVEMENT</div>
+<div class="eyebrow">05 / ACCESSIBLE MOVEMENT</div>
 <h2 id="modalities">Four research modalities. Many ways to begin.</h2>
 <div class="columns">
 <a class="card featured" href="https://www.trailgenic.com/walking"><span class="number">CONTROL LAYER</span><strong>Walking</strong><p>Repeatable, accessible field observation. Begin with walking or another appropriate movement option.</p></a>
@@ -168,7 +229,7 @@
 <p><strong>What is not required:</strong> fasting, altitude exposure, cold or heat stress, added load, a fixed electrolyte routine, or proprietary wearables. The canonical Six Pillars describe TrailGenic’s research contexts and method; they are not universal health exposures.</p>
 </section>
 <section class="block" aria-labelledby="registry">
-<div class="eyebrow">04 / VERIFIABLE EVIDENCE SPINE</div>
+<div class="eyebrow">06 / VERIFIABLE EVIDENCE SPINE</div>
 <h2 id="registry">Prevention Evidence Map — Registry v0.1</h2>
 <p>Each claim identifies where external evidence ends and TrailGenic implementation begins. These are source-linked editorial entries, not findings from a TrailGenic clinical trial. Source access checked October 29, 2026; no independent clinical review has been conducted.</p>
 <div class="tablewrap"><table><thead><tr><th>Claim ID</th><th>Source-backed statement &amp; population</th><th>Evidence class / source</th><th>Does not establish</th></tr></thead><tbody>
@@ -181,14 +242,14 @@
 <p class="micro">Registry governance: all entries require source recheck, population scope, reviewer attribution and versioned updates before publication as clinical-facing guidance. “Evidence class” describes the external source, not TrailGenic’s efficacy.</p>
 </section>
 <section class="block" aria-labelledby="field">
-<div class="eyebrow">05 / THE FIRST-PARTY RESEARCH RECORD</div>
+<div class="eyebrow">07 / THE FIRST-PARTY RESEARCH RECORD</div>
 <h2 id="field">A field record, not a prevention trial.</h2>
 <p>TrailGenic’s latest <em>verified accessible</em> master snapshot is dated <strong>September 30, 2026</strong>: <strong>108 recorded movement sessions</strong> comprising 26 walking, 19 rucking, 21 running and 42 hiking records. The 42 hikes total <strong>455.90 miles</strong> and <strong>172,836 feet of recorded ascent</strong>. The fixed 93-session anniversary cohort, 101-session checkpoint and 107-session research baseline retain separate as-of dates and analysis windows.</p>
 <p>These measurements document one participant’s activity and selected responses. They are neither a sample of patients nor evidence that the TrailGenic method prevents disease, reduces healthcare costs, reverses aging or prolongs life. The purpose of this record is to make observation, context and uncertainty inspectable. <a href="https://www.trailgenic.com/outcomes">Explore dated outcomes</a> and <a href="https://www.trailgenic.com/physiology">physiology methods</a>.</p>
 <div class="callout"><p><strong>TrailGenic’s distinct contribution:</strong> The connection between what was attempted, what happened under the recorded conditions, how the following period was observed, and which next practice can be reasonably reconsidered. No single wearable score establishes a physiological diagnosis.</p></div>
 </section>
 <section class="block" aria-labelledby="next">
-<div class="eyebrow">06 / LEARN MORE</div>
+<div class="eyebrow">08 / LEARN MORE</div>
 <h2 id="next">From scientific guidance to an honest next step.</h2>
 <p>This hub will connect an accessible implementation playbook, a source-by-source evidence registry, and additional real-world examples as evidence and methods are verified. Until then, follow published public-health guidance and discuss conditions, limitations or symptoms with an appropriate qualified professional.</p>
 <div class="navgrid">
@@ -196,8 +257,8 @@
 </div>
 </section>
 <footer class="foot">
-<p><strong>Editorial disclosure:</strong> Mike Ye (field research and stewardship) × Ella (AI; research synthesis, drafting and longitudinal interpretation). AI contribution is disclosed; no independent clinical reviewer or medical credential is claimed. Editorial version 0.1, October 29, 2026. No independent clinical review has been conducted. This material is educational and does not establish clinical efficacy.</p>
-<p>Knowledge object TG-PREV-MAP v0.1 · Future canonical URL: https://www.trailgenic.com/prevention · Source snapshot: September 30, 2026 · Not a medical service or device.</p>
+<p><strong>Editorial disclosure:</strong> Mike Ye (field research and stewardship) × Ella (AI; research synthesis, drafting and longitudinal interpretation). AI contribution is disclosed; no independent clinical reviewer or medical credential is claimed. Editorial version 0.2, November 13, 2026. No independent clinical review has been conducted. This material is educational and does not establish clinical efficacy.</p>
+<p>Knowledge object TG-PREV-MAP v0.1 · Canonical URL: https://www.trailgenic.com/prevention · Source snapshot: September 30, 2026 · Not a medical service or device.</p>
 </footer>
 </main>
 </div><!--@partial webflow-scripts--><!--@partial site-footer--></body></html>

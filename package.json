@@ -1,0 +1,12 @@
+{
+  "name": "trailgenic-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tools/check-page.test.mjs"
+  },
+  "dependencies": {
+    "parse5": "8.0.0"
+  }
+}

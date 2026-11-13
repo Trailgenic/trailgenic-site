@@ -4,9 +4,12 @@
 // assets      self-hosted images, stylesheets, scripts and downloads (served under /cdn/)
 // The build fails, leaving the live site untouched, if a page uses a missing
 // partial, links a /cdn/ file that does not exist, or carries a stale integrity hash.
+// It also fails if a page breaks the rules in tools/check-page.mjs (head structure and
+// canonical tags), which are checked on the parsed page, not with text patterns.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { checkPage } from "./tools/check-page.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, "public");
@@ -45,6 +48,7 @@ for (const file of walk(pagesDir)) {
     const digest = crypto.createHash(m[2]).update(fs.readFileSync(fp)).digest("base64");
     if (digest !== m[3]) errors.push(`${rel}: integrity hash out of date for ${m[1]}`);
   }
+  errors.push(...checkPage(rel, html));
   const dest = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, html);

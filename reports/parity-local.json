@@ -1,6 +1,5 @@
 {
  "identical": [
-  "/llms.txt",
   "/robots.txt",
   "/sitemap.xml"
  ],
@@ -89,6 +88,7 @@
   "/lexicon/trailgenic-adaptation-curve",
   "/lexicon/world-model-session",
   "/lexicon/zone-2-hiking",
+  "/llms.txt",
   "/longevity",
   "/longevity/cold-and-heat-stress-at-altitude-hormesis-you-cant-get-in-a-sauna",
   "/longevity/fasting-beyond-the-trail-why-fasted-movement-changes-longevity",
