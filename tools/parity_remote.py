@@ -35,6 +35,7 @@ VERCEL = json.load(open(os.path.join(ROOT, "vercel.json")))
 REDIRECTS = {r["source"]: r["destination"] for r in VERCEL.get("redirects", [])}
 CHANGES = json.load(open(os.path.join(ROOT, "tools", "changes.json")))
 REMOVED = set(CHANGES.get("removed_pages", []))
+ADDED = set(CHANGES.get("added_files", []))
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -74,6 +75,8 @@ def main():
     pages = json.load(open(os.path.join(ROOT, "snapshot", "manifest.json")))["pages"]
     checks = []
     for path, rec in pages.items():
+        if path in ADDED:
+            continue  # checked below against the build
         if path in REDIRECTS:
             checks.append(("redirect", path, 301, None, REDIRECTS[path]))
         elif path in REMOVED:
