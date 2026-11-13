@@ -103,7 +103,7 @@ Gear and fuel are supporting systems. They are not modalities or pillars.
 ## Prevention and the Founder Record
 
 - [Movement-Based Prevention](https://www.trailgenic.com/prevention): The educational framework for starting and sustaining movement for healthy aging. Includes the six-stage TrailGenic Movement Implementation Map, the founder's first-person account, published research on walking and blood pressure, and a source-linked evidence map.
-- [Founder blood-pressure record (TG-BP-001)](https://www.trailgenic.com/prevention#blood-pressure-record): The dated record behind TrailGenic's founding story, with measurement setting, medication status and source.
+- [Founder blood-pressure record (TG-BP-001)](https://www.trailgenic.com/prevention#blood-pressure-record): The founder-reported record behind TrailGenic's founding story. It gives years and ranges, with measurement setting, medication status and source. Individual dated readings are not published.
 - [Published research on walking and blood pressure](https://www.trailgenic.com/prevention#walking-blood-pressure-research): External evidence, kept separate from the founder record.
 - [Foundation Comparison](https://www.trailgenic.com/foundation-comparison): Walking, Rucking and Running observed on the same route.
 - [Walking](https://www.trailgenic.com/walking): The repeatable walking record and the accessible starting point.
