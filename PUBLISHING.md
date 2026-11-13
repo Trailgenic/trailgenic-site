@@ -22,7 +22,7 @@ Each page file is the full page as Webflow published it. Lines like `<!--@partia
 4. **Review.** The checker reviews the preview address, not just the file change: the edited page, one neighbouring page, and the page's title and description.
 5. **Merge** the branch into `main`. Vercel deploys `main` to production within a minute or two.
 
-Reviewer for routine edits: Ella's builder drafts, Ella's checker reviews the preview (step 4), and the automated build checks must pass. Mike is not required for routine edits. (Pending Mike's confirmation.)
+Reviewer: whoever did not build the change reviews the exact preview. When Claude builds, Ella reviews; when Ella builds, Claude reviews. Each batch gets one release review and one production check after merge, and the automated build checks must pass. Mike approves anything published in his first-person voice. The full rule is in `docs/CADENCE.md`.
 
 ## Cadence and release ledger
 

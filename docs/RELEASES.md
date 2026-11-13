@@ -2,7 +2,15 @@
 
 One entry per release, newest first. Record the source dataset (its snapshot path and SHA-256 in `Trailgenic/world-model-data`) and cutoff, affected pages, the review decision, the deployed commit, and the live URLs. Add an entry for a deferred report review too, with what is missing and the next review date.
 
-The site's published dataset snapshot is September 30, 2026 (108 sessions). No release below changed it. The first frozen snapshot, `snapshots/2026-11-11/` in `Trailgenic/world-model-data` (SHA-256 `8460f353…a7c8c6`), holds 110 sessions through Ruck 20 and Walk 27. That difference awaits the first Rhythm 1 release.
+Published data on the site is not all at the same cutoff:
+
+- **Walking and Rucking hubs:** release `2026-11-11.1`, master through November 11, 2026 (Walk S27, Ruck S20). Published on Webflow before the cutover and carried over unchanged; see the entry below.
+- **Aggregate surfaces** (homepage, /longevity, /physiology, /science, /sleep, /biomarkers, /hiking, /prevention, /outcomes): 108 sessions through September 30, 2026 (release `2026-09-30.1`).
+- **Running hub and /foundation-comparison:** release `2026-09-24.2`.
+
+The first frozen snapshot, `snapshots/2026-11-11/` in `Trailgenic/world-model-data` (SHA-256 `8460f353…a7c8c6`), holds 110 sessions. The first monthly intake decides two things:
+- which aggregate surfaces catch up to the 110-session master;
+- which historical comparison windows keep their original cohorts (for example, the 93-session anniversary audit, the 101-session checkpoint, and Walking's S1–24 windows).
 
 ---
 
@@ -73,7 +81,17 @@ The site's published dataset snapshot is September 30, 2026 (108 sessions). No r
 - **Affected pages:** 12 pages (7 physiology, 4 science including /science/research-datasets, 1 protocols): Dataset description and creator markup
 - **Decision:** merged as pull request #1 (`fix/dataset-structured-data`)
 - **Deployed:** `aa6f212`
-- **Live check:** none recorded. Covered by the full live checks after later releases.
+- **Review:** none recorded.
+- **Live check:** no dedicated check. Later full live checks confirm production availability of the 12 pages.
+- **Open:** Search Console validation of the original Dataset warnings is a separate result and not yet recorded.
+
+## 2026-11-11 · Walking and Rucking hub release 2026-11-11.1 (published on Webflow)
+
+- **Source dataset / cutoff:** `Trailgenic-World-Model-Datasets-MASTER-through-Ruck20-Walk27-2026-11-11.xlsx`, master through November 11, 2026 (Walk S27, Ruck S20). The same file name as snapshot `2026-11-11` in `Trailgenic/world-model-data`; the published copy's fingerprint was not recorded.
+- **Affected pages:** /walking, /rucking
+- **Decision:** published on Webflow before the cutover; no review recorded in this ledger
+- **Deployed:** live on Webflow before 2026-11-11T20:59:21Z, then carried over byte-for-byte at cutover (`8fb4fa8`)
+- **Live URLs:** https://www.trailgenic.com/walking · https://www.trailgenic.com/rucking
 
 ## 2026-11-11 · Cutover from Webflow to Vercel
 

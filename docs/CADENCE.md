@@ -50,6 +50,8 @@ Owner: Ella. Adopted November 13, 2026. Either Ella or Claude can pick up from t
 
 ## Queued work
 
+Build items 1 and 2 now, in parallel. Hold their production deployment until Grokbot captures the citation panel (on or after November 27, 2026). Record the live commit and capture date with the panel results.
+
 1. **Structured data.** Start with the strongest evidence pages. Use only dates and fields the visible page supports.
 2. **Sitemap dates.** Derive them from substantive edits instead of hand-editing them.
 3. **Hub decisions.** /fitness-library and /recovery-conditioning stay open until we know what each destination would carry.
